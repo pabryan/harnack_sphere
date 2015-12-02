@@ -9,48 +9,56 @@
 
 
 
-\curraddr{}
-\email{}
+\author[P. Bryan]{Paul Bryan}
+\address{Leibniz Universit\"{a}t Hannover, Institut f\"{u}r Differentialgeometrie
+und Riemann Center for Geometry and Physics, Welfengarten 1, 30167
+Hannover, Germany}
+\email{pabryan@gmail.com}
+\author[M.N. Ivaki]{Mohammad N. Ivaki}
+\address{Institut f\"{u}r Diskrete Mathematik und Geometrie, Technische Universit\"{a}t Wien,
+Wiedner Hauptstr. 8--10, 1040 Wien, Austria}
+\email{mohammad.ivaki@tuwien.ac.at}
+\author[J. Scheuer]{Julian Scheuer }
+\address{Albert-Ludwigs-Universit\"{a}t, 
+Mathematisches Institut, Eckerstr. 1, 79104
+Freiburg, Germany}
+\email{julian.scheuer@math.uni-freiburg.de}
 \date{\today}
 
 \dedicatory{}
 \subjclass[2010]{}
-\keywords{}
+\keywords{fully nonlinear curvature flows, Harnack estimates}
 
 
 \begin{abstract}
-We prove differential Harnack inequalities for the flow of hypersurfaces by curvature functions on the unit sphere $\mathbb{S}^{n+1}.$ We obtain such estimates for flows by $p$-power of the mean curvature with $0<p<1$ as well as for 1-homogeneous convex curvature functions. Along the calculations, we recover many older well-known differential Harnack estimates in the Euclidean space as well as some new ones.
+We prove Harnack estimates for the flow of hypersurfaces by curvature functions on the unit sphere $\mathbb{S}^{n+1}.$ We obtain such estimates for flows by $p$-power of the mean curvature with $0<p<1$ as well as for 1-homogeneous convex curvature functions. 
 \end{abstract}
 
 \maketitle
 
 
 \section{Introduction}
-
 We consider the evolution of a hypersurface $M^n$ by
 \eq{\label{eq:CurvFlow}
 \partial_tx=-\varphi(f)\nu,~ x:M^n\times[0,T)\to M_c,
 }
 where \(M_c\) is the simply connected space form of constant sectional curvature \(c\), and $f\in C^{\8}(\G_+)$ is a strictly monotone, 1-homogeneous, symmetric function on the eigenvalues of Weingarten map \(\mathcal{W}\) (principal curvatures) \(\kappa_1, \cdots, \kappa_n\).
- Our principal result is Harnack inequalities for flows on the sphere when the speed $\p=f$ is either convex or $\p=H^{p},~ p\in (0,1)$. This result extends the Harnack inequalities obtained in \cite{2015arXiv150802821B, bryanlouie} on the sphere. Along the way, we obtain new and old Harnack inequalities in Euclidean space \cite{MR1296393, MR1100812, MR1316556, MR2813400, MR1480081}. Our main results are given in the following theorems.
+ Our principal result is Harnack inequalities for flows on the sphere when the speed $\p=f$ is either convex or $\p=H^{p},~ p\in (0,1)$. This result extends the Harnack inequalities obtained in \cite{2015arXiv150802821B, bryanlouie} on the sphere. %Along the way, we obtain old Harnack inequalities in Euclidean space \cite{MR1296393, MR1100812, MR1316556, MR2813400, MR1480081}. Our main results are given in the following theorems.
  \begin{theorem}\label{thm: main A}
 Let $f$ be a  convex curvature function and $\p(f)=f$, then
 $$\partial_t \p-b^{ij}\nabla_i\p\nabla_j\p+\frac{n}{2}\frac{\p}{t}>0.$$
 \end{theorem}
-
 \begin{theorem}\label{thm: main 1}
 Let $\p(H)=H^{p}.$ If $\frac{1}{2}+\frac{1}{2n}\leq {p}< 1,$ then
 \[
 \partial_t H^{p} - b^{ij}\nabla_iH^{p}\nabla_jH^{p} - \frac{c {p}}{2{p}-1}H^{2{p}-1} + \frac{{p}}{{p}+1} \frac{H^{p}}{t} > 0.
 \]
 If $0<{p}\leq \frac{1}{2} + \frac{1}{2n}$ or $p=1$, then
-
 \[
 \partial_t H^{p} - b^{ij}\nabla_iH^{p}\nabla_jH^{p} - c n{p}H^{2{p}-1} + \frac{{p}}{{p}+1} \frac{H^{p}}{t} > 0.
 \]
 \end{theorem}
 \section{Preliminaries}
-
 Let $\overline{g}$ and $\overline{Rm}$ denote, respectively, the metric and the curvature tensor of $M_c$. Define \(M_t := x(M^n,t)\), and let \(g = x_t^{\ast} \overline{g}\) denote the induced metric on \(M\) with $\nabla$ the corresponding Levi-Civita connection. Write $\nu$ for the outer unit normal to $M_t$ and let \(\{\partial_i\}_{i=1}^n\) be a local coordinate frame on \(M\) which extends to a frame \(\{\partial_0 = \nu, (x_t)_{\ast} \partial_1, \cdots, (x_t)_{\ast} \partial_n\}\) on \(M_c\) in a neighborhood of \(M_t\).
 
 Let Greek indices range from \(0\) to \(n\) and Latin indices range from \(1\) to \(n\). The Riemann curvature tensor of \(M_c\) satisfies \(\bar{R}_{\a\beta\gamma\theta} = c(\bar{g}_{\a\gamma}\bar{g}_{\beta\delta} - \bar{g}_{\a\theta}\bar{g}_{\beta\gamma})\). We may write the metric $g = \{g_{ij}\}$, second fundamental form $A = \{h_{ij}\}$, the Weingarten map $\mathcal{W} = h^i_j = g^{mi} h_{jm}$ and the Riemann curvature tensor $Rm_{ijkl}$ with respect to the given frame.
@@ -71,7 +79,6 @@ Here, $\{g^{ij}\}$ is the inverse matrix of $\{g_{ij}\}.$ For a strictly convex 
 \[
 b = \{b^{ij}\}.
 \]
-
 The relations between $A$, $Rm$, and $\overline{Rm}$ are given by the Gau{\ss} and Codazzi equations:
 \[
 \begin{split}
@@ -86,7 +93,6 @@ valid for space forms. We also make use of the Ricci identity,
 \[
 {Rm^m}_{kij}  = \left(\nabla^2_{ij} \partial_k - \nabla^2_{ji} \partial_k\right)^m
 \]
-
 We will need some notation for derivatives of the speed \(\varphi\). Let us write
 \[
 \varphi^{i}_{j} = \frac{\partial \varphi}{\partial h^{j}_{i}}
@@ -104,9 +110,9 @@ The trace of \(\varphi^{ij}\) with respect to the metric will be written
 \operatorname{tr}(\dot{\p}) = g_{ij} \varphi^{ij}.
 \]
 Let us also define the operator
-\[
-\Box = \varphi^{ij} \nabla^2_{ij}
-\]
+$
+\Box = \varphi^{ij} \nabla^2_{ij}.
+$
 This operator satisfies the product rule
 \begin{equation}
 \label{eq:productbox}
@@ -117,7 +123,6 @@ We frequently make use, without comment, of the formula for differentiating an i
 \[
 \frac{\partial g^{ij}}{\partial g_{kl}} = - g^{kj} g^{il}.
 \]
-
 First derivatives of \(\varphi\) from the two perspectives are related by
 \begin{equation}
 \label{eq:delh}
@@ -173,15 +178,12 @@ and define
 so that from the evolution of \(\varphi\) below (\cref{lem:evolution}, \cref{eq:delt_speed}) we may write our main Harnack quantities as
 \[
 \chi_1 = t(\partial_t\p- \theta) + \delta\varphi
-\]
-and
-\[
+\quad \mbox{and}\quad
 \chi_2 = t(\beta - \theta) + \delta\varphi.
 \]
 We begin by recalling some standard evolution equations and commutators and then break the remaining calculation into several lemmas.
 
 The evolution equations in the following lemma are standard and can be found in many places \cite{MR1296393, MR1100812, MR1316556, MR892052, MR1480081}. The necessary tools are commuting derivatives, using the definition of the curvature tensor for space forms, the Gauss equation, and the Codazzi equation as described in the previous section. Compare also \cite[p.~94-95]{Gerhardt:/2006} and the formula \cite[eq.~(6.17)]{Gerhardt:01/1996}.
-
 \begin{lemma}
 \label{lem:evolution}
 The following evolution equations hold
@@ -210,9 +212,7 @@ The following evolution equations hold
 \item \label{eq:delt_speed} $\partial_t \varphi = \Box \varphi + \varphi\varphi^{ij}(h^2)_{ij} + c \varphi\varphi^{ij}g_{ij} = \beta + c\varphi\operatorname{tr}(\dot{\p}).$
 \end{enumerate}
 \end{lemma}
-
 We require the commutators \([\nabla, \Box]\) and \([\partial_t, \Box]\). Without further comment we will also use the fact that \([\partial_t, \nabla] f = 0\) for any smooth function \(f\).
-
 \begin{lemma}
 \label{lem:gradBox}
 For every smooth function $f$, the commutation relation
@@ -225,7 +225,6 @@ For every smooth function $f$, the commutation relation
 \]
 holds, where \(\nabla f = df\) is the covariant derivative of \(f\) and the subscript \(i\) refers to the \(i\)'th component of a one-form.
 \end{lemma}
-
 \begin{proof}
 From the Ricci identities
 \[
@@ -248,7 +247,6 @@ From the Gauss equation we obtain
 \end{split}
 \]
 \end{proof}
-
 \begin{lemma}
 \label{lem:deltBox}
 The following commutation relation holds
@@ -260,7 +258,6 @@ j} \varphi + \nabla_k \varphi \nabla_j \varphi) + (\varphi - \varphi^{ij}h_{ij})
 \end{split}
 \]
 \end{lemma}
-
 \begin{proof}
 First, let us calculate the evolution of \(\varphi^{ij}\), which will also prove useful later. From the mixed derivative \cref{eq:delhdelg}, the evolution of the metric (\cref{lem:evolution}, \cref{eq:delt_metric}), and the evolution of the second fundamental form (\cref{lem:evolution}, \cref{eq:delt_sff}) we compute
 \begin{equation}
@@ -272,7 +269,6 @@ First, let us calculate the evolution of \(\varphi^{ij}\), which will also prove
 &= \varphi^{ij,kl} \left(\a_{kl} + c \varphi g_{kl}\right) + 2\varphi\varphi^{jk}h^{i}_{k}.
 \end{split}
 \end{equation}
-
 Next, the commutator of \(\partial_t\) and \(\nabla^2_{ij}\) is given by,
 \begin{equation}
 \label{eq:deltnabla2}
@@ -282,7 +278,6 @@ Next, the commutator of \(\partial_t\) and \(\nabla^2_{ij}\) is given by,
 &= - \nabla_k \varphi \partial_t \G_{ij}^k.
 \end{split}
 \end{equation}
-
 We obtain from \cref{eq:deltBox}, \cref{eq:deltnabla2}, and the evolution of the Christoffel symbols (\cref{lem:evolution}, \cref{eq:delt_christoffel}),
 \[
 \begin{split}
@@ -296,9 +291,7 @@ We obtain from \cref{eq:deltBox}, \cref{eq:deltnabla2}, and the evolution of the
 \]
 The result now follows from \(|\nabla \varphi|^2 = g^{kl}\nabla_k \varphi \nabla_l \varphi\) and \(\nabla_l \varphi = \varphi^{ij} \nabla_l h_{ij}\) by the chain rule.
 \end{proof}
-
 The next ingredient is the evolution of the covariant derivative, \(\nabla \varphi = d\varphi\).
-
 \begin{lemma}
 \label{lem:Evgradphi}
 There holds
@@ -310,7 +303,6 @@ There holds
 \end{split}
 \]
 \end{lemma}
-
 \begin{proof}
 Using the evolution of \(\varphi\) \cref{lem:evolution}, \cref{eq:delt_speed}, the derivative of \(\operatorname{tr}(\dot{\p})\) \cref{eq:delPhi}, and the commutator \([\nabla, \Box]\) from \cref{lem:gradBox}, we compute
 \[
@@ -328,13 +320,13 @@ Using the evolution of \(\varphi\) \cref{lem:evolution}, \cref{eq:delt_speed}, t
 \end{split}
 \]
 where in the third equality, we used
-\[
+$
 \nabla_i (h^2)_{kl} = \nabla_i (g^{sr} h_{ks} h_{rl}) = h^s_l \nabla_i h_{ks} + h^r_k \nabla_i h_{rl}
-\]
+$
 and in the last equality we used
-\[
+$
 b^{rs} (h^2)_{rl} = b^{rs} h_{rm} h^m_l = \delta^s_m h^m_l = h^s_l.
-\]
+$
 \end{proof}
 Now we may proceed to the calculations of \(\partial_t \beta\) and \(\partial_t \theta\).
 \begin{lemma}
@@ -351,11 +343,10 @@ satisfies
 \end{split}
 \]
 where
-\[
+$
 R_{\beta} = \varphi \Box \operatorname{tr}(\dot{\p}) + 2\varphi^{kl} \nabla_k \operatorname{tr}(\dot{\p}) \nabla_l \varphi + \varphi \varphi^{ij,kl}g_{kl} \a_{ij} + 2\varphi^{2}\varphi^{ij}h_{ij}.
-\]
+$
 \end{lemma}
-
 \begin{proof}
 Let us break up the calculation of
 \[
@@ -423,10 +414,9 @@ The quantity $\theta$ evolves according to
 \]
 \end{lemma}
 where
-\[
+$
 R_{\theta} = -(\varphi^{kl}h_{kl} + \varphi)b^{ir}b^{j}_{r}\nabla_i \varphi\nabla_j\varphi + 2 b^{j}_{k}\varphi^{kl}\nabla_l\varphi\nabla_j\varphi + 2 \varphi\varphi^{ij,kl} g_{ij} \gamma_{kl}.
-\]
-
+$
 \begin{proof}
 Again using the product rule for \(\Box\), \cref{eq:productbox} and the symmetry \(b^{ij} = b^{ji}\), we have
 \begin{equation}
@@ -464,8 +454,7 @@ For the second term, from the evolution of \(\nabla\varphi\) in \cref{lem:Evgrad
 &\quad \left. + c\left(\varphi^{kl}g_{ki} \nabla_l \varphi + \varphi \nabla_i \operatorname{tr}(\dot{\p})\right)\right] \\
 &= 2 b^{ij} \nabla_j\varphi \varphi^{kl}(h^2)_{kl}\nabla_i \varphi \\
 &\quad - 2 b^{ij} \nabla_j\varphi \varphi^{kl}h_{kl}h^{m}_{i} \nabla_m \varphi + 2 b^{ij} \nabla_j\varphi \varphi^{kl}h^{m}_{l}h_{ki} \nabla_m \varphi \\
-&\quad + 2 b^{ij} \nabla_j\varphi \varphi^{kl,rs}\nabla_i h_{rs} \a_{kl} \\
-&\quad + 4 b^{ij} \nabla_j\varphi \varphi^{kl} b^{rs} \varphi(h^2)_{rl} \nabla_i h_{ks} \\
+&\quad + 2 b^{ij} \nabla_j\varphi \varphi^{kl,rs}\nabla_i h_{rs} \a_{kl}  + 4 b^{ij} \nabla_j\varphi \varphi^{kl} b^{rs} \varphi(h^2)_{rl} \nabla_i h_{ks} \\
 &\quad + c\left(2 b^{ij} \nabla_j\varphi \varphi^{kl}g_{ki} \nabla_l \varphi + 2 b^{ij} \nabla_j\varphi \varphi \nabla_i \operatorname{tr}(\dot{\p})\right) \\
 &= 2 \varphi^{kl}(h^2)_{kl}\theta - 2 \varphi^{kl}h_{kl} |\nabla\varphi|^2 + 2 \varphi^{kl} h^{m}_{l} \nabla_k\varphi \nabla_m \varphi \\
 &\quad + 2 \varphi^{kl,rs} \gamma_{rs} \a_{kl} + 4 b^{rs} \varphi^{kl} \gamma_{ks} \varphi(h^2)_{rl} \\
@@ -502,14 +491,12 @@ R &= R_{\beta} - R_{\theta} \\
 &\quad  +(\varphi^{kl}h_{kl} + \varphi)b^{ir}b^{j}_{r}\nabla_i \varphi\nabla_j\varphi - 2 b^{j}_{k}\varphi^{kl}\nabla_l\varphi\nabla_j\varphi.
 \end{split}
 \]
-
 \end{proposition}
-
 \begin{proof}
 We have
-\[
+$
 (\partial_t - \Box)\chi_2 = \beta - \theta + t(\partial_{t} - \Box)(\beta - \theta) + \delta(\partial_t \varphi - \Box\varphi).
-\]
+$
 First of all, the evolution equation for \(\varphi\), \cref{lem:evolution}, \cref{eq:delt_speed} gives us
 \[
 \delta(\partial_t \varphi - \Box\varphi) = \left(\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p})\right)\delta\varphi.
@@ -523,11 +510,9 @@ since \(\nabla_r \varphi = \varphi^{ij} \nabla_r h_{ij}\). Putting the two equat
 \label{eq:deltchi1}
 \begin{split}
 \beta - \theta + \delta(\partial_t \varphi - \Box\varphi) &= \left(\frac{\beta-\theta}{\delta\varphi} + \varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p})\right)\delta\varphi + t \frac{(\beta - \theta)^2}{\delta\varphi} - t \frac{(\varphi^{ij}\eta_{ij})^2}{\delta\varphi} \\
-&= \frac{\beta-\theta}{\delta\varphi} \chi_2 + \left(\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p})\right)\delta\varphi \\
-&\quad - t \frac{\varphi^{ij}\varphi^{kl}}{\delta\varphi} \eta_{ij}\eta_{kl}.
+&= \frac{\beta-\theta}{\delta\varphi} \chi_2 + \left(\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p})\right)\delta\varphi  - t \frac{\varphi^{ij}\varphi^{kl}}{\delta\varphi} \eta_{ij}\eta_{kl}.
 \end{split}
 \end{equation}
-
 The remaining term \(t(\partial_{t} - \Box)(\beta - \theta)\) is now just bookkeeping. Recall, \cref{lem:evbeta} states that
 \begin{align*}
 (\partial_{t} - \Box)\beta &= \left(\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}) \right)\beta  & (A) \\
@@ -542,7 +527,6 @@ The remaining term \(t(\partial_{t} - \Box)(\beta - \theta)\) is now just bookke
 &\quad - 2b^{il} \varphi^{jk} \left(\gamma_{ij} \gamma_{kl} - 2\a_{ij} \gamma_{kl} + \nabla^2_{ij}\varphi\nabla^2_{kl}\varphi\right) & (D') \\
 &\quad + cR_{\theta}. & (E')
 \end{align*}
-
 Subtracting line by line, we have
 \begin{align*}
 (A) - (A') &= \left(\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}) \right)\beta - \left(\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}) \right)\theta = \left(\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}) \right)(\beta - \theta) \\
@@ -555,10 +539,8 @@ Subtracting line by line, we have
 &= 2b^{il}\varphi^{jk} \left(\a_{ij}\a_{kl} - 2 \a_{ij} \gamma_{kl} + \gamma_{ij} \gamma_{kl} \right) = 2b^{il}\varphi^{jk} \eta_{ij} \eta_{kl} \\
 (E) - (E') &= c(R_{\beta} - R_{\theta}) = cR.\\
 \end{align*}
-
 Multiplying everything by \(t\) and adding the result to \cref{eq:deltchi1} and using the definitions of $\b$ and $\t$ gives the result.
 \end{proof}
-
 We need two more lemmas to obtain a Harnack inequality for $H^{p}$-flow with $0<p<1.$  We start by rewriting the term $R$ in the evolution of \(\chi_2\) when the speed is a function of the mean curvature.
 
 \begin{lemma}\label{RSphere}
@@ -566,16 +548,13 @@ Suppose that $\p=\p(H).$ Then the term $R$ in the evolution equation of $\chi_2$
 \eq{\label{RSphere1}
 R&=2n\fr{\p''\p}{\p'}\br{\Box\p + \p\p^{ij}(h^2)_{ij} - b^{ij}\nabla_i \p \nabla_j \p}-n\fr{\p''\p^2}{\p'}\p^{ij}(h^2)_{ij}+2\p^2\p'H\\
     &\hp{=}+n\br{2\fr{\p''}{\p'}-\fr{\p''^{2}\p}{\p'^{3}}+\fr{\p'''\p}{\p'^{2}}}\p^{ij}\nabla_{i}\p\nabla_j\p\\
-    &\hp{=}+\br{\p'H+\p}b^{ir}b^{j}_{r}\nabla_i\p\nabla_j\p-2\p'b^{ij}\nabla_i\p\nabla_j\p.
+ &\hp{=}+\br{\p'H+\p}b^{ir}b^{j}_{r}\nabla_i\p\nabla_j\p-2\p'b^{ij}\nabla_i\p\nabla_j\p.
 }
 \end{lemma}
-
 \pf{
 This computation is tedious but straightforward. The key point is to replace the terms containing second covariant derivatives of $\p,$ namely $\Box\operatorname{tr}(\dot{\p})$ and $\a_{ij},$ by a term involving $\Box\p,$ which can then be replaced by $\b-\t$ and some curvature terms.
 }
-
 To obtain a Harnack estimate for $H^{p}$-flow, we will have to handle the middle term in \cref{RSphere1}; this term does not always have the favorable positive sign. To this aim, it is useful to add an auxiliary function of the speed. Using Proposition \ref{thm:Evchi} and \cref{RSphere}, it is straightforward to obtain the following evolution equation for $\chi_3=\chi_2+t\zeta$, where $\zeta=\zeta(\p)$ is a function of $\p.$
-
 \begin{lemma}\label{lemma : lem9}
 The quantity
 $\chi_3=\chi_2+t\zeta$
@@ -589,7 +568,6 @@ evolves according to
 }
 \end{lemma}
 Proposition \ref{thm:Evchi}, and Lemmas \ref{RSphere}, \ref{lemma : lem9}  enable us to get a strong Harnack estimate for $H^{p}$-flow; see Section \ref{Harnack} and Theorem \ref{thm: main 1}. Due to the presence of $\Box\operatorname{tr}(\dot{\p})$ in $R$ given in Proposition \ref{thm:Evchi}, it is not clear to us whether $\chi_2$ would results in Harnack estimates for curvature flows other than $H^{p}$-flow. As it will be shown, by weakening $\chi_2$ to $\chi_1=\chi_2+tc\p\operatorname{tr}(\dot{\p})$,  we can obtain (weak) Harnack estimates for all 1-homogeneous convex speeds.
-
 \begin{proposition}\label{WeakHarnackEv}
 The quantity
 $\chi_1=t(\del_t\p-\t)+\d\p$
@@ -599,64 +577,28 @@ satisfies the evolution equation
 &+ tc\left\{2\p^2\p^{ij}h_{ij}+\left[\br{\p^{ij}h_{ij}+\p}b^{ir}-2\p^{ir}\right]b^{j}_{r}\nabla_{i}\p\nabla_{j}\p\right\}.
 }
 \end{proposition}
-
 \pf{
 We simply use the evolution of $\chi_2,$ cf.~\eqref{thm:Evchi1}, and add the evolution of $tc\operatorname{tr}(\dot{\p})\p.$ This is
 \eq{\label{WeakHarnackEv2}\br{\del_t-\Box}\br{tc\operatorname{tr}(\dot{\p})\p}&=tc\Big(\operatorname{tr}(\dot{\p})\p\p^{ij}(h^2)_{ij}+c\operatorname{tr}(\dot{\p})^2\p+\p\del_t\operatorname{tr}(\dot{\p})\\
-                    &\hp{-tk\Big(}-\p\Box\operatorname{tr}(\dot{\p})-2\p^{ij}\nabla_{i}\p\nabla_{j}\operatorname{tr}(\dot{\p})\Big)\\
-                            &\hp{=}+c\operatorname{tr}(\dot{\p})\p.
+                    &\hp{-tk\Big(}-\p\Box\operatorname{tr}(\dot{\p})-2\p^{ij}\nabla_{i}\p\nabla_{j}\operatorname{tr}(\dot{\p})\Big)+c\operatorname{tr}(\dot{\p})\p.
                             }
 Noting that
 $$\del_t\operatorname{tr}(\dot{\p})=\del_t\br{\p^{ij}g_{ij}}=\p^{ij,kl}\br{\a_{kl}+c\p g_{kl}}g_{ij}$$
 and adding \eqref{WeakHarnackEv2} to the term $R$ in \eqref{thm:Evchi1}, we obtain the claim.
 }
-
-
 \section{Harnack Inequalities}\label{Harnack}
-
-\subsection{Euclidean Space}
-
-In Euclidean space, we deduce differential Harnack inequalities for various speeds, recovering well known Harnack inequalities \cite{MR1296393, MR1100812, MR1316556, MR2813400, MR1480081}.
-
-\begin{corollary}\label{EucHarnack}
-Let $x$ be a strictly convex solution of \eqref{eq:CurvFlow} in Euclidean space. Suppose $f$ is inverse concave and the pair $\p\in C^{\8}(\R_+),~\d\neq 0$ satisfy
-$$\p''+\fr{2\p'}{f}-\fr{1}{\d}\fr{\p'^2}{\p}\geq 0,\quad \d\p(0,\xi)>0.$$
-Then
-$\chi_2=t(\partial_t\p-b^{ij}\nabla_i\p\nabla_j\p)+\d\p>0$
- along \eqref{eq:CurvFlow}.
-\end{corollary}
-
-\pf{
-In \eqref{thm:Evchi1} all that has to be checked is non-negativity of the bracket involving the second derivative of $\p(f).$
-First note that the curvature function $f$ is inverse concave, i.e.,
-\eq{\label{eq: inverse concavity}\~f(\k_i)=\fr{1}{f(\k_i^{-1})}}
-is concave, if and only if
-\eq{\label{InvConcave}\left(f^{ij,kl}+2f^{ik}b^{jl}-2\fr{f^{ij}f^{kl}}{f}\right)\eta_{ij}\eta_{kl}\geq0
-}
-for all symmetric $\eta.$
-We calculate
-\eq{
-\left(\p^{ij,kl}+2b^{jl}\p^{ik}-\fr{\p^{ij}\p^{kl}}{\d\p}\right)\eta_{ij}\eta_{kl}&=\left(\p'f^{ij,kl}+\p''f^{ij}f^{kl}+2\p'f^{ik}b^{jl}-\fr{\p'^2}{\d\p}\right)(f^{ij}\eta_{ij})^2\\
-                        &\geq \br{\p''+2\fr{\p'}{f}-\fr{\p'^2}{\d\p}}(f^{ij}\eta_{ij})^2\\
-                        &\geq 0.
-}
-}
-
-Easy calculations imply that the assumptions of Corollary \ref{EucHarnack} are satisfied in quite a wide range of interesting situation.
-
-\begin{corollary}\label{HarnackEucCor}
- If $f$ is an inverse concave curvature function, then for contracting flows the pair
-$$\p(f)=f^{\a},\quad 0<\a<\8, \quad \d\geq \fr{\a}{\a+1},$$
+In Euclidean space we recover differential Harnack inequalities for various speeds already discussed in \cite[Cor.~5.11 (1)]{MR1296393}, as can be seen by evaluating the evolution equation \eqref{thm:Evchi1} with $c=0.$
+\begin{remark}\label{HarnackEucCor}
+ Let $x$ be a strictly convex solution of \eqref{eq:CurvFlow} in Euclidean space. If $f$ is a $1$-homogeneous and inverse concave curvature function, then for contracting flows the pair
+$$\p(f)=f^{\a},\quad 0<\a<\8, \quad \d= \fr{\a}{\a+1},$$
 and for expanding flows the pair
-$$\p(f)=-f^{-\b}, \quad 0<\b<1,\quad \d\leq \fr{\b}{\b-1}$$
+$$\p(f)=-f^{-\b}, \quad 0<\b<1,\quad \d= \fr{\b}{\b-1}$$
 satisfy $$\partial_t \p-b^{ij}\nabla_i\p\nabla_j\p+\frac{\d\p}{t}>0.$$
 %If $f$ is inverse convex (e.q., the inequality (\ref{eq: inverse concavity}) is reversed), then for expanding flows the pair
 %\eq{\p(f)=-f^{-\b}, \quad \b>1,\quad \d\geq \fr{\b}{\b-1}}
 %satisfy $\chi<0.$
-\end{corollary}
-
-\subsection{The Sphere}
-
+\end{remark}
+Let us consider the spherical case.
 \begin{theorem}\label{thm: main A}
 Suppose $f$ is a  convex curvature function and $\p=f$, then for $t>0$ we have
 $$\partial_t \p-b^{ij}\nabla_i\p\nabla_j\p+\frac{n}{2}\frac{\p}{t}>0.$$
@@ -682,7 +624,6 @@ If $0<{p}\leq \frac{1}{2} + \frac{1}{2n}$ or $p=1$, then
 \partial_t H^{p} - b^{ij}\nabla_iH^{p}\nabla_jH^{p} - c n{p}H^{2{p}-1} + \frac{{p}}{{p}+1} \frac{H^{p}}{t} > 0.
 \]
 \end{theorem}
-
 \begin{proof}
 In order to prove Theorem \ref{thm: main 1}, we need to show that for
 $$\p=H^{p},\quad \d=\fr{p}{p+1},$$
@@ -690,12 +631,11 @@ the quantity $\chi_3$ preserves its positivity at all $t>0.$ Here $\zeta$ is cho
 $$\zeta(\p)=\begin{cases} 0, &0<p\leq \fr{1}{2}+\fr{1}{2n}\\
                     p\br{n-\fr{1}{2p-1}}\p^{2-\fr{1}{p}}, &\fr{1}{2}+\fr{1}{2n}<p< 1.\end{cases}$$
 However, to avoid confusion, we will keep the general form as long as possible.
-
 At time $t=0,$ $\chi_3$ is positive.
 %%%%%%%%%%%% We need to impose strict mean convexity in the main theorem here!!!!!!! %%%%%%
 Thus suppose there exists a first time $t_0$ and a point $x_0$ in $M_{t_0},$ such that $\chi_3(t_0,x_0)=0.$
 Then we also obtain
-$$\chi_2=-t\zeta,\quad \b-\t=-\fr{\d\p}{t}-\zeta.$$
+$$\chi_2=-t\zeta\Rightarrow \b-\t=-\fr{\d\p}{t}-\zeta.$$
 Thus, using \eqref{Evchibar1}, we obtain at $(t_0,x_0):$
 \eq{0&\geq \del_t\chi_3-\Box\chi_3\\
         &=2\zeta-2n\d\fr{\p''\p^2}{\p'}+t\br{\p^{ij,kl}+2b^{il}\p^{jk}-\fr{\p^{ij}\p^{kl}}{\d\p}}\eta_{ij}\eta_{kl}\\
@@ -722,21 +662,13 @@ $$\fr{\zeta^2}{\d\p}-2n\fr{\p''\p}{\p'}\zeta+n\br{\zeta'\p-\zeta}\p'\geq 0\quad\
 $$\zeta'\p-n\fr{\p''\p^2}{\p'}-\zeta\geq 0\quad\mbox{for}\quad\frac{n+1}{2n}\leq p\leq 1,$$
 $$n\br{2\fr{\p''}{\p'}-\fr{\p''^{2}\p}{\p'^{3}}+\fr{\p'''\p}{\p'^{2}}}-\zeta''+\fr{\p}{\p'H^2}-\fr{1}{H}=0.$$
 \end{proof}
-
 \section{Preserving convexity}
-
-In the derivation of the Harnack inequalities we have assumed the strict convexity of flow hypersurfaces. In this section, we show that strict convexity is preserved by a variety of flow speeds.
-
-\subsection{Flows in the sphere}
-In the sphere, we obtain the preservation of strict convexity for all flows for which we could prove the Harnack inequality, cf.~Theorem \ref{thm: main A} and Theorem \ref{thm: main 1}.
-
+In the derivation of the Harnack inequalities we have assumed the strict convexity of flow hypersurfaces. In this section, we show that strict convexity is preserved for all flows in the sphere for which we could prove the Harnack inequality. In Euclidean space, the question of preserved convexity has been addressed more thoroughly. It is also known that there is a variety of examples where convexity is lost for contracting flows \cite{AndrewsMcCoyZheng:07/2013}, the authors also discuss necessary and sufficient conditions for preserving convexity. In other special situations preserved convexity was proved, e.g., see \cite{Andrews:/1994b}, \cite{Andrews:/2007}, \cite{Andrews:04/2010} and \cite{Schulze:/2005}.
 \begin{proposition}
  Let $M_{0}$ be a closed and strictly convex initial hypersurface for the curvature flow equation
-\eq{\dot{x}=-\p\nu}
-in the sphere. Suppose either $\p=f$ with $f$ as a convex curvature function, or  $\p=H^{p}$ and $p\in (0,1)$.
+(\ref{eq:CurvFlow}). Suppose either $\p=f$ with $f$ as a convex curvature function, or  $\p=H^{p}$ and $p\in (0,1)$.
 Then all flow hypersurfaces are strictly convex.
 \end{proposition}
-
 \pf{
 Let us first treat the case $\p=H^{p}$ and $0<p<1.$ The inverse curvature function of $H$ is the harmonic mean curvature
 \eq{\~H=\br{\sum_{i=1}^n\k_i^{-1}}^{-1}.}
@@ -745,7 +677,7 @@ Let $T$ be the first time, where the strict convexity is lost. Then on the time 
 where the harmonic mean curvature $\~H$ is now evaluated at $\~\k_i=\k_i^{-1},$ compare \cite{Gerhardt:/2015} for the derivation of the dual flow. As a curvature function, the harmonic mean curvature is 1-homogeneous, strictly monotone, concave and vanishes on the boundary of $\G_{+} $ (regarding the concavity see \cite[Lemma~2.2.12, Lemma~2.2.14]{Gerhardt:/2006}). For flows of the kind \eqref{DualFlow} uniform curvature estimates were deduced in \cite[Lemma~4.7]{MakowskiScheuer:/2013}, implying that the $\~\k_{i}$ are bounded. This means that up to time $T$ uniform convexity is preserved for the original flow, which contradicts the definition of $T,$ if $T$ is not the collapsing time.
 
 Now we treat convex speeds. We use Hamilton's maximum principle for tensors to deduce that the tensor
-\eq{S_{ij}=h_{ij}-\e g_{ij}}
+$S_{ij}=h_{ij}-\e g_{ij}$
 remains non-negative, if $\e$ is chosen so that this is the case initially. We use the evolution equations \eqref{eq:delt_metric} and \eqref{eq:delt_sff_box} to deduce
 \eq{\label{PresConv}\del_tS_{ij}-\Box S_{ij}&=\p'f^{kl}(h^2)_{kl}h_{ij}-(\p'f+\p)(h^2)_{ij}+c(\p'f+\p)g_{ij}\\
                     &\hp{=}-c\p'f^{kl}g_{kl}h_{ij}+2\e \p h_{ij}+\p^{kl,rs}\nabla_{i}h_{kl}\nabla_{j}h_{rs}\\
@@ -753,61 +685,13 @@ remains non-negative, if $\e$ is chosen so that this is the case initially. We u
 Using convexity of $f$, for any unit length null eigenvector $\eta$ of $S_{ij}$ we have
 \eq{N_{ij}\eta^i\eta^j\geq -2\e^2f+2cf-\e cf^{kl}g_{kl}+2\e^2 f.}
 On the other hand, for convex and $1$-homogeneous curvature functions there holds
-\eq{f^{kl}g_{kl}\leq n,}
+$f^{kl}g_{kl}\leq n,$
 cf.~\cite[Lemma~2.2.19]{Gerhardt:/2006}. Furthermore, $S_{ij}$ is still positive semi-definite and thus $f\geq n\e.$
 Hence
-\eq{N_{ij}\eta^i\eta^j\geq n\e>0.}
+$N_{ij}\eta^i\eta^j\geq n\e>0.$
 }
 
-\subsection{Flows in the Euclidean space}
-In Euclidean space, the question of preserved convexity has been addressed more thoroughly. It is also known that there is a variety of examples where convexity is lost for contracting flows; see \cite{AndrewsMcCoyZheng:07/2013}. In this paper, the authors also discuss necessary and sufficient conditions to conclude preserved convexity. In other special situations preserved convexity was proved, e.g., see \cite{Andrews:/1994b}, \cite{Andrews:/2007}, \cite{Andrews:04/2010} and \cite{Schulze:/2005}.
-It does not seem possible to obtain preserved convexity in the generality in which we can prove a Harnack inequality, cf. Corollary \ref{HarnackEucCor}. For completeness, in the following proposition we provide simple proofs for a large class of flows that convexity is preserved.
-These results are not entirely optimal. We refer to \cite{AndrewsMcCoyZheng:07/2013} for an exhaustive discussion of the contracting case.
 
-\begin{proposition}
-Let $M_{0}$ be a closed and strictly convex initial hypersurface for the curvature flow equation
-\eq{\dot{x}=-\p\nu}
-in the Euclidean space. Suppose $f$ is an inverse concave curvature function. Then in any of the cases
-\eq{\p(f)=f^{\a},\quad 0<\a<\8,}
-\eq{\p(f)=-f^{-\b},\quad 0<\b\leq 1,}
-all flow hypersurfaces remain strictly convex, provided that in the contracting case with $\a>1,$ $f$ is additionally supposed to be convex and in the expanding case $f$ is additionally supposed to be concave.
-\end{proposition}
-
-\pf{
-(i)~Let us first consider the case $\p=f^{\a},$ $\a\leq 1.$ We use \eqref{eq:delt_inversesff} to compute the evolution equation of the inverse of the Weingarten map,
-\eq{b^i_j=b^{ik}g_{kj}.}
-We obtain
-\eq{\del_t b^i_j&=\Box b^i_j-\p'f^{rs}(h^2)_{rs}b^i_j+(\p'f-\p)\d^i_j\\
-                &\hp{=}-\br{\p'f^{kl,pq}+2\p'b^{lq}f^{kp}+\p''f^{kl}f^{pq}}b^{ir}b^{s}_{j}\nabla_rh_{kl}\nabla_sh_{pq}.}
-Since $f$ is inverse concave, from \eqref{InvConcave} we deduce
-\eq{\p'f^{kl,pq}+2\p'b^{lq}f^{kp}+\p''f^{kl}f^{pq}\geq 2\fr{\p'}{f}f^{ij}f^{kl}+\p''f^{ij}f^{kl}\geq 0}
-in the sense of bilinear forms for all $\p$ under consideration.
-Since $\a\leq 1,$ all other terms are negative as well and we deduce that in any coordinate system all diagonal elements of $(b^i_j)$ are bounded. Hence, all principal curvatures remain bounded from below.
-
-(ii)~If $\a>1$ and $f$ is convex, we use the same proof as in the spherical case to show that the tensor
-\eq{S_{ij}=h_{ij}-\e g_{ij}}
-remains non-negative. Equation \eqref{PresConv} was already formulated in a generality which allows to consider this new situation. At a first point in spacetime where we have a null-eigenvector of $S_{ij}$ we deduce, also using $S_{ij}\geq 0$
-\eq{N_{ij}\eta^i\eta^j\geq \e\p'f^{kl}(h^2)_{kl}-\e^2\p'f+\e^2\p\geq \e^2\p>0.}
-Here we also used the convexity of the composition $\p(f).$
-
-(iii)~In the expanding case we use Andrews' maximum principle, \cite[Thm.~3.2, Thm.~4.1]{Andrews:/2007} to deduce preserved pinching. Therefore consider the tensor
-\eq{T_{ij}=h_{ij}-\e Hg_{ij},}
-where $0<\e<\fr 1n$ is small enough to make $T_{ij}$ positive initially.
-Using the evolution equations \eqref{eq:delt_metric}, \eqref{eq:delt_sff_box} and \eqref{eq:delt_weingarten_box}, we obtain
-\eq{\del_t T_{ij}-\Box T_{ij}&=\p'f^{kl}(h^2)_{kl}T_{ij}-(\p'f+\p)(h^2)_{ij}+\e\br{\p'f-\p}\|A\|^2g_{ij}+2\e H\p h_{ij}\\
-                            &\hp{=}+\p^{kl,rs}\nabla_ih_{kl}\nabla_jh_{rs}-\e\p^{kl,rs}\nabla_mh_{kl}\nabla^mh_{rs}g_{ij}\\
-                            &\equiv N_{ij}+\~N_{ij},}
-  where $\~N_{ij}$ represents all term including derivatives of $h_{ij}.$ At a first unit length null-eigenvector of $T_{ij}$ we have
-\eq{h_{ij}\eta^i=\e H\eta_j}
-and hence
-\eq{N_{ij}\eta^i\eta^j&=-\e^2 H^2(\p'f+\p)+\e\br{\p'f-\p}\|A\|^2+2\e^2H^2\p\\
-                    &>0, }
-since $\|A\|^2\geq \tfrac{H^2}{n}.$ To deduce that also $\~N_{ij}\eta^i\eta^j\geq 0$ is true, we have to provide the modified null-eigenvector condition as defined in \cite[Thm.~3.2]{Andrews:/2007}, which holds for terms of the form $\~N_{ij},$ if $\p$ is a symmetric, strictly monotone, concave and inverse concave curvature function, compare \cite[Thm.~4.1]{Andrews:/2007}, where inverse concavity has to be understood as concavity of
-\eq{\hat{\p}(\k_i)=-\p(\k_i^{-1}).}
-$\p$ is obviously monotone and symmetric. It is concave as a composition of the concave function $x\mt -x^{-\b}$ and the concave curvature function $f.$ The speed $\p$ is also inverse concave, since
-\eq{\hat{\p}(\kappa_i)=f^{-\b}(\k_i^{-1})=\br{\fr{1}{f(\k_i^{-1})}}^{\b},}
- is a concave function of $\kappa_i$; $\hat{\p}$ is the composition of concave functions $x^{\b}$ with $\b\leq 1$ and $\fr{1}{f(\k_i^{-1})}$.
-}
 
 \bibliographystyle{amsplain}
 \bibliography{Bibliography.bib}
