@@ -3,7 +3,7 @@
 \input{StandardPaper2.tex}
 
 \begin{document}
-\title[Harnack inequalities in the sphere]{Harnack estimates for curvature flows on the sphere}
+\title[Differential Harnack inequalities on the sphere]{Harnack inequalities for evolving hypersurfaces on the sphere}
 
 
 
@@ -31,7 +31,7 @@ Freiburg, Germany}
 
 
 \begin{abstract}
-We prove Harnack estimates for the flow of hypersurfaces by curvature functions on the unit sphere $\mathbb{S}^{n+1}.$ We obtain such estimates for flows by $p$-power of the mean curvature with $0<p<1$ as well as for 1-homogeneous convex curvature functions. 
+We prove Harnack inequalities for hypersurfaces evolving on the unit sphere either by a 1-homogeneous convex curvature function or by the $p$-power of mean curvature with $0<p<1$. 
 \end{abstract}
 
 \maketitle
@@ -46,9 +46,8 @@ where \(M_c\) is the simply connected space form of constant sectional curvature
  Our principal result is Harnack inequalities for flows on the sphere when the speed $\p=f$ is either convex or $\p=H^{p},~ p\in (0,1)$. This result extends the Harnack inequalities obtained in \cite{2015arXiv150802821B, bryanlouie} on the sphere. %Along the way, we obtain old Harnack inequalities in Euclidean space \cite{MR1296393, MR1100812, MR1316556, MR2813400, MR1480081}. Our main results are given in the following theorems.
  \begin{theorem}\label{thm: main A}
 Let $f$ be a  convex curvature function and $\p(f)=f$, then
-$$\partial_t \p-b^{ij}\nabla_i\p\nabla_j\p+\frac{n}{2}\frac{\p}{t}>0.$$
-\end{theorem}
-\begin{theorem}\label{thm: main 1}
+$$\partial_t \p-b^{ij}\nabla_i\p\nabla_j\p+\frac{1}{2}\frac{\p}{t}>0.$$
+
 Let $\p(H)=H^{p}.$ If $\frac{1}{2}+\frac{1}{2n}\leq {p}< 1,$ then
 \[
 \partial_t H^{p} - b^{ij}\nabla_iH^{p}\nabla_jH^{p} - \frac{c {p}}{2{p}-1}H^{2{p}-1} + \frac{{p}}{{p}+1} \frac{H^{p}}{t} > 0.
@@ -73,7 +72,7 @@ The mean curvature of $M^n$ is the trace of the Weingarten map (equivalently the
 (h^2)_{ij} = g_{kj} (h^2)_i^k = h^k_i h_{kj},
 \]
 \[
-|A|^2 = g^{ij}g^{kl}h_{ik}h_{lj} = h_{ij}h^{ij},
+|A|^2 = g^{ij}g^{kl}h_{ik}h_{lj} = h_{ij}h^{ij}.
 \]
 Here, $\{g^{ij}\}$ is the inverse matrix of $\{g_{ij}\}.$ For a strictly convex hypersurface, \(A\) is strictly positive-definite and hence has a strictly positive-definite inverse, which we denote by
 \[
@@ -91,7 +90,7 @@ Rm_{ijkl} &= \overline{Rm}_{ijkl} + h_{ik}h_{jl} - h_{il}h_{jk} \\
 \]
 valid for space forms. We also make use of the Ricci identity,
 \[
-{Rm^m}_{kij}  = \left(\nabla^2_{ij} \partial_k - \nabla^2_{ji} \partial_k\right)^m
+{Rm^m}_{kij}  = \left(\nabla^2_{ij} \partial_k - \nabla^2_{ji} \partial_k\right)^m.
 \]
 We will need some notation for derivatives of the speed \(\varphi\). Let us write
 \[
@@ -601,17 +600,17 @@ satisfy $$\partial_t \p-b^{ij}\nabla_i\p\nabla_j\p+\frac{\d\p}{t}>0.$$
 Let us consider the spherical case.
 \begin{theorem}\label{thm: main A}
 Suppose $f$ is a  convex curvature function and $\p=f$, then for $t>0$ we have
-$$\partial_t \p-b^{ij}\nabla_i\p\nabla_j\p+\frac{n}{2}\frac{\p}{t}>0.$$
+$$\partial_t \p-b^{ij}\nabla_i\p\nabla_j\p+\frac{1}{2}\frac{\p}{t}>0.$$
 \end{theorem}
 \begin{proof}
 In view of the maximum principle and that $\chi_1$ is manifestly positive at $t=0$, it suffices to show that the right-hand side of (\ref{WeakHarnackEv12}) is positive whenever at some point in space-time $\chi_1=0$. By convexity of $\p$, the term with the coefficient $\p^{ij,kl}$ is positive. On the other hand, note that any 1-homogeneous curvature function $\p$ satisfies $\p b^{ij}\geq \p^{ij}.$ Therefore
 $$\left(\br{\p^{ij}h_{ij}+\p}b^{ir}-2\p^{ir}\right)b^{j}_{r}\nabla_{i}\p\nabla_{j}\p\ge 0.$$ To complete the proof note that
-$$\br{2b^{il}\p^{jk}-\fr{\p^{ij}\p^{kl}}{\d\p}}\eta_{ij}\eta_{kl}\geq \br{\frac{2\p^{il}\p^{jk}}{\p}-\fr{\p^{ij}\p^{kl}}{\d\p}}\eta_{ij}\eta_{kl}\geq \left(\frac{2}{n}-\frac{1}{\delta}\right)\frac{(\p^{ij}\eta_{ij})^2}{\p}.$$
+$$\br{b^{il}\p^{jk}-\fr{\p^{ij}\p^{kl}}{\p}}\eta_{ij}\eta_{kl}\geq 0.$$
 \end{proof}
-\begin{remark}
-For power means $H_r=\left(\sum \kappa_i^r\right)^{\frac{1}{r}}$ and $r\geq 1,$ it is not difficult, using AM-GM inequality, to see that $\br{2b^{il}\p^{jk}-\fr{\p^{ij}\p^{kl}}{\d\p}}\eta_{ij}\eta_{kl}\geq0$ with $\delta=\frac{1}{2};$ therefore, the contracting flow with speed $\p=H_r$ and $r\geq 1$ satisfies
-$$\partial_t H_r-b^{ij}\nabla_iH_r\nabla_jH_r+\frac{H_r}{2t}>0.$$
-\end{remark}
+%\begin{remark}
+%For power means $H_r=\left(\sum \kappa_i^r\right)^{\frac{1}{r}}$ and $r\geq 1,$ it is not difficult, using AM-GM inequality, to see that $\br{2b^{il}\p^{jk}-\fr{\p^{ij}\p^{kl}}{\d\p}}\eta_{ij}\eta_{kl}\geq0$ with $\delta=\frac{1}{2};$ therefore, the contracting flow with speed $\p=H_r$ and $r\geq 1$ satisfies
+%$$\partial_t H_r-b^{ij}\nabla_iH_r\nabla_jH_r+\frac{H_r}{2t}>0.$$
+%\end{remark}
 Employing the evolution \cref{Evchibar1}, we can obtain a stronger Harnack inequality for the speed \(\p = H^{p}\) with \(p \in (0,1)\); the case $p=1$ was considered in \cite{2015arXiv150802821B}.
 \begin{theorem}\label{thm: main 1}
 If $\frac{1}{2}+\frac{1}{2n}\leq {p}< 1,$ then
