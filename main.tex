@@ -43,7 +43,7 @@ We consider the evolution of a hypersurface $M^n$ by
 \partial_tx=-\varphi(f)\nu,~ x:M^n\times[0,T)\to M_c,
 }
 where \(M_c\) is the simply connected space form of constant sectional curvature \(c\), and $f\in C^{\8}(\G_+)$ is a strictly monotone, 1-homogeneous, symmetric function on the eigenvalues of Weingarten map \(\mathcal{W}\) (principal curvatures) \(\kappa_1, \cdots, \kappa_n\).
- Our principal result is Harnack inequalities for flows on the sphere when the speed $\p=f$ is either convex or $\p=H^{p},~ p\in (0,1)$. This result extends the Harnack inequalities obtained in \cite{2015arXiv150802821B, bryanlouie} on the sphere. %Along the way, we obtain old Harnack inequalities in Euclidean space \cite{MR1296393, MR1100812, MR1316556, MR2813400, MR1480081}. Our main results are given in the following theorems.
+ Our principal result is Harnack inequalities for flows on the sphere when the speed $\p(f)=f$ is convex, or $\p(H)=H^{p}$ with $ p\in (0,1)$. This result extends the Harnack inequalities obtained in \cite{BryanIvaki:08/2015, BryanLouie:02/2015} on the sphere. %Along the way, we obtain old Harnack inequalities in Euclidean space \cite{Andrews:09/1994, Chow:06/1991, Hamilton:/1995, MR2813400, Smocyzk:/1997}. Our main results are given in the following theorems.
  \begin{theorem}\label{thm: main A}
 Let $f$ be a  convex curvature function and $\p(f)=f$, then
 $$\partial_t \p-b^{ij}\nabla_i\p\nabla_j\p+\frac{1}{2}\frac{\p}{t}>0.$$
@@ -156,7 +156,7 @@ and the covariant derivative of the trace,
 
 \section{Basic Evolution equations}
 
-Following \cite{MR1296393, MR1100812, MR1316556, MR1480081}, in this section, we collect basic evolution equations that are needed to calculate the evolution of the following quantities
+Following \cite{Andrews:09/1994, Chow:06/1991, Hamilton:/1995, Smoczyk:/1997}, in this section, we collect basic evolution equations that are needed to calculate the evolution of the following quantities
 \[
 \chi_1 =t(\partial_t \varphi- b^{ij} \nabla_i \varphi \nabla_j \varphi) +\delta\varphi
 \]
@@ -164,7 +164,7 @@ and
 \[
 \chi_2 =t(\partial_t \varphi - b^{ij} \nabla_i \varphi \nabla_j \varphi - c \varphi \operatorname{tr}(\dot{\p})) +\delta\varphi
 \]
-where \(\delta \ne 0\) is an arbitrary, non-zero constant. The evolution equation of $\chi_1$ will be used for obtaining Harnack estimates for convex 1-homogeneous curvature speeds $\p$, and the evolution equation of $\chi_2$ will be employed for obtaining stronger Harnack estimates for flow by powers of the mean curvature $\p=H^{p}$ with $p\in(0,1).$ Note that in Euclidean space $\chi_1=\chi_2.$
+where \(\delta \ne 0\) is an arbitrary, non-zero constant. The evolution equation of $\chi_1$ will be used for obtaining Harnack estimates for convex 1-homogeneous curvature speeds $\p$, and the evolution equation of $\chi_2$ will be employed for obtaining stronger Harnack estimates for flow by powers of the mean curvature $\p(H)=H^{p}$ with $p\in(0,1).$ Note that in Euclidean space $\chi_1=\chi_2.$
 
 Let us make a few definitions to keep the calculations more manageable. Let
 \[
@@ -182,7 +182,7 @@ so that from the evolution of \(\varphi\) below (\cref{lem:evolution}, \cref{eq:
 \]
 We begin by recalling some standard evolution equations and commutators and then break the remaining calculation into several lemmas.
 
-The evolution equations in the following lemma are standard and can be found in many places \cite{MR1296393, MR1100812, MR1316556, MR892052, MR1480081}. The necessary tools are commuting derivatives, using the definition of the curvature tensor for space forms, the Gauss equation, and the Codazzi equation as described in the previous section. Compare also \cite[p.~94-95]{Gerhardt:/2006} and the formula \cite[eq.~(6.17)]{Gerhardt:01/1996}.
+The evolution equations in the following lemma are standard and can be found in many places \cite{Andrews:09/1994, Chow:06/1991, Hamilton:/1995, Huisken:/1987a, Smoczyk:/1997}. The necessary tools are commuting derivatives, using the definition of the curvature tensor for space forms, the Gauss equation, and the Codazzi equation as described in the previous section. Compare also \cite[p.~94-95]{Gerhardt:/2006} and the formula \cite[eq.~(6.17)]{Gerhardt:01/1996}.
 \begin{lemma}
 \label{lem:evolution}
 The following evolution equations hold
@@ -217,9 +217,9 @@ We require the commutators \([\nabla, \Box]\) and \([\partial_t, \Box]\). Withou
 For every smooth function $f$, the commutation relation
 \[
 \begin{split}
-([\nabla, \Box]f)_i &= \nabla_i \Box f - (\Box \nabla f)_i = \varphi^{kl,rs} \nabla_i h_{rs} \nabla^2_{kl} f \\
-&\quad + c \varphi^{kl} g_{ki} \nabla_l f - c \operatorname{tr}(\dot{\p}) \nabla_i f \\
-&\quad + \varphi^{kl}\left(h^{m}_{l}h_{ki} - h_{kl}h^{m}_{i}\right) \nabla_m f
+([\nabla, \Box]f)_i &= \nabla_i \Box f - (\Box \nabla f)_i\\ 
+				&= \varphi^{kl,rs} \nabla_i h_{rs} \nabla^2_{kl} f + \varphi^{kl}\left(h^{m}_{l}h_{ki} - h_{kl}h^{m}_{i}\right) \nabla_m f \\
+&\quad + c \varphi^{kl} g_{ki} \nabla_l f - c \operatorname{tr}(\dot{\p}) \nabla_i f 
 \end{split}
 \]
 holds, where \(\nabla f = df\) is the covariant derivative of \(f\) and the subscript \(i\) refers to the \(i\)'th component of a one-form.
@@ -355,16 +355,16 @@ into smaller pieces. First, we have lots of nice cancellation. Using the evoluti
 \begin{equation}
 \label{eq:deltbeta1}
 \begin{split}
-\partial_{t}\Box\varphi - \Box\Box\varphi - \Box(\varphi\varphi^{ij} (h^2)_{ij}) &= \Box\partial_t\varphi - \Box\Box\varphi - \Box(\varphi\varphi^{ij} (h^2)_{ij}) + [\partial_t, \Box] \varphi \\
-&= \Box(\Box \varphi + \varphi\varphi^{ij}(h^2)_{ij} + c \varphi\operatorname{tr}(\dot{\p})) - \Box\Box\varphi - \Box(\varphi\varphi^{ij} (h^2)_{ij}) \\
-&\quad + \varphi^{ij,kl} \nabla^2_{ij} \varphi (\a_{kl} + c \varphi g_{kl}) \\
-&\quad + 2\varphi^{ij}h^{k}_{i} (\varphi \nabla^2_{kj} \varphi + \nabla_k \varphi \nabla_j \varphi) + (\varphi - \varphi^{ij}h_{ij})| \nabla\varphi|^{2} \\
-&= c (\operatorname{tr}(\dot{\p}) \Box \varphi + \varphi \Box \operatorname{tr}(\dot{\p}) + 2 \varphi^{kl} \nabla_k \operatorname{tr}(\dot{\p}) \nabla_l \varphi) \\
-&\quad + \varphi^{ij,kl} \nabla^2_{ij} \varphi (\a_{kl} + c \varphi g_{kl}) \\
-&\quad + 2\varphi^{ij}b^{kl} \varphi (h^2)_{il} \nabla^2_{kj} \varphi + 2\varphi^{ij}h^{k}_{i} \nabla_k \varphi \nabla_j \varphi + (\varphi - \varphi^{ij}h_{ij})| \nabla\varphi|^{2} \\
-&= c \operatorname{tr}(\dot{\p}) \Box \varphi + (\varphi - \varphi^{ij}h_{ij})| \nabla\varphi|^{2}  + \varphi^{ij,kl} \nabla^2_{ij} \varphi \a_{kl} \\
-&\quad + 2\varphi^{ij}b^{kl} \varphi (h^2)_{il} \nabla^2_{kj} \varphi + 2\varphi^{ij}h^{k}_{i} \nabla_k \varphi \nabla_j \varphi \\
-&\quad + c(\varphi \Box \operatorname{tr}(\dot{\p}) + 2 \varphi^{kl} \nabla_k \operatorname{tr}(\dot{\p}) \nabla_l \varphi + \varphi \varphi^{ij,kl} g_{kl} \nabla^2_{ij} \varphi)
+&\partial_{t}\Box\varphi - \Box\Box\varphi - \Box(\varphi\varphi^{ij} (h^2)_{ij})\\ =\ &\Box\partial_t\varphi - \Box\Box\varphi - \Box(\varphi\varphi^{ij} (h^2)_{ij}) + [\partial_t, \Box] \varphi \\
+=\ &\Box(\Box \varphi + \varphi\varphi^{ij}(h^2)_{ij} + c \varphi\operatorname{tr}(\dot{\p})) - \Box\Box\varphi - \Box(\varphi\varphi^{ij} (h^2)_{ij})\\
+\quad &+ \varphi^{ij,kl} \nabla^2_{ij} \varphi (\a_{kl} + c \varphi g_{kl}) + 2\varphi^{ij}h^{k}_{i} (\varphi \nabla^2_{kj} \varphi + \nabla_k \varphi \nabla_j \varphi)\\ 
+\quad &+ (\varphi - \varphi^{ij}h_{ij})| \nabla\varphi|^{2} \\
+=\ &c (\operatorname{tr}(\dot{\p}) \Box \varphi + \varphi \Box \operatorname{tr}(\dot{\p}) + 2 \varphi^{kl} \nabla_k \operatorname{tr}(\dot{\p}) \nabla_l \varphi) \\
+\quad &+ \varphi^{ij,kl} \nabla^2_{ij} \varphi (\a_{kl} + c \varphi g_{kl}) + 2\varphi^{ij}b^{kl} \varphi (h^2)_{il} \nabla^2_{kj} \varphi\\
+\quad  &+ 2\varphi^{ij}h^{k}_{i} \nabla_k \varphi \nabla_j \varphi + (\varphi - \varphi^{ij}h_{ij})| \nabla\varphi|^{2} \\
+=\ &c \operatorname{tr}(\dot{\p}) \Box \varphi + (\varphi - \varphi^{ij}h_{ij})| \nabla\varphi|^{2}  + \varphi^{ij,kl} \nabla^2_{ij} \varphi \a_{kl} \\
+\quad &+ 2\varphi^{ij}b^{kl} \varphi (h^2)_{il} \nabla^2_{kj} \varphi + 2\varphi^{ij}h^{k}_{i} \nabla_k \varphi \nabla_j \varphi \\
+\quad &+ c(\varphi \Box \operatorname{tr}(\dot{\p}) + 2 \varphi^{kl} \nabla_k \operatorname{tr}(\dot{\p}) \nabla_l \varphi + \varphi \varphi^{ij,kl} g_{kl} \nabla^2_{ij} \varphi)
 \end{split}
 \end{equation}
 using, in the third equality, the product rule for \(\Box\) \cref{eq:productbox} and \(h^k_i = h^m_i b^{kl}h_{ml} = b^{kl} (h^2)_{il}\) since \(b\) is the inverse of \(A\).
@@ -406,8 +406,7 @@ The quantity $\theta$ evolves according to
 \begin{split}
 (\partial_{t} - \Box)\theta &= (\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}))\theta \\
 &\quad + (\varphi - \varphi^{ij}h_{ij})|\nabla\varphi|^{2} + 2\varphi^{ij}h^{k}_{i}\nabla_k\varphi\nabla_j\varphi \\
-&\quad - \varphi^{kl,ij} (\gamma_{ij}\gamma_{kl}  - 2\a_{ij} \gamma_{kl}) \\
-&\quad - 2b^{il} \varphi^{jk} \left(\gamma_{ij} \gamma_{kl} - 2\a_{ij} \gamma_{kl} + \nabla^2_{ij}\varphi\nabla^2_{kl}\varphi\right) \\
+&\quad - \varphi^{kl,ij} (\gamma_{ij}\gamma_{kl}  - 2\a_{ij} \gamma_{kl}) - 2b^{il} \varphi^{jk} \left(\gamma_{ij} \gamma_{kl} - 2\a_{ij} \gamma_{kl} + \nabla^2_{ij}\varphi\nabla^2_{kl}\varphi\right) \\
 &\quad + cR_{\theta},
 \end{split}
 \]
@@ -423,8 +422,8 @@ Again using the product rule for \(\Box\), \cref{eq:productbox} and the symmetry
 \begin{split}
 (\partial_{t} - \Box)\theta &= (\partial_{t}b^{ij} - \Box b^{ij})\nabla_i \varphi\nabla_j\varphi + b^{ij} (\partial_{t} - \Box) (\nabla\varphi \otimes \nabla\varphi)_{ij} \\
 &\quad - 2 \varphi^{kl} \nabla_k b^{ij} \nabla_l (\nabla \varphi \otimes \nabla\varphi)_{ij} \\
-&= (\partial_{t}b^{ij} - \Box b^{ij})\nabla_i \varphi\nabla_j\varphi + 2 b^{ij} (\partial_{t} - \Box) (\nabla\varphi)_i \nabla_j\varphi - 2 b^{ij} \varphi^{kl} \nabla^2_{ik} \varphi \nabla^2_{lj} \varphi \\
-&\quad - 4 \varphi^{kl} \nabla_k b^{ij} \nabla^2_{il} \varphi \nabla_j\varphi \\
+&= (\partial_{t}b^{ij} - \Box b^{ij})\nabla_i \varphi\nabla_j\varphi + 2 b^{ij} (\partial_{t} - \Box) (\nabla\varphi)_i \nabla_j\varphi\\ 
+&\quad - 2 b^{ij} \varphi^{kl} \nabla^2_{ik} \varphi \nabla^2_{lj} \varphi - 4 \varphi^{kl} \nabla_k b^{ij} \nabla^2_{il} \varphi \nabla_j\varphi \\
 &= (\partial_{t}b^{ij} - \Box b^{ij})\nabla_i \varphi\nabla_j\varphi + 2 b^{ij} (\partial_{t} - \Box) (\nabla\varphi)_i \nabla_j\varphi \\
 &\quad - 2 b^{ij} \varphi^{kl} \nabla^2_{ik} \varphi \nabla^2_{lj} \varphi + 4 \varphi^{kl} b^{ip}b^{jq} \nabla_k h_{pq} \nabla^2_{il} \varphi \nabla_j\varphi \\
 &= (\partial_{t}b^{ij} - \Box b^{ij})\nabla_i \varphi\nabla_j\varphi + 2 b^{ij} (\partial_{t} - \Box) (\nabla\varphi)_i \nabla_j\varphi \\
@@ -441,23 +440,25 @@ where in the second to last equality we used the formula for the derivative of t
 &= \left(c\operatorname{tr}(\dot{\p}) - \varphi^{rs}(h)^2_{rs}\right) \theta\\ & \quad - (2b^{lq}\varphi^{kp} + \varphi^{kl,pq}) b^{ir}b^{js}\nabla_i\varphi\nabla_j\varphi\nabla_rh_{kl}\nabla_s h_{pq} \\
 &\quad + (\varphi^{kl}h_{kl} + \varphi)|\nabla\varphi|^{2} - c(\varphi^{kl}h_{kl} + \varphi)b^{ir}b^{j}_{r}\nabla_i \varphi\nabla_j\varphi \\
 &= \left(c\operatorname{tr}(\dot{\p}) - \varphi^{rs}(h)^2_{rs}\right) \theta  + (\varphi^{kl}h_{kl} + \varphi)|\nabla\varphi|^{2} \\
-&\quad - \varphi^{kl,pq} \gamma_{kl} \gamma_{pq} - 2b^{lq}\varphi^{kp} \gamma_{kl} \gamma_{pq}  - c(\varphi^{kl}h_{kl} + \varphi)b^{ir}b^{j}_{r}\nabla_i \varphi\nabla_j\varphi.
+&\quad - \varphi^{kl,pq} \gamma_{kl} \gamma_{pq} - 2b^{lq}\varphi^{kp} \gamma_{kl} \gamma_{pq}  \\ 
+&\quad -c(\varphi^{kl}h_{kl} + \varphi)b^{ir}b^{j}_{r}\nabla_i \varphi\nabla_j\varphi.
 \end{split}
 \end{equation}
 For the second term, from the evolution of \(\nabla\varphi\) in \cref{lem:Evgradphi}, we have
 \begin{equation}
 \label{eq:delt_theta2}
 \begin{split}
-2 b^{ij} (\partial_{t} - \Box) (\nabla\varphi)_i \nabla_j\varphi &= 2 b^{ij} \nabla_j\varphi \left[\varphi^{kl,rs}\nabla_i h_{rs} \a_{kl}\varphi + 2 \varphi^{kl} b^{rs} \varphi(h^2)_{rl} \nabla_i h_{ks} \right. \\
-&\quad + \varphi^{kl}(h^2)_{kl}\nabla_i \varphi + \left(\varphi^{kl}h^{m}_{l}h_{ki} - \varphi^{kl}h_{kl}h^{m}_{i}\right) \nabla_m \varphi\\
-&\quad \left. + c\left(\varphi^{kl}g_{ki} \nabla_l \varphi + \varphi \nabla_i \operatorname{tr}(\dot{\p})\right)\right] \\
-&= 2 b^{ij} \nabla_j\varphi \varphi^{kl}(h^2)_{kl}\nabla_i \varphi \\
-&\quad - 2 b^{ij} \nabla_j\varphi \varphi^{kl}h_{kl}h^{m}_{i} \nabla_m \varphi + 2 b^{ij} \nabla_j\varphi \varphi^{kl}h^{m}_{l}h_{ki} \nabla_m \varphi \\
-&\quad + 2 b^{ij} \nabla_j\varphi \varphi^{kl,rs}\nabla_i h_{rs} \a_{kl}  + 4 b^{ij} \nabla_j\varphi \varphi^{kl} b^{rs} \varphi(h^2)_{rl} \nabla_i h_{ks} \\
-&\quad + c\left(2 b^{ij} \nabla_j\varphi \varphi^{kl}g_{ki} \nabla_l \varphi + 2 b^{ij} \nabla_j\varphi \varphi \nabla_i \operatorname{tr}(\dot{\p})\right) \\
-&= 2 \varphi^{kl}(h^2)_{kl}\theta - 2 \varphi^{kl}h_{kl} |\nabla\varphi|^2 + 2 \varphi^{kl} h^{m}_{l} \nabla_k\varphi \nabla_m \varphi \\
-&\quad + 2 \varphi^{kl,rs} \gamma_{rs} \a_{kl} + 4 b^{rs} \varphi^{kl} \gamma_{ks} \varphi(h^2)_{rl} \\
-&\quad + c\left(2 \varphi^{kl} b^j_k \nabla_j\varphi \nabla_l \varphi + 2 \varphi b^{ij} \nabla_j\varphi \nabla_i \operatorname{tr}(\dot{\p})\right)
+&2 b^{ij} (\partial_{t} - \Box) (\nabla\varphi)_i \nabla_j\varphi\\  
+=\ &2 b^{ij} \nabla_j\varphi \big[\varphi^{kl,rs}\nabla_i h_{rs} \a_{kl}\varphi + 2 \varphi^{kl} b^{rs} \varphi(h^2)_{rl} \nabla_i h_{ks}  \\
+\quad &+ \varphi^{kl}(h^2)_{kl}\nabla_i \varphi + \left(\varphi^{kl}h^{m}_{l}h_{ki} - \varphi^{kl}h_{kl}h^{m}_{i}\right) \nabla_m \varphi\\
+\quad &+ c\left(\varphi^{kl}g_{ki} \nabla_l \varphi + \varphi \nabla_i \operatorname{tr}(\dot{\p})\right)\big] \\
+=\ &2 b^{ij} \nabla_j\varphi \varphi^{kl}(h^2)_{kl}\nabla_i \varphi \\
+\quad &- 2 b^{ij} \nabla_j\varphi \varphi^{kl}h_{kl}h^{m}_{i} \nabla_m \varphi + 2 b^{ij} \nabla_j\varphi \varphi^{kl}h^{m}_{l}h_{ki} \nabla_m \varphi \\
+\quad &+ 2 b^{ij} \nabla_j\varphi \varphi^{kl,rs}\nabla_i h_{rs} \a_{kl}  + 4 b^{ij} \nabla_j\varphi \varphi^{kl} b^{rs} \varphi(h^2)_{rl} \nabla_i h_{ks} \\
+\quad &+ c\left(2 b^{ij} \nabla_j\varphi \varphi^{kl}g_{ki} \nabla_l \varphi + 2 b^{ij} \nabla_j\varphi \varphi \nabla_i \operatorname{tr}(\dot{\p})\right) \\
+=\ &2 \varphi^{kl}(h^2)_{kl}\theta - 2 \varphi^{kl}h_{kl} |\nabla\varphi|^2 + 2 \varphi^{kl} h^{m}_{l} \nabla_k\varphi \nabla_m \varphi \\
+\quad &+ 2 \varphi^{kl,rs} \gamma_{rs} \a_{kl} + 4 b^{rs} \varphi^{kl} \gamma_{ks} \varphi(h^2)_{rl} \\
+\quad &+ c\left(2 \varphi^{kl} b^j_k \nabla_j\varphi \nabla_l \varphi + 2 \varphi b^{ij} \nabla_j\varphi \nabla_i \operatorname{tr}(\dot{\p})\right)
 \end{split}
 \end{equation}
 using the definitions of \(\theta, \a_{ij}\) and \(\gamma_{ij}\) as well as \(b^{ij}h_{ki} \nabla_j \varphi = \delta^j_k \nabla_j \varphi = \nabla_k \varphi\), and \(b^{ij} h^m_i = b^{ij} g^{mp}h_{pi} = \delta^j_p g^{mp} = g^{mj}\) in the last equality.
@@ -508,8 +509,9 @@ since \(\nabla_r \varphi = \varphi^{ij} \nabla_r h_{ij}\). Putting the two equat
 \begin{equation}
 \label{eq:deltchi1}
 \begin{split}
-\beta - \theta + \delta(\partial_t \varphi - \Box\varphi) &= \left(\frac{\beta-\theta}{\delta\varphi} + \varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p})\right)\delta\varphi + t \frac{(\beta - \theta)^2}{\delta\varphi} - t \frac{(\varphi^{ij}\eta_{ij})^2}{\delta\varphi} \\
-&= \frac{\beta-\theta}{\delta\varphi} \chi_2 + \left(\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p})\right)\delta\varphi  - t \frac{\varphi^{ij}\varphi^{kl}}{\delta\varphi} \eta_{ij}\eta_{kl}.
+&\beta - \theta + \delta(\partial_t \varphi - \Box\varphi) \\
+=\ &\left(\frac{\beta-\theta}{\delta\varphi} + \varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p})\right)\delta\varphi + t \frac{(\beta - \theta)^2}{\delta\varphi} - t \frac{(\varphi^{ij}\eta_{ij})^2}{\delta\varphi} \\
+=\ &\frac{\beta-\theta}{\delta\varphi} \chi_2 + \left(\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p})\right)\delta\varphi  - t \frac{\varphi^{ij}\varphi^{kl}}{\delta\varphi} \eta_{ij}\eta_{kl}.
 \end{split}
 \end{equation}
 The remaining term \(t(\partial_{t} - \Box)(\beta - \theta)\) is now just bookkeeping. Recall, \cref{lem:evbeta} states that
@@ -528,15 +530,22 @@ The remaining term \(t(\partial_{t} - \Box)(\beta - \theta)\) is now just bookke
 \end{align*}
 Subtracting line by line, we have
 \begin{align*}
-(A) - (A') &= \left(\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}) \right)\beta - \left(\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}) \right)\theta = \left(\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}) \right)(\beta - \theta) \\
-(B) - (B') &= (\varphi - \varphi^{ij}h_{ij}) |\nabla\varphi|^{2} + 2\varphi^{ij}h^{k}_{i}\nabla_k \varphi \nabla_j \varphi - (\varphi - \varphi^{ij}h_{ij})|\nabla\varphi|^{2} - 2\varphi^{ij}h^{k}_{i}\nabla_k\varphi\nabla_j\varphi = 0 \\
-(C) - (C') &= \varphi^{ij,kl} \a_{ij} \a_{kl} + \varphi^{kl,ij} (\gamma_{ij}\gamma_{kl}  - 2\a_{ij} \gamma_{kl}) = \varphi^{ij,kl} (\a_{ij} - \gamma_{ij}) (\a_{kl} - \gamma_{kl}) \\
+(A) - (A') &= \left(\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}) \right)\beta - \left(\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}) \right)\theta \\
+		&= \left(\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}) \right)(\beta - \theta) \\
+(B) - (B') &= (\varphi - \varphi^{ij}h_{ij}) |\nabla\varphi|^{2} + 2\varphi^{ij}h^{k}_{i}\nabla_k \varphi \nabla_j \varphi \\ 
+	&\quad - (\varphi - \varphi^{ij}h_{ij})|\nabla\varphi|^{2} - 2\varphi^{ij}h^{k}_{i}\nabla_k\varphi\nabla_j\varphi \\	
+    	&= 0 \\
+(C) - (C') &= \varphi^{ij,kl} \a_{ij} \a_{kl} + \varphi^{kl,ij} (\gamma_{ij}\gamma_{kl}  - 2\a_{ij} \gamma_{kl})\\ 
+	&= \varphi^{ij,kl} (\a_{ij} - \gamma_{ij}) (\a_{kl} - \gamma_{kl}) \\
 &= \varphi^{ij,kl} \eta_{ij} \eta_{kl} \\
 (D) - (D') &= 2b^{il}\varphi^{jk} (2\nabla^2_{ij}\varphi\varphi(h^2)_{kl} + \varphi(h^2)_{ij}\varphi(h^2)_{kl}) \\
 &\quad + 2b^{il} \varphi^{jk} \left(\gamma_{ij} \gamma_{kl} - 2\a_{ij} \gamma_{kl} + \nabla^2_{ij}\varphi\nabla^2_{kl}\varphi\right) \\
-&= 2b^{il}\varphi^{jk} \left(\nabla^2_{ij}\varphi\nabla^2_{kl}\varphi +2\nabla^2_{ij}\varphi\varphi(h^2)_{kl} + \varphi(h^2)_{ij}\varphi(h^2)_{kl} - 2 \a_{ij} \gamma_{kl} + \gamma_{ij} \gamma_{kl} \right) \\
-&= 2b^{il}\varphi^{jk} \left(\a_{ij}\a_{kl} - 2 \a_{ij} \gamma_{kl} + \gamma_{ij} \gamma_{kl} \right) = 2b^{il}\varphi^{jk} \eta_{ij} \eta_{kl} \\
-(E) - (E') &= c(R_{\beta} - R_{\theta}) = cR.\\
+&= 2b^{il}\varphi^{jk} \big(\nabla^2_{ij}\varphi\nabla^2_{kl}\varphi +2\nabla^2_{ij}\varphi\varphi(h^2)_{kl} + \varphi(h^2)_{ij}\varphi(h^2)_{kl} \\
+	&\qquad\qquad - 2 \a_{ij} \gamma_{kl} + \gamma_{ij} \gamma_{kl} \big) \\
+&= 2b^{il}\varphi^{jk} \left(\a_{ij}\a_{kl} - 2 \a_{ij} \gamma_{kl} + \gamma_{ij} \gamma_{kl} \right) \\ 
+	&= 2b^{il}\varphi^{jk} \eta_{ij} \eta_{kl} \\
+(E) - (E') &= c(R_{\beta} - R_{\theta}) \\ 
+	&= cR.\\
 \end{align*}
 Multiplying everything by \(t\) and adding the result to \cref{eq:deltchi1} and using the definitions of $\b$ and $\t$ gives the result.
 \end{proof}
@@ -561,8 +570,9 @@ evolves according to
 \eq{\label{Evchibar1}
 \del_t \chi_3 -\Box\chi_3 &= \left(\fr{\b-\t}{\d\p} + \p^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p})\right)\chi_2+\zeta \\
 &\hp{=} + t\left(\p^{ij,kl} + 2b^{il}\p^{jk} - \fr{\p^{ij}\p^{kl}}{\d\p}\right)\eta_{ij}\eta_{kl} \\
-&\hp{=} + ct\Big\{2n\fr{\p''\p}{\p'}\br{\Box\p + \p\p^{ij}(h^2)_{ij} - b^{ij}\nabla_i \p \nabla_j \p}+\br{\zeta'-n\fr{\p''\p}{\p'}}\p^{ij}(h^2)_{ij}\p\\
-&\hp{=+t}+ \zeta'\operatorname{tr}(\dot{\p})\p  + 2\p^2\p'H+\br{n\br{2\fr{\p''}{\p'}-\fr{\p''^{2}\p}{\p'^{3}}+\fr{\p'''\p}{\p'^{2}}}-\zeta''}\p^{ij}\nabla_{i}\p\nabla_j\p \\
+&\hp{=} + ct\Big\{2n\fr{\p''\p}{\p'}\br{\Box\p + \p\p^{ij}(h^2)_{ij} - b^{ij}\nabla_i \p \nabla_j \p}\\ 
+&\hp{=+t}+\br{\zeta'-n\fr{\p''\p}{\p'}}\p^{ij}(h^2)_{ij}\p+ \zeta'\operatorname{tr}(\dot{\p})\p+ 2\p^2\p'H\\ 
+&\hp{=+t}+\br{n\br{2\fr{\p''}{\p'}-\fr{\p''^{2}\p}{\p'^{3}}+\fr{\p'''\p}{\p'^{2}}}-\zeta''}\p^{ij}\nabla_{i}\p\nabla_j\p \\
 &\hp{=+t} + \br{\p'H+\p}b^{ir}b^{j}_{r}\nabla_i\p\nabla_j\p-2\p'b^{ij}\nabla_i\p\nabla_j\p\Big\}.
 }
 \end{lemma}
@@ -571,9 +581,10 @@ Proposition \ref{thm:Evchi}, and Lemmas \ref{RSphere}, \ref{lemma : lem9}  enabl
 The quantity
 $\chi_1=t(\del_t\p-\t)+\d\p$
 satisfies the evolution equation
-\eq{\label{WeakHarnackEv12}\del_t\chi_1-\Box\chi_1 &= \br{\frac{\b-\t}{\delta\varphi} + \varphi^{ij}(h^2)_{ij} + c\frac{\d-1}{\d} \operatorname{tr}(\dot{\p})}\chi_1+\fr{c\operatorname{tr}(\dot{\p})\p}{\d}(tc\operatorname{tr}(\dot{\p})+2\d) \\
-&+ t\p^{ij,kl}\br{\eta_{ij}+c\p g_{ij}}\br{\eta_{kl}+c\p g_{kl}}+t\br{2b^{il}\p^{jk}-\fr{\p^{ij}\p^{kl}}{\d\p}}\eta_{ij}\eta_{kl} \\
-&+ tc\left\{2\p^2\p^{ij}h_{ij}+\left[\br{\p^{ij}h_{ij}+\p}b^{ir}-2\p^{ir}\right]b^{j}_{r}\nabla_{i}\p\nabla_{j}\p\right\}.
+\eq{\label{WeakHarnackEv12}\del_t\chi_1-\Box\chi_1 &= \br{\frac{\b-\t}{\delta\varphi} + \varphi^{ij}(h^2)_{ij} + c\frac{\d-1}{\d} \operatorname{tr}(\dot{\p})}\chi_1\\ 
+&\quad +\fr{c\operatorname{tr}(\dot{\p})\p}{\d}(tc\operatorname{tr}(\dot{\p})+2\d) \\
+&\quad + t\p^{ij,kl}\br{\eta_{ij}+c\p g_{ij}}\br{\eta_{kl}+c\p g_{kl}}\\ &\quad +t\br{2b^{il}\p^{jk}-\fr{\p^{ij}\p^{kl}}{\d\p}}\eta_{ij}\eta_{kl} \\
+&\quad + tc\left\{2\p^2\p^{ij}h_{ij}+\left[\br{\p^{ij}h_{ij}+\p}b^{ir}-2\p^{ir}\right]b^{j}_{r}\nabla_{i}\p\nabla_{j}\p\right\}.
 }
 \end{proposition}
 \pf{
@@ -586,7 +597,7 @@ $$\del_t\operatorname{tr}(\dot{\p})=\del_t\br{\p^{ij}g_{ij}}=\p^{ij,kl}\br{\a_{k
 and adding \eqref{WeakHarnackEv2} to the term $R$ in \eqref{thm:Evchi1}, we obtain the claim.
 }
 \section{Harnack Inequalities}\label{Harnack}
-In Euclidean space we recover differential Harnack inequalities for various speeds already discussed in \cite[Cor.~5.11 (1)]{MR1296393}, as can be seen by evaluating the evolution equation \eqref{thm:Evchi1} with $c=0.$
+In Euclidean space we recover differential Harnack inequalities for various speeds already discussed in \cite[Cor.~5.11 (1)]{Andrews:09/1994}, as can be seen by evaluating the evolution equation \eqref{thm:Evchi1} with $c=0.$
 \begin{remark}\label{HarnackEucCor}
  Let $x$ be a strictly convex solution of \eqref{eq:CurvFlow} in Euclidean space. If $f$ is a $1$-homogeneous and inverse concave curvature function, then for contracting flows the pair
 $$\p(f)=f^{\a},\quad 0<\a<\8, \quad \d= \fr{\a}{\a+1},$$
@@ -598,21 +609,19 @@ satisfy $$\partial_t \p-b^{ij}\nabla_i\p\nabla_j\p+\frac{\d\p}{t}>0.$$
 %satisfy $\chi<0.$
 \end{remark}
 Let us consider the spherical case.
-\begin{theorem}\label{thm: main A}
+\begin{theorem}
 Suppose $f$ is a  convex curvature function and $\p=f$, then for $t>0$ we have
 $$\partial_t \p-b^{ij}\nabla_i\p\nabla_j\p+\frac{1}{2}\frac{\p}{t}>0.$$
 \end{theorem}
 \begin{proof}
 In view of the maximum principle and that $\chi_1$ is manifestly positive at $t=0$, it suffices to show that the right-hand side of (\ref{WeakHarnackEv12}) is positive whenever at some point in space-time $\chi_1=0$. By convexity of $\p$, the term with the coefficient $\p^{ij,kl}$ is positive. On the other hand, note that any 1-homogeneous curvature function $\p$ satisfies $\p b^{ij}\geq \p^{ij}.$ Therefore
 $$\left(\br{\p^{ij}h_{ij}+\p}b^{ir}-2\p^{ir}\right)b^{j}_{r}\nabla_{i}\p\nabla_{j}\p\ge 0.$$ To complete the proof note that
-$$\br{b^{il}\p^{jk}-\fr{\p^{ij}\p^{kl}}{\p}}\eta_{ij}\eta_{kl}\geq 0.$$
+$$\br{b^{il}\p^{jk}-\fr{\p^{ij}\p^{kl}}{\p}}\eta_{ij}\eta_{kl}\geq 0,$$
+see the proof of \cite[Thm.~2.3]{Andrews:/2007} for example.
 \end{proof}
-%\begin{remark}
-%For power means $H_r=\left(\sum \kappa_i^r\right)^{\frac{1}{r}}$ and $r\geq 1,$ it is not difficult, using AM-GM inequality, to see that $\br{2b^{il}\p^{jk}-\fr{\p^{ij}\p^{kl}}{\d\p}}\eta_{ij}\eta_{kl}\geq0$ with $\delta=\frac{1}{2};$ therefore, the contracting flow with speed $\p=H_r$ and $r\geq 1$ satisfies
-%$$\partial_t H_r-b^{ij}\nabla_iH_r\nabla_jH_r+\frac{H_r}{2t}>0.$$
-%\end{remark}
-Employing the evolution \cref{Evchibar1}, we can obtain a stronger Harnack inequality for the speed \(\p = H^{p}\) with \(p \in (0,1)\); the case $p=1$ was considered in \cite{2015arXiv150802821B}.
-\begin{theorem}\label{thm: main 1}
+
+Employing the evolution \cref{Evchibar1}, we can obtain a stronger Harnack inequality for the speed \(\p = H^{p}\) with \(p \in (0,1)\); the case $p=1$ was considered in \cite{BryanIvaki:08/2015}.
+\begin{theorem} \label{thm: main 1}
 If $\frac{1}{2}+\frac{1}{2n}\leq {p}< 1,$ then
 \[
 \partial_t H^{p} - b^{ij}\nabla_iH^{p}\nabla_jH^{p} - \frac{c {p}}{2{p}-1}H^{2{p}-1} + \frac{{p}}{{p}+1} \frac{H^{p}}{t} > 0.
