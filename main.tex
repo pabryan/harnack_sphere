@@ -71,28 +71,19 @@ A number of authors have studied Harnack inequalities in Euclidean space. The ge
 In the sphere, we find it rather more difficult to obtain Harnack inequalities in such generality. For one thing, the Gauss-map parametrisation used to great effect in \cite{MR1296393} is not available to us (at least in the same way). We get around this first difficulty by direct computation. The principle difficulty however, arises from the background curvature introducing extra terms, involving up to third derivatives of the speed, and at this stage, we are only able to obtain the required positivity in the cases listed above. In the case of Euclidean space, our computations do recover many (but no new) Euclidean Harnack inequalities about which we make brief mention in \cref{sec:Harnack}.
 
 Let us now recall the general philosophy that ``equality should be attained on solitons'' in Harnack inequalities for curvature flows as espoused in \cite{MR1316556}, and see how this philosophy may interpreted in the sphere. The original motivating idea was the seminal work of \cite{MR834612} where the differential Harnack inequality for the Schr\"odinger operator (and in particular for the heat equation) on a compact manifold with positive Ricci curvature was introduced. A sharp inequality was obtained, with equality attained precisely on the heat kernel, a self-similar solution of the heat equation. Motivated by the sharp inequality, Hamilton \cite{MR1316556} was lead to seek a sharp Harnack inequality with equality occurring precisely on solitons, the self-similar solutions of the Mean Curvature Flow. The result is the definition of the Harnack quadratic:
-\[
+\begin{equation}
+\label{eq:harnack_quadratic}
 Q = \partial_t \p - b^{ij} \nabla_i \p \nabla_j \p
-\]
+\end{equation}
 where \(b^{ij}\) is the inverse of the second fundamental form of a strictly convex hypersurface. Several authors, beginning with \cite{} have investigated this quadratic\cite{}, relating it to the second fundamental form of a degenerate metric on space-time.
 
-The Li-Yau approach \cite{MR834612}, begins by considering the function \(u = \ln \p\). Following this approach in our situation, from the evolution of the speed \(\p\) given below in \cref{lem:evolution}, \cref{eq:delt_speed} we see that
+In the Li-Yau approach \cite{MR834612}, begins by considering the function \(u = \ln \p\). Following this approach in our situation, from the evolution of the speed \(\p\) given below in \cref{lem:evolution}, \cref{eq:delt_speed} we see that
 \[
 \partial_t u = \Box u + \p^{ij} \nabla_i u \nabla_j u + \p^{ij}(h^2)_{ij} + \p^{ij}g_{ij}
 \]
-where \(\Box\) is the elliptic operator \(\p^{ij} \nabla^2_{ij}\) and \(\p^{ij}\) is the differential of the speed function (see the next section below) and \((h^2)_{ij}\) is a quadratic metric contraction of the second fundamental form. One now computes the evolution of \(\Box u - \p^{ij}(h^2)_{ij} - \p^{ij}g_{ij} = \partial_t u - \p^{ij} \nabla_i u \nabla_j u\) and seeks to apply the maximum principle (in the form of an ODE comparison) to show that
-\[
-\partial_t u - \p^{ij} \nabla_i u \nabla_j u \geq -\frac{C}{t},
-\]
-for an appropriate choice of \(C\). Or in other words,
-\[
-\frac{\partial_t \p}{\p} + \frac{\p^{ij} \nabla_i \p \nabla_j \p}{\p^2}  + \frac{C}{t} \geq 0,
-\]
-the Li-Yau differential Harnack inequality.
+where \(\Box\) is the elliptic operator \(\p^{ij} \nabla^2_{ij}\) and \(\p^{ij}\) is the differential of the speed function (see the next section below) and \((h^2)_{ij}\) is a quadratic metric contraction of the second fundamental form. One now computes the evolution of \(\Box u - \p^{ij}(h^2)_{ij} - \p^{ij}g_{ij} = \partial_t u - \p^{ij} \nabla_i u \nabla_j u\) and seeks to apply the maximum principle. It is immediately clear that this approach will not work since the evolution of \(u\) depends not only on the speed \(\p\) function, but also on the \emph{time-dependent} metric and second fundamental form. Hence one needs to modify the Li-Yau quadratic \(\Box u - \p^{ij}(h^2)_{ij} - \p^{ij}g_{ij} = \partial_t u - \p^{ij} \nabla_i u \nabla_j u\), introducing additional ``compensating terms'' for the maximum principle to work. To determine the appropriate terms, Hamilton supposed the equality case should hold for self-similar solutions.
 
-For geometric hypersurface flows, this does not quite work. We need to replace the \(\p^{ij} \nabla_i u \nabla_j u\) term with \(b^{ij} \nabla_i \p \nabla_j \p\) in the Harnack quadratic. It is not so surprising that the Li-Yau formulation is insufficient for hypersurface flows since the evolution of the speed \(\p\) depends not only on \(\p\) and it's derivatives, but also on the \emph{changing} metric and second fundamental form which are changing in time, hence one needs to introduce additional ``compensating terms'' for the maximum principle to work. To determine the appropriate terms, Hamilton supposed the equality case should hold for self-similar solutions.
-
-In the Gauss parametrisation used in \cite{MR1296393}, the Harnack quadratic is simply \(\partial_t \p\). Transforming back to the curvature flow parametrisation (called the ``standard'' parametrisation in \cite{MR1296393}), miraculously re-introduces \emph{exactly the missing term} and gives the Harnack inequality! This method is quite close in philosophy to the Li-Yau approach, working with the time-independent standard metric on the sphere.
+In the Gauss parametrisation used in \cite{MR1296393}, the Harnack quadratic is simply \(\partial_t \p\). Transforming back to the curvature flow parametrisation (called the ``standard'' parametrisation in \cite{MR1296393}), miraculously re-introduces \emph{exactly the missing term} and gives the Harnack inequality! This method is quite close in philosophy to the Li-Yau approach, because everything is computed with respect to the time-independent standard metric on the sphere.
 
 Now, our results take place on the sphere. The general procedure outlined above is to add terms to the Li-Yau Harnack quadratic in order to obtain a Harnack, and ideally one would like a sharp Harnack inequality with equality occurring precisely on solitons. Attempting to follow this procedure, one is lead immediately to the questions: 
 \begin{enumerate}
@@ -104,39 +95,31 @@ For the second question, note that the Gauss map may be considered as a map \(M_
 
 The first question offers more possibilities. The usual symmetries considered in Euclidean space are isometries of the ambient space and space-time scalings. For the Harnack inequality, rotations are not so important, but translations and scalings are of utmost importance. On the sphere, if the initial area is smaller than the area of an equator, under suitable curvature assumptions, \cite[Theorem 0.1]{MR892052} states that the hypersurface collapses to a point and thus cannot move by isometry. Otherwise, it converges smoothly to an equator and hence must have been an equator for all time (since it moves by isometries). Therefore, there are no closed, convex hypersurfaces of the sphere moving by isometry. This is the same in Euclidean space of course, but in that situation one may also consider translators, which are non-compact and so don't exist in the sphere. 
 
-As to scalings, these don't exist on the sphere, but there is a one-parameter subgroup of conformal transformations somewhat analogous to scalings: the flow of the ``spherical position vector field'' \(\posvec = \sin(\radialdistance) \grad \radialdistance\) where \(\radialdistance\) denotes the distance to a fixed point. This is the unique, radially pointing conformal vector field, and in fact, realising the sphere as locally conformally flat via steriographic projection from this point, corresponds to scalings. This one-parameter subgroup is not exactly a symmetry of our flows, but we can garner some intuition from it.
+As to scalings, these don't exist on the sphere, but there the family of shrinking geodesic spheres offers some motivation as to how to proceed. Here we are only interested in attaining a qualitative understanding of the connection between solitons and Harnack inequalities, so let us consider the case of the Mean Curvature Flow. In this case, a family of shrinking geodesic spheres is given the graph \(\{\radialdistance = \radialdistance(t) = \arccos(e^{-t})\}\) in geodesic polar coordinates around the equator (see e.g. \cite{Gerhardt:/2015} equations 6.5,6.11). The mean curvature of such a family is
+\[
+H(t) = n\cot(\radialdistance(t)) = n\frac{e^{-t}}{\sqrt{1 - e^{-2t}}}.
+\]
+Then direct computation gives
+\[
+\del_t H + f(t) H  - n H = 0
+\]
+where
+\[
+f(t) = 
+\]
+On the other hand, the Harnack inequality (\cref{thm:harnack} with \(\p = H\), or \cite{IvakiBryan:08/2015} states that
+\[
+\del_t H + \frac{1}{2t} H  - n H \geq 0
+\]
+whenever \(\nabla H = 0\) as in the case of geodesic spheres.
 
-Such, ``conformal solitons'' are characterised by the equation
-\[
-\ip{\posvec}{\nor} = -c(t) \p
-\]
-where \(c(t)\) can be any positive function (for shrinking flows). This is equivalent to requiring that a solution of the curvature flow \(\del_t x = - \p \nu\) can re-parametrised so that \(M_t = f_t(F_0(M))\) where \(f_t\) is the flow of \(\posvec\). 
+Thus we find that the Harnack inequality give in \cref{thm:harnack} is not sharp, however, the first order term of \(f\) is \(2t\) and so our Harnack is ``sharp to first order''. The lack of a sharp Harnack is perhaps not too surprising given that the shrinking spheres are flowing by conformal transformation, and not a true symmetry for our curvature flows.
 
-An example of a solution to our curvature flows moving by this family is the shrinking geodesic spheres. Here we are only interested in attaining a qualitative understanding of the connection between solitons and Harnack inequalities, so let us consider the case of the Mean Curvature Flow. In this case, for a family of shrinking geodesic spheres \(\{\radialdistance = \radialdistance(t) = \arccos(e^{-t})\}\) (see e.g. \cite{Gerhardt:/2015} equations 6.5,6.11), the conformal-soliton equation becomes
-\[
-\ip{\sin(\radialdistance) \partial_{\radialdistance}}{\partial_{\radialdistance}} = - c(t) n \cot (\radialdistance)
-\]
-where \(\radialdistance\) measures the distance from the point of collapse. Thus 
-\[
-c(t) = -\frac{1}{n} \frac{\sin^2(\radialdistance(t))}{\cos(\radialdistance(t))} = \frac{2}{n} \sinh(t).
-\]
-On the other hand, differentiating the conformal soliton equation with respect to \(t\) gives
-\[
-\cos(\radialdistance) \del_t \radialdistance H = -c' H + c \del_t H
-\]
-since \(\del_t \nu = \grad H = 0\). Simplifying we obtain the identity
-\[
-0 = \del_t H + \frac{1}{1 - e^{-2t}} H = \del_t H + (\frac{1}{2t} + 1/2 + (1/6) t + \cdots) H.
-\]
-Now we observe that the Harnack inequality (\cref{thm:harnack} with \(\p = H\), or \cite{IvakiBryan:08/2015} states that
-\[
-\del_t H + \left(\frac{1}{2t}  - n\right) H \geq 0
-\]
-whenever \(\nabla H = 0\).
+Before moving on, let us make a few remarks on applications of Harnack inequalities. These have proven an important tool in a number of geometric evolution equations. For the Ricci flow on surfaces, it is an essential ingredient in proving that any initial metric on \(\S^2\) converges to a constant curvature metric under the normalised Ricci flow \cite{}. The Harnack inequality also plays an important role in Peralman's proof of Thurston's geometrisation conjecture \cite{}, with close connections to the entropy introduced there \cite{}. This role is quite broad in that the Harnack inequality is an essential tool for understanding singularity formation of curvature flows \cite{}, which are modelled by ancient solutions, a particularly important class being solitons, which in turn are characterised by the equality case in the Harnack inequality \cite{}. 
 
-Thus we find that the Harnack inequality give in \cref{thm:harnack} is not sharp. Note however, that the first order term is \(2t\) and so our Harnack is ``sharp to first order''. The lack of a sharp Harnack is perhaps not too surprising given that conformal-solitons are not true symmetries of our curvature flows.
+In \cite{IvakiBryan:08/2015} we proved the classification result that any convex, ancient solution to the Mean Curvature Flow on the sphere by using the Harnack inequality to obtain a curvature bound, and then an Aleksandrov reflection technique. The same classification result was obtained in \cite{}, with a much shorter proof, applying the maximum principle to a pinching quantity. Previously, we remarked that the Harnack inequality/Aleksandrov reflection argument is quite general and should be broadly applicable. This is indeed the case, but in an upcoming paper \cite{} we show that for all the flows for which we have obtained a Harnack inequality, there is in fact a very short classification proof similar to \cite{}. Thus we defer consideration of ancient solutions to that paper, where a very general classification result using the rigidity result in \cite{} and the Aleksandrov reflection technique from \cite{IvakiBryan:08/2015,} is proven. The result of that paper then yields classifications for \emph{any flows in the sphere for which a Harnack inequality holds}, and for which non-trivial, ancient solutions exist, but at this stage we do not know just how large a class of flows this is.
 
-This paper is laid out as follows: in \cref{sec:prelim} we define our notational conventions and recall some standard definitions and identities. In \cref{sec:basic_evolution} we recall some standard evolution equations and commutators. The next section, \cref{sec:main_evolution} contains the bulk of our calculations where we derive the evolution equations for the main quantities we study. Then, applying these calculations we derive the Harnack inequalities in \cref{sec:harnack}. In this section, we present several variants depending on the strength of our assumptions. To finish, we prove preservation of convexity in \cref{sec:convexity} to justify our assumption of convexity for the Harnack inequality.
+This paper is laid out as follows: in \cref{sec:prelim} we define our notational conventions and recall some standard definitions and identities. In \cref{sec:basic_evolution} we recall some standard evolution equations and commutators. The next section, \cref{sec:main_evolution} contains the bulk of our calculations where we derive the evolution equations for the main quantities we study. Then, applying these calculations we derive the Harnack inequalities in \cref{sec:Harnack}. In this section, we present several variants depending on the strength of our assumptions. To finish, we prove preservation of convexity in \cref{sec:convexity} to justify our assumption of convexity for the Harnack inequality.
 
 \section{Preliminaries}
 \label{sec:prelim}
@@ -653,7 +636,7 @@ evolves according to
 &\hp{=+t} + \br{\p'H+\p}b^{ir}b^{j}_{r}\nabla_i\p\nabla_j\p-2\p'b^{ij}\nabla_i\p\nabla_j\p\Big\}.
 }
 \end{lemma}
-Proposition \ref{thm:Evchi}, and Lemmas \ref{RSphere}, \ref{lemma : lem9}  enable us to get a strong Harnack estimate for $H^{p}$-flow; see Section \ref{Harnack} and Theorem \ref{thm: main 1}. Due to the presence of $\Box\operatorname{tr}(\dot{\p})$ in $R$ given in Proposition \ref{thm:Evchi}, it is not clear to us whether $\chi_2$ would results in Harnack estimates for curvature flows other than $H^{p}$-flow. As it will be shown, by weakening $\chi_2$ to $\chi_1=\chi_2+tc\p\operatorname{tr}(\dot{\p})$,  we can obtain (weak) Harnack estimates for all 1-homogeneous convex speeds.
+Proposition \ref{thm:Evchi}, and Lemmas \ref{RSphere}, \ref{lemma : lem9}  enable us to get a strong Harnack estimate for $H^{p}$-flow; see Section \ref{sec:Harnack} and Theorem \ref{thm: main 1}. Due to the presence of $\Box\operatorname{tr}(\dot{\p})$ in $R$ given in Proposition \ref{thm:Evchi}, it is not clear to us whether $\chi_2$ would results in Harnack estimates for curvature flows other than $H^{p}$-flow. As it will be shown, by weakening $\chi_2$ to $\chi_1=\chi_2+tc\p\operatorname{tr}(\dot{\p})$,  we can obtain (weak) Harnack estimates for all 1-homogeneous convex speeds.
 \begin{proposition}\label{WeakHarnackEv}
 The quantity
 $\chi_1=t(\del_t\p-\t)+\d\p$
@@ -685,6 +668,7 @@ satisfy $$\partial_t \p-b^{ij}\nabla_i\p\nabla_j\p+\frac{\d\p}{t}>0.$$
 %If $f$ is inverse convex (e.q., the inequality (\ref{eq: inverse concavity}) is reversed), then for expanding flows the pair
 %\eq{\p(f)=-f^{-\b}, \quad \b>1,\quad \d\geq \fr{\b}{\b-1}}
 %satisfy $\chi<0.$
+Compare with \cite[Theorem 5.6, Corollary 5.11]{MR1296393}. To the best of our knowledge, this is the first time such general Harnack inequalities (even in Euclidean space) have been proven in such generality by direct computation.
 \end{remark}
 Let us consider the spherical case.
 \begin{theorem}\label{thm: main A}
