@@ -66,7 +66,7 @@ If $0<{p}\leq \frac{1}{2} + \frac{1}{2n}$ or $p=1$, then
 \]
 \end{theorem}
 
-A number of authors have studied Harnack inequalities in Euclidean space. The genesis of such study is \cite{MR1316556} where Hamilton proves a Harnack inequality for the mean curvature flow of convex hypersurfaces. Harnack inequalities for other flows have been obtained in \cite{MR1100812,ivaki2015centro,ivaki2015convex, MR2813400, MR1480081}, including flows by the power of Gauss curvature, centro-affine normal flow, and powers of inverse mean curvature. The most general results, subsuming many other results, were obtained in \cite{MR1296393} for so-called \(\alpha\)-convex and \(\alpha\)-concave speeds.
+A number of authors have studied Harnack inequalities in Euclidean space. The genesis of such study is \cite{MR1316556} where Hamilton proves a Harnack inequality for the mean curvature flow of convex hypersurfaces. Harnack inequalities for other flows have been obtained in \cite{MR1100812,ivaki2015centro,ivaki2015convex, MR2813400, MR1480081}, including flows by the power of Gauss curvature, centro-affine normal flows, and flows by the power of inverse mean curvature. The most general results, subsuming many other results, were obtained in \cite{MR1296393} for so-called \(\alpha\)-convex and \(\alpha\)-concave speeds.
 
 In the sphere, we find it rather more difficult to obtain Harnack inequalities in such generality. For one thing, the Gauss-map parametrization used to great effect in \cite{MR1296393} is not available to us (at least in the same way). We get around this first difficulty by direct computation. The principle difficulty, however, arises from the background curvature introducing extra terms, involving up to third derivatives of the speed, and at this stage, we are only able to obtain the required positivity in the cases listed above. In the case of Euclidean space, our computations do recover many (but no new) Euclidean Harnack inequalities about which we make brief mention in \cref{sec:Harnack}.
 
@@ -75,7 +75,7 @@ Let us now recall the general philosophy that ``equality should be attained on s
 \label{eq:harnack_quadratic}
 Q = \partial_t \p - b^{ij} \nabla_i \p \nabla_j \p
 \end{equation}
-where \(b^{ij}\) is the inverse of the second fundamental form of a strictly convex hypersurface. Several authors, beginning with \cite{MR1362964} for the Ricci flow and \cite{MR1856176} for hypersurface flows, have investigated this quadratic \cite{kotschwarharnack,2013arXiv1301.1543H}, relating it to the second fundamental form of a degenerate metric on space-time though we will not pursue this line of investigation here.
+where \(b^{ij}\) is the inverse of the second fundamental form of a strictly convex hypersurface. Several authors, beginning with \cite{MR1362964} for the Ricci flow and \cite{MR1856176} for hypersurface flows, have investigated this quadratic \cite{2013arXiv1301.1543H,kotschwarharnack}, relating it to the second fundamental form of a degenerate metric on space-time though we will not pursue this line of investigation here.
 
 The Li-Yau approach \cite{MR834612}, begins by considering the function \(u = \ln \p\). Following this approach in our situation, from the evolution of the speed \(\p\) given below in \cref{lem:evolution}, \cref{eq:delt_speed} we see that
 \[
@@ -95,7 +95,7 @@ For the second question, note that the Gauss map may be considered as a map \(M_
 
 The first question offers more possibilities. The usual symmetries considered in Euclidean space are isometries of the ambient space and space-time scalings. For the Harnack inequality, rotations are not so important, but translations and scalings are of utmost importance. On the sphere, if the initial area is smaller than the area of an equator, under suitable curvature assumptions, the hypersurface collapses to a point in finite time \cite[Theorem 0.1]{MR892052}, and thus cannot move by isometry. Otherwise, it converges smoothly to an equator and hence must have been an equator for all time (since it moves by isometries). Therefore, there are no closed, convex hypersurfaces of the sphere moving by isometry. This is the same in Euclidean space of course, and in that situation one may also consider translators. But these are non-compact hence do not exist in the sphere. 
 
-As to scalings, these also do not exist on the sphere, but the family of shrinking geodesic spheres is ``sufficiently self-similar'' to be of interest. Here we are only interested in attaining a qualitative understanding of the connection between solitons and Harnack inequalities, so let us consider the relatively simpler case of the mean curvature flow. In this case, a family of shrinking geodesic spheres is given the graph \(\{\radialdistance = \radialdistance(t) = \arccos(e^{t})\}\) in geodesic polar coordinates around the equator (see e.g., \cite{Gerhardt:/2015} equations 6.5, 6.11). The mean curvature of such a family is
+As to scalings, these also do not exist on the sphere, but the family of shrinking geodesic spheres is ``sufficiently self-similar'' to be of interest. Here we are only interested in attaining a qualitative understanding of the connection between solitons and Harnack inequalities, so let us consider the relatively simpler case of the mean curvature flow. In this case, a family of shrinking geodesic spheres is given the graph \(\{\radialdistance = \radialdistance(t) = \arccos(e^{t})\}\) in geodesic polar coordinates around the equator (see e.g., \cite[equations (6.5), (6.11)]{Gerhardt:/2015} ). The mean curvature of such a family is
 \[
 H(t) = n\cot(\radialdistance(t)) = n\frac{e^{t}}{\sqrt{1 - e^{2t}}}.
 \]
@@ -703,7 +703,7 @@ and adding \eqref{WeakHarnackEv2} to the term $R$ in \eqref{thm:Evchi1}, we obta
 \section{Harnack Inequalities}
 \label{sec:Harnack}
 
-In Euclidean space we recover differential Harnack inequalities for various speeds already discussed in \cite[Cor.~5.11 (1)]{Andrews:09/1994}, as can be seen by evaluating the evolution equation \eqref{thm:Evchi1} with $c=0.$
+In Euclidean space we recover differential Harnack inequalities for various speeds already discussed in \cite[Corollary 5.11 (1)]{Andrews:09/1994}, as can be seen by evaluating the evolution equation \eqref{thm:Evchi1} with $c=0.$
 
 \begin{remark}\label{HarnackEucCor}
  Let $x$ be a strictly convex solution of \eqref{eq:CurvFlow} in Euclidean space. If $f$ is a $1$-homogeneous and inverse concave curvature function, then for contracting flows the pair
@@ -725,7 +725,7 @@ $$\partial_t \p-b^{ij}\nabla_i\p\nabla_j\p+\frac{1}{2}\frac{\p}{t}>0.$$
 In view of the maximum principle and that $\chi_1$ is manifestly positive at $t=0$, it suffices to show that the right-hand side of (\ref{WeakHarnackEv12}) is positive whenever at some point in space-time $\chi_1=0$. By convexity of $\p$, the term with the coefficient $\p^{ij,kl}$ is positive. On the other hand, note that any 1-homogeneous curvature function $\p$ satisfies $\p b^{ij}\geq \p^{ij}.$ Therefore
 $$\left(\br{\p^{ij}h_{ij}+\p}b^{ir}-2\p^{ir}\right)b^{j}_{r}\nabla_{i}\p\nabla_{j}\p\ge 0.$$ To complete the proof note that
 $$\br{b^{il}\p^{jk}-\fr{\p^{ij}\p^{kl}}{\p}}\eta_{ij}\eta_{kl}\geq 0,$$
-see the proof of \cite[Thm.~2.3]{Andrews:/2007} for example.
+see the proof of \cite[Theorem 2.3]{Andrews:/2007} for example.
 \end{proof}
 
 Employing the evolution \cref{Evchibar1}, we can obtain a stronger Harnack inequality for the speed \(\p = H^{p}\) with \(p \in (0,1)\); the case $p=1$ was considered in \cite{BryanIvaki:08/2015}.
