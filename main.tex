@@ -40,7 +40,7 @@ We prove Harnack inequalities for hypersurfaces evolving on the unit sphere eith
 \section{Introduction}
 We consider the evolution of a hypersurface $M^n$ by
 \eq{\label{eq:CurvFlow}
-\partial_tx = -\varphi\nu,~ x:M^n\times[0,T)\to M_c,
+\partial_tx = -\p\nu,~ x:M^n\times[0,T)\to M_c,
 }
 where \(M_c\) is the simply connected space form of constant sectional curvature \(c\), and $\p\in C^{\8}(\G_+)$ is a strictly monotone,  symmetric function on the eigenvalues of Weingarten map \(\mathcal{W}\) (principal curvatures) \(\kappa_1, \cdots, \kappa_n\). Strict monotonicity ensures the flow is parabolic. We will need to make some further assumptions on the speed to obtain Harnack inequalities. Either,
 \begin{itemize}
@@ -138,66 +138,66 @@ valid for space forms. We also make use of the Ricci identity,
 \[
 {Rm^m}_{kij}  = \left(\nabla^2_{ij} \partial_k - \nabla^2_{ji} \partial_k\right)^m.
 \]
-We will need some notation for derivatives of the speed \(\varphi\). Let us write
+We will need some notation for derivatives of the speed \(\p\). Let us write
 \[
-\varphi^{i}_{j} = \frac{\partial \varphi}{\partial h^{j}_{i}}
+\p^{i}_{j} = \frac{\partial \p}{\partial h^{j}_{i}}
 \]
-for the first partial derivatives of \(\varphi\). We may also think of \(\varphi\) as a function of the metric and second fundamental form
+for the first partial derivatives of \(\p\). We may also think of \(\p\) as a function of the metric and second fundamental form
 \[
-\varphi(g, h) = \varphi(g^{ik} h_{kj}).
+\p(g, h) = \p(g^{ik} h_{kj}).
 \]
 From this point of view, for the first and second partial derivatives, let us write
 \[
-\varphi^{ij} = \frac{\partial\varphi}{\partial h_{ij}}, \quad \varphi^{ij,kl} = \fr{\partial^2\varphi}{\partial h_{kl} \partial h_{ij}}.
+\p^{ij} = \frac{\partial\p}{\partial h_{ij}}, \quad \p^{ij,kl} = \fr{\partial^2\p}{\partial h_{kl} \partial h_{ij}}.
 \]
-The trace of \(\varphi^{ij}\) with respect to the metric will be written
+The trace of \(\p^{ij}\) with respect to the metric will be written
 \[
-\operatorname{tr}(\dot{\p}) = g_{ij} \varphi^{ij}.
+\operatorname{tr}(\dot{\p}) = g_{ij} \p^{ij}.
 \]
 Let us also define the operator
 $
-\Box = \varphi^{ij} \nabla^2_{ij}.
+\Box = \p^{ij} \nabla^2_{ij}.
 $
 This operator satisfies the product rule
 \begin{equation}
 \label{eq:productbox}
-\Box (fg) = f \Box g + g \Box f + 2 \varphi^{ij} \nabla_i f \nabla_j g.
+\Box (fg) = f \Box g + g \Box f + 2 \p^{ij} \nabla_i f \nabla_j g.
 \end{equation}
 
 We frequently make use, without comment, of the formula for differentiating an inverse
 \[
 \frac{\partial g^{ij}}{\partial g_{kl}} = - g^{kj} g^{il}.
 \]
-First derivatives of \(\varphi\) from the two perspectives are related by
+First derivatives of \(\p\) from the two perspectives are related by
 \begin{equation}
 \label{eq:delh}
-\varphi^{ij} = \frac{\partial \varphi}{\partial h_l^k} \frac{\partial h_l^k}{\partial h_{ij}} = \varphi^l_k g^{ik} \delta^j_l = g^{ik} \varphi^j_k.
+\p^{ij} = \frac{\partial \p}{\partial h_l^k} \frac{\partial h_l^k}{\partial h_{ij}} = \p^l_k g^{ik} \delta^j_l = g^{ik} \p^j_k.
 \end{equation}
 and
 \begin{equation}
 \label{eq:delg}
-\frac{\partial\varphi}{\partial g_{ij}} = \varphi^{l}_{k} \frac{\partial h^{k}_{l}}{\partial g_{ij}} = -\varphi^{l}_{k} g^{ki} g^{rj} h_{rl} = -\varphi^{li}h^{j}_{l}.
+\frac{\partial\p}{\partial g_{ij}} = \p^{l}_{k} \frac{\partial h^{k}_{l}}{\partial g_{ij}} = -\p^{l}_{k} g^{ki} g^{rj} h_{rl} = -\p^{li}h^{j}_{l}.
 \end{equation}
 We will also need the mixed second derivatives,
 \begin{equation}
 \label{eq:delhdelg}
 \begin{split}
-\frac{\partial \varphi^{ij}}{\partial g_{kl}} &= \frac{\partial}{\partial g_{kl}} \left(g^{sj} \varphi^{i}_{s} \right) = - g^{kj}g^{sl} \varphi^{i}_{s} - g^{sj} (\varphi^i_s)^{mk} h^l_m \\
-&= - g^{kj} \varphi^{il} - g^{sj} g_{ns} \varphi^{in,mk} h^l_m \\
-&= - g^{kj} \varphi^{il} - \varphi^{ij,mk} h^l_m,
+\frac{\partial \p^{ij}}{\partial g_{kl}} &= \frac{\partial}{\partial g_{kl}} \left(g^{sj} \p^{i}_{s} \right) = - g^{kj}g^{sl} \p^{i}_{s} - g^{sj} (\p^i_s)^{mk} h^l_m \\
+&= - g^{kj} \p^{il} - g^{sj} g_{ns} \p^{in,mk} h^l_m \\
+&= - g^{kj} \p^{il} - \p^{ij,mk} h^l_m,
 \end{split}
 \end{equation}
-where we applied \cref{eq:delg} to \(\varphi^i_s\) in the first line.
+where we applied \cref{eq:delg} to \(\p^i_s\) in the first line.
 
-Covariant derivatives of \(\varphi\) satisfy
+Covariant derivatives of \(\p\) satisfy
 \begin{equation}
 \label{eq:delphi}
-\nabla_k \varphi = \varphi^{ij} \nabla_k h_{ij}
+\nabla_k \p = \p^{ij} \nabla_k h_{ij}
 \end{equation}
 and the covariant derivative of the trace,
 \begin{equation}
 \label{eq:delPhi}
-\nabla_k \operatorname{tr}(\dot{\p}) = g_{ij} \varphi^{ij,rs} \nabla_k h_{rs}.
+\nabla_k \operatorname{tr}(\dot{\p}) = g_{ij} \p^{ij,rs} \nabla_k h_{rs}.
 \end{equation}
 
 \section{Basic Evolution equations}
@@ -205,27 +205,27 @@ and the covariant derivative of the trace,
 
 Following \cite{Andrews:09/1994, Chow:06/1991, Hamilton:/1995, Smoczyk:/1997}, in this section, we collect basic evolution equations that are needed to calculate the evolution of the following quantities
 \[
-\chi_1 =t(\partial_t \varphi- b^{ij} \nabla_i \varphi \nabla_j \varphi) +\delta\varphi
+\chi_1 =t(\partial_t \p- b^{ij} \nabla_i \p \nabla_j \p) +\delta\p
 \]
 and
 \[
-\chi_2 =t(\partial_t \varphi - b^{ij} \nabla_i \varphi \nabla_j \varphi - c \varphi \operatorname{tr}(\dot{\p})) +\delta\varphi
+\chi_2 =t(\partial_t \p - b^{ij} \nabla_i \p \nabla_j \p - c \p \operatorname{tr}(\dot{\p})) +\delta\p
 \]
 where \(\delta \ne 0\) is an arbitrary, non-zero constant. The evolution equation of $\chi_1$ will be used for obtaining Harnack estimates for convex 1-homogeneous curvature speeds $\p$, and the evolution equation of $\chi_2$ will be employed for obtaining stronger Harnack estimates for flow by powers of the mean curvature $\p(H)=H^{p}$ with $p\in(0,1).$ Note that in Euclidean space $\chi_1=\chi_2.$
 
 Let us make a few definitions to keep the calculations more manageable. Let
 \[
-\a_{ij} = \nabla^2_{ij} \varphi + \varphi(h^2)_{ij}, \quad \gamma_{ij} = b^{kl} \nabla_k \varphi \nabla_l h_{ij}, \quad \eta_{ij} = \a_{ij} - \gamma_{ij}
+\a_{ij} = \nabla^2_{ij} \p + \p(h^2)_{ij}, \quad \gamma_{ij} = b^{kl} \nabla_k \p \nabla_l h_{ij}, \quad \eta_{ij} = \a_{ij} - \gamma_{ij}
 \]
 and define
 \[
-\beta = \varphi^{ij} \a_{ij} = \Box\varphi + \varphi \varphi^{ij}(h^2)_{ij}, \quad \theta =  b^{ij} \nabla_i \varphi \nabla_j \varphi
+\beta = \p^{ij} \a_{ij} = \Box\p + \p \p^{ij}(h^2)_{ij}, \quad \theta =  b^{ij} \nabla_i \p \nabla_j \p
 \]
-so that from the evolution of \(\varphi\) below (\cref{lem:evolution}, \cref{eq:delt_speed}) we may write our main Harnack quantities as
+so that from the evolution of \(\p\) below (\cref{lem:evolution}, \cref{eq:delt_speed}) we may write our main Harnack quantities as
 \[
-\chi_1 = t(\partial_t\p- \theta) + \delta\varphi
+\chi_1 = t(\partial_t\p- \theta) + \delta\p
 \quad \mbox{and}\quad
-\chi_2 = t(\beta - \theta) + \delta\varphi.
+\chi_2 = t(\beta - \theta) + \delta\p.
 \]
 We begin by recalling some standard evolution equations and commutators and then break the remaining calculation into several lemmas.
 
@@ -234,27 +234,27 @@ The evolution equations in the following lemma are standard and can be found in 
 \label{lem:evolution}
 The following evolution equations hold
 \begin{enumerate}
-\item \label{eq:delt_metric} $\partial_tg_{ij} = -2\varphi h_{ij}$
-\item \label{eq:delt_inversemetric} $\partial_t g^{ij} = 2\varphi h^{ij}$
-\item \label{eq:delt_sff} $\partial_t h_{ij} = \nabla^2_{ij} \varphi - \varphi(h^2)_{ij} + c \varphi g_{ij}$
-\item \label{eq:delt_weingarten} $\partial_t h_i^j = (\nabla^2)^j_i\varphi + \varphi(h^2)_i^j + c \varphi\delta_i^j = \a^j_i + c \varphi\delta_i^j$
+\item \label{eq:delt_metric} $\partial_tg_{ij} = -2\p h_{ij}$
+\item \label{eq:delt_inversemetric} $\partial_t g^{ij} = 2\p h^{ij}$
+\item \label{eq:delt_sff} $\partial_t h_{ij} = \nabla^2_{ij} \p - \p(h^2)_{ij} + c \p g_{ij}$
+\item \label{eq:delt_weingarten} $\partial_t h_i^j = (\nabla^2)^j_i\p + \p(h^2)_i^j + c \p\delta_i^j = \a^j_i + c \p\delta_i^j$
 \item \label{eq:delt_sff_box} \begin{align*}
-\partial_t h_{ij} &= \Box h_{ij} + \varphi^{kl} (h^2)_{kl} h_{ij} - (\varphi^{kl}h_{kl} + \varphi) (h^2)_{ij} \\
-& \quad + \varphi^{kl,rs}\nabla_i h_{kl}\nabla_j h_{rs} \\
-& \quad + c \{(\varphi + \varphi^{kl}h_{kl}) g_{ij} - \operatorname{tr}(\dot{\p}) h_{ij}\}
+\partial_t h_{ij} &= \Box h_{ij} + \p^{kl} (h^2)_{kl} h_{ij} - (\p^{kl}h_{kl} + \p) (h^2)_{ij} \\
+& \quad + \p^{kl,rs}\nabla_i h_{kl}\nabla_j h_{rs} \\
+& \quad + c \{(\p + \p^{kl}h_{kl}) g_{ij} - \operatorname{tr}(\dot{\p}) h_{ij}\}
 \end{align*}
 \item \label{eq:delt_weingarten_box} \begin{align*}
-\partial_t h_i^j &= \Box h_i^j + \varphi^{kl} (h^2)_{kl} h_i^j - (\varphi^{kl}h_{kl} - \varphi) (h^2)_i^j \\
-& \quad + \varphi^{kl,rs}\nabla_i h_{kl}\nabla^j h_{rs} \\
-& \quad + c \{(\varphi + \varphi^{kl}h_{kl}) \delta_i^j - \operatorname{tr}(\dot{\p}) h_i^j\}
+\partial_t h_i^j &= \Box h_i^j + \p^{kl} (h^2)_{kl} h_i^j - (\p^{kl}h_{kl} - \p) (h^2)_i^j \\
+& \quad + \p^{kl,rs}\nabla_i h_{kl}\nabla^j h_{rs} \\
+& \quad + c \{(\p + \p^{kl}h_{kl}) \delta_i^j - \operatorname{tr}(\dot{\p}) h_i^j\}
 \end{align*}
 \item \label{eq:delt_inversesff} \begin{align*}
-\partial_t b^{ij} &= \Box b^{ij} - \varphi^{rs} (h^2)_{rs} b^{ij} + (\varphi^{kl}h_{kl} + \varphi) g^{ij} \\
-& \quad - \left(2b^{lq}\varphi^{kp} + \varphi^{kl,pq}\right) b^{ir}b^{js} \nabla_r h_{kl} \nabla_s h_{pq} \\
-& \quad - c \{(\varphi + \varphi^{kl}h_{kl}) b^{ir}b^{j}_{r} - \operatorname{tr}(\dot{\p}) b^{ij}\}
+\partial_t b^{ij} &= \Box b^{ij} - \p^{rs} (h^2)_{rs} b^{ij} + (\p^{kl}h_{kl} + \p) g^{ij} \\
+& \quad - \left(2b^{lq}\p^{kp} + \p^{kl,pq}\right) b^{ir}b^{js} \nabla_r h_{kl} \nabla_s h_{pq} \\
+& \quad - c \{(\p + \p^{kl}h_{kl}) b^{ir}b^{j}_{r} - \operatorname{tr}(\dot{\p}) b^{ij}\}
 \end{align*}
-\item \label{eq:delt_squaredsff} $\partial_t (h^2)_{ij} = h^k_j \nabla^2_{ik} \varphi + h^k_i \nabla^2_{jk} \varphi + h^k_j \varphi(h^2)_{ik} - h^k_i \varphi(h^2)_{jk} + 2c\varphi h_{ij}$
-\item \label{eq:delt_speed} $\partial_t \varphi = \Box \varphi + \varphi\varphi^{ij}(h^2)_{ij} + c \varphi\varphi^{ij}g_{ij} = \beta + c\varphi\operatorname{tr}(\dot{\p}).$
+\item \label{eq:delt_squaredsff} $\partial_t (h^2)_{ij} = h^k_j \nabla^2_{ik} \p + h^k_i \nabla^2_{jk} \p + h^k_j \p(h^2)_{ik} - h^k_i \p(h^2)_{jk} + 2c\p h_{ij}$
+\item \label{eq:delt_speed} $\partial_t \p = \Box \p + \p\p^{ij}(h^2)_{ij} + c \p\p^{ij}g_{ij} = \beta + c\p\operatorname{tr}(\dot{\p}).$
 \end{enumerate}
 \end{lemma}
 
@@ -262,7 +262,7 @@ The following evolution equations hold
 \label{EvGamma}
 The Christoffel symbols evolve according to
 \begin{equation}
-\partial_t {\G}^{k}_{ij} = -\varphi g^{kl} \nabla_l h_{ij} - g^{kl} h_{li} \nabla_j \varphi - g^{kl} h_{lj} \nabla_i \varphi + g^{kl} h_{ij} \nabla_l \varphi.
+\partial_t {\G}^{k}_{ij} = -\p g^{kl} \nabla_l h_{ij} - g^{kl} h_{li} \nabla_j \p - g^{kl} h_{lj} \nabla_i \p + g^{kl} h_{ij} \nabla_l \p.
 \end{equation}
 \end{lemma}
 
@@ -273,14 +273,14 @@ In local coordinates, we have
 \]
 Since $\partial_t \G^{k}_{ij}$ is a tensor, we may calculate using normal coordinates at any given point, at which \(\G^k_{ij} = 0\). Then we have
 \[
-\frac{1}{2} \partial_t g^{kl} (\partial_j g_{il} + \partial_i g_{jl} - \partial_l g_{ij}) = 2\varphi g^{kr} h_{rs} \G^s_{ij} = 0.
+\frac{1}{2} \partial_t g^{kl} (\partial_j g_{il} + \partial_i g_{jl} - \partial_l g_{ij}) = 2\p g^{kr} h_{rs} \G^s_{ij} = 0.
 \]
 from \cref{lem:evolution}, \cref{eq:delt_inversemetric}. Now commuting derivatives \([\partial_t, \partial_i] = 0\), and using the Codazzi equations we obtain
 \[
 \begin{split}
 \partial_t {\G}^{k}_{ij} & = \frac{1}{2} g^{kl} \left(\partial_j \partial_t g_{il} + \partial_i \partial_t g_{jl} - \partial_l \partial_t g_{ij}\right) \\
-&= - g^{kl} \left(\partial_j (\varphi h_{il}) + \partial_i (\varphi h_{jl}) - \partial_l (\varphi h_{ij})\right) \\
-&= -\varphi g^{kl} \partial_l h_{ij} - g^{kl} h_{il} \partial_j \varphi  - g^{kl} h_{lj} \partial_i \varphi + g^{kl} h_{ij} \partial_l \varphi.
+&= - g^{kl} \left(\partial_j (\p h_{il}) + \partial_i (\p h_{jl}) - \partial_l (\p h_{ij})\right) \\
+&= -\p g^{kl} \partial_l h_{ij} - g^{kl} h_{il} \partial_j \p  - g^{kl} h_{lj} \partial_i \p + g^{kl} h_{ij} \partial_l \p.
 \end{split}
 \]
 The result follows since in normal coordinates, \(\nabla_i = \partial_i\) at our given point. 
@@ -294,8 +294,8 @@ For every smooth function $f$, the commutation relation
 \[
 \begin{split}
 ([\nabla, \Box]f)_i &= \nabla_i \Box f - (\Box \nabla f)_i\\ 
-                &= \varphi^{kl,rs} \nabla_i h_{rs} \nabla^2_{kl} f + \varphi^{kl}\left(h^{m}_{l}h_{ki} - h_{kl}h^{m}_{i}\right) \nabla_m f \\
-&\quad + c \varphi^{kl} g_{ki} \nabla_l f - c \operatorname{tr}(\dot{\p}) \nabla_i f 
+                &= \p^{kl,rs} \nabla_i h_{rs} \nabla^2_{kl} f + \p^{kl}\left(h^{m}_{l}h_{ki} - h_{kl}h^{m}_{i}\right) \nabla_m f \\
+&\quad + c \p^{kl} g_{ki} \nabla_l f - c \operatorname{tr}(\dot{\p}) \nabla_i f 
 \end{split}
 \]
 holds, where \(\nabla f = df\) is the covariant derivative of \(f\) and the subscript \(i\) refers to the \(i\)'th component of a one-form.
@@ -312,7 +312,7 @@ is given by
 \]
 and thus we obtain
 \[
-\nabla_i (\varphi^{kl} \nabla^2_{kl} f) - (\varphi^{kl}(\nabla^2_{kl} \nabla f))_i = \varphi^{kl,rs} \nabla_i h_{rs} \nabla^2_{kl}f + \varphi^{kl}{Rm^{m}}_{kli} \nabla_m f.
+\nabla_i (\p^{kl} \nabla^2_{kl} f) - (\p^{kl}(\nabla^2_{kl} \nabla f))_i = \p^{kl,rs} \nabla_i h_{rs} \nabla^2_{kl}f + \p^{kl}{Rm^{m}}_{kli} \nabla_m f.
 \]
 From the Gauss equation we obtain
 \[
@@ -327,71 +327,71 @@ From the Gauss equation we obtain
 The following commutation relation holds
 \[
 \begin{split}
-[\partial_t, \Box] \varphi &= (\partial_{t}\Box - \Box\partial_{t}) \varphi = \varphi^{ij,kl} \nabla^2_{ij} \varphi (\a_{kl} + c \varphi g_{kl}) \\
-&\quad + 2\varphi^{ij}h^{k}_{i} (\varphi \nabla^2_{k
-j} \varphi + \nabla_k \varphi \nabla_j \varphi) + (\varphi - \varphi^{ij}h_{ij})| \nabla\varphi|^{2}.
+[\partial_t, \Box] \p &= (\partial_{t}\Box - \Box\partial_{t}) \p = \p^{ij,kl} \nabla^2_{ij} \p (\a_{kl} + c \p g_{kl}) \\
+&\quad + 2\p^{ij}h^{k}_{i} (\p \nabla^2_{k
+j} \p + \nabla_k \p \nabla_j \p) + (\p - \p^{ij}h_{ij})| \nabla\p|^{2}.
 \end{split}
 \]
 \end{lemma}
 \begin{proof}
-First, let us calculate the evolution of \(\varphi^{ij}\), which will also prove useful later. From the mixed derivative \cref{eq:delhdelg}, the evolution of the metric (\cref{lem:evolution}, \cref{eq:delt_metric}), and the evolution of the second fundamental form (\cref{lem:evolution}, \cref{eq:delt_sff}) we compute
+First, let us calculate the evolution of \(\p^{ij}\), which will also prove useful later. From the mixed derivative \cref{eq:delhdelg}, the evolution of the metric (\cref{lem:evolution}, \cref{eq:delt_metric}), and the evolution of the second fundamental form (\cref{lem:evolution}, \cref{eq:delt_sff}) we compute
 \begin{equation}
 \label{eq:deltBox}
 \begin{split}
-\partial_{t} \varphi^{ij} &= \varphi^{ij,kl} \partial_t h_{kl} + \frac{\partial\varphi^{ij}}{\partial g_{kl}} \partial_t g_{kl} \\
-&= \varphi^{ij,kl} \left(\nabla^2_{kl} \varphi - \varphi(h^2)_{kl} + c \varphi g_{kl}\right) + 2\varphi \varphi^{ij,kl} h_{lm}h^{m}_{k} + 2\varphi\varphi^{jk}g^{li}h_{kl} \\
-&= \varphi^{ij,kl} \left(\nabla^2_{kl} \varphi + \varphi(h^2)_{kl} + c \varphi g_{kl}\right) + 2\varphi\varphi^{jk}h^{i}_{k} \\
-&= \varphi^{ij,kl} \left(\a_{kl} + c \varphi g_{kl}\right) + 2\varphi\varphi^{jk}h^{i}_{k}.
+\partial_{t} \p^{ij} &= \p^{ij,kl} \partial_t h_{kl} + \frac{\partial\p^{ij}}{\partial g_{kl}} \partial_t g_{kl} \\
+&= \p^{ij,kl} \left(\nabla^2_{kl} \p - \p(h^2)_{kl} + c \p g_{kl}\right) + 2\p \p^{ij,kl} h_{lm}h^{m}_{k} + 2\p\p^{jk}g^{li}h_{kl} \\
+&= \p^{ij,kl} \left(\nabla^2_{kl} \p + \p(h^2)_{kl} + c \p g_{kl}\right) + 2\p\p^{jk}h^{i}_{k} \\
+&= \p^{ij,kl} \left(\a_{kl} + c \p g_{kl}\right) + 2\p\p^{jk}h^{i}_{k}.
 \end{split}
 \end{equation}
 Next, the commutator of \(\partial_t\) and \(\nabla^2_{ij}\) is given by,
 \begin{equation}
 \label{eq:deltnabla2}
 \begin{split}
-\left(\partial_{t}\nabla^2_{ij} - \nabla^2_{ij}\partial_{t}\right) \varphi &= \partial_t \left(\nabla_i \nabla_j \varphi - \nabla_{\nabla_i \partial_j} \varphi\right) - \nabla_i \nabla_j \partial_t \varphi + \nabla_{\nabla_i \partial_j} \partial_t \varphi \\
-&= - \partial_t \left(\G_{ij}^k \nabla_{\partial_k} \varphi\right) + \G_{ij}^k \nabla_{\partial_k} \partial_t \varphi \\
-&= - \nabla_k \varphi \partial_t \G_{ij}^k.
+\left(\partial_{t}\nabla^2_{ij} - \nabla^2_{ij}\partial_{t}\right) \p &= \partial_t \left(\nabla_i \nabla_j \p - \nabla_{\nabla_i \partial_j} \p\right) - \nabla_i \nabla_j \partial_t \p + \nabla_{\nabla_i \partial_j} \partial_t \p \\
+&= - \partial_t \left(\G_{ij}^k \nabla_{\partial_k} \p\right) + \G_{ij}^k \nabla_{\partial_k} \partial_t \p \\
+&= - \nabla_k \p \partial_t \G_{ij}^k.
 \end{split}
 \end{equation}
 We obtain from \cref{eq:deltBox}, \cref{eq:deltnabla2}, and the evolution of the Christoffel symbols \cref{EvGamma},
 \[
 \begin{split}
-\left(\partial_{t}\Box - \Box\partial_{t}\right) \varphi &= \left(\partial_{t}\varphi^{ij}\right) \nabla^2_{ij} \varphi - \varphi^{ij}\nabla_k \varphi\partial_t \G^{k}_{ij} \\
-&= \left[\varphi^{ij,kl} \left(\a_{kl} + c \varphi g_{kl}\right) + 2\varphi\varphi^{jk}h^{i}_{k}\right] \nabla^2_{ij} \varphi \\
-&\quad + \varphi^{ij} \nabla_k \varphi \left(\varphi g^{kl} \nabla_l h_{ij} + h^k_i \nabla_j \varphi + h^k_j \nabla_i \varphi - g^{kl} h_{ij} \nabla_l \varphi\right) \\
-&= \varphi^{ij,kl} \nabla^2_{ij} \varphi \left(\a_{kl} + c \varphi g_{kl}\right) \\
-&\quad + 2\varphi^{jk}h^{i}_{k}\varphi \nabla^2_{ij} \varphi + h^k_i \varphi^{ij} \nabla_k \varphi \nabla_j \varphi + h^k_j \varphi^{ij} \nabla_k \varphi \nabla_i \varphi \\
-&\quad + \varphi g^{kl}\nabla_k \varphi \varphi^{ij} \nabla_l h_{ij} - \varphi^{ij} h_{ij} g^{kl}\nabla_k \varphi \nabla_l \varphi.
+\left(\partial_{t}\Box - \Box\partial_{t}\right) \p &= \left(\partial_{t}\p^{ij}\right) \nabla^2_{ij} \p - \p^{ij}\nabla_k \p\partial_t \G^{k}_{ij} \\
+&= \left[\p^{ij,kl} \left(\a_{kl} + c \p g_{kl}\right) + 2\p\p^{jk}h^{i}_{k}\right] \nabla^2_{ij} \p \\
+&\quad + \p^{ij} \nabla_k \p \left(\p g^{kl} \nabla_l h_{ij} + h^k_i \nabla_j \p + h^k_j \nabla_i \p - g^{kl} h_{ij} \nabla_l \p\right) \\
+&= \p^{ij,kl} \nabla^2_{ij} \p \left(\a_{kl} + c \p g_{kl}\right) \\
+&\quad + 2\p^{jk}h^{i}_{k}\p \nabla^2_{ij} \p + h^k_i \p^{ij} \nabla_k \p \nabla_j \p + h^k_j \p^{ij} \nabla_k \p \nabla_i \p \\
+&\quad + \p g^{kl}\nabla_k \p \p^{ij} \nabla_l h_{ij} - \p^{ij} h_{ij} g^{kl}\nabla_k \p \nabla_l \p.
 \end{split}
 \]
-The result now follows from \(|\nabla \varphi|^2 = g^{kl}\nabla_k \varphi \nabla_l \varphi\) and \(\nabla_l \varphi = \varphi^{ij} \nabla_l h_{ij}\) by the chain rule.
+The result now follows from \(|\nabla \p|^2 = g^{kl}\nabla_k \p \nabla_l \p\) and \(\nabla_l \p = \p^{ij} \nabla_l h_{ij}\) by the chain rule.
 \end{proof}
-The next ingredient is the evolution of the covariant derivative, \(\nabla \varphi = d\varphi\).
+The next ingredient is the evolution of the covariant derivative, \(\nabla \p = d\p\).
 \begin{lemma}
 \label{lem:Evgradphi}
 There holds
 \[
 \begin{split}
-\left((\partial_{t}-\Box)\nabla\varphi\right)_{i} &= \varphi^{kl,rs}\nabla_i h_{rs} \a_{kl} + 2 \varphi^{kl} b^{rs} \varphi(h^2)_{rl} \nabla_i h_{ks} \\
-&\quad + \varphi^{kl}(h^2)_{kl}\nabla_i \varphi + \left(\varphi^{kl}h^{m}_{l}h_{ki} - \varphi^{kl}h_{kl}h^{m}_{i}\right) \nabla_m \varphi\\
-&\quad + c\left(\varphi^{kl}g_{ki} \nabla_l \varphi + \varphi \nabla_i \operatorname{tr}(\dot{\p})\right).
+\left((\partial_{t}-\Box)\nabla\p\right)_{i} &= \p^{kl,rs}\nabla_i h_{rs} \a_{kl} + 2 \p^{kl} b^{rs} \p(h^2)_{rl} \nabla_i h_{ks} \\
+&\quad + \p^{kl}(h^2)_{kl}\nabla_i \p + \left(\p^{kl}h^{m}_{l}h_{ki} - \p^{kl}h_{kl}h^{m}_{i}\right) \nabla_m \p\\
+&\quad + c\left(\p^{kl}g_{ki} \nabla_l \p + \p \nabla_i \operatorname{tr}(\dot{\p})\right).
 \end{split}
 \]
 \end{lemma}
 \begin{proof}
-Using the evolution of \(\varphi\) \cref{lem:evolution}, \cref{eq:delt_speed}, the derivative of \(\operatorname{tr}(\dot{\p})\) \cref{eq:delPhi}, and the commutator \([\nabla, \Box]\) from \cref{lem:gradBox}, we compute
+Using the evolution of \(\p\) \cref{lem:evolution}, \cref{eq:delt_speed}, the derivative of \(\operatorname{tr}(\dot{\p})\) \cref{eq:delPhi}, and the commutator \([\nabla, \Box]\) from \cref{lem:gradBox}, we compute
 \[
 \begin{split}
-\partial_{t}\nabla_i \varphi - (\Box\nabla \varphi)_{i} &= \nabla_i \partial_t \varphi - \nabla_i \Box \varphi + ([\nabla, \Box] \varphi)_i \\
-&= \nabla_i \left(\Box\varphi + \varphi^{kl}(h^2)_{kl}\varphi + c \operatorname{tr}(\dot{\p})\varphi\right) - \nabla_i (\Box\varphi) \\
-&\quad + \varphi^{kl,rs} \nabla_i h_{rs} \nabla^2_{kl} \varphi + c\varphi^{kl}g_{ki} \nabla_l \varphi - c\operatorname{tr}(\dot{\p})\nabla_i \varphi \\
-&\quad + (\varphi^{kl}h^{m}_{l}h_{ki} - \varphi^{kl}h_{kl}h^{m}_{i}) \nabla_m \varphi \\
-&= \varphi^{kl}(h^2)_{kl}\nabla_i \varphi + \varphi^{kl,rs}\nabla_i h_{rs} (h^2)_{kl}\varphi + \varphi\varphi^{kl}(h^s_l \nabla_i h_{ks} + h^r_k \nabla_i h_{rl})\\&\quad  + c \varphi\nabla_i\operatorname{tr}(\dot{\p})
-+ \varphi^{kl,rs} \nabla_i h_{rs} \nabla^2_{kl} \varphi + c\varphi^{kl}g_{ki}\nabla_l \varphi \\
-&\quad + (\varphi^{kl}h^{m}_{l}h_{ki} - \varphi^{kl}h_{kl}h^{m}_{i}) \nabla_m \varphi \\
-&= \varphi^{kl,rs}\nabla_i h_{rs} \left((h^2)_{kl}\varphi + \nabla^2_{kl} \varphi\right) + 2 \varphi\varphi^{kl} h^s_l \nabla_i h_{ks} \\
-&\quad + \varphi^{kl}(h^2)_{kl}\nabla_i \varphi + (\varphi^{kl}h^{m}_{l}h_{ki} - \varphi^{kl}h_{kl}h^{m}_{i}) \nabla_m \varphi \\
-&\quad + c \left(\varphi\nabla_i\operatorname{tr}(\dot{\p}) + \varphi^{kl}g_{ki}\nabla_l \varphi\right),
+\partial_{t}\nabla_i \p - (\Box\nabla \p)_{i} &= \nabla_i \partial_t \p - \nabla_i \Box \p + ([\nabla, \Box] \p)_i \\
+&= \nabla_i \left(\Box\p + \p^{kl}(h^2)_{kl}\p + c \operatorname{tr}(\dot{\p})\p\right) - \nabla_i (\Box\p) \\
+&\quad + \p^{kl,rs} \nabla_i h_{rs} \nabla^2_{kl} \p + c\p^{kl}g_{ki} \nabla_l \p - c\operatorname{tr}(\dot{\p})\nabla_i \p \\
+&\quad + (\p^{kl}h^{m}_{l}h_{ki} - \p^{kl}h_{kl}h^{m}_{i}) \nabla_m \p \\
+&= \p^{kl}(h^2)_{kl}\nabla_i \p + \p^{kl,rs}\nabla_i h_{rs} (h^2)_{kl}\p + \p\p^{kl}(h^s_l \nabla_i h_{ks} + h^r_k \nabla_i h_{rl})\\&\quad  + c \p\nabla_i\operatorname{tr}(\dot{\p})
++ \p^{kl,rs} \nabla_i h_{rs} \nabla^2_{kl} \p + c\p^{kl}g_{ki}\nabla_l \p \\
+&\quad + (\p^{kl}h^{m}_{l}h_{ki} - \p^{kl}h_{kl}h^{m}_{i}) \nabla_m \p \\
+&= \p^{kl,rs}\nabla_i h_{rs} \left((h^2)_{kl}\p + \nabla^2_{kl} \p\right) + 2 \p\p^{kl} h^s_l \nabla_i h_{ks} \\
+&\quad + \p^{kl}(h^2)_{kl}\nabla_i \p + (\p^{kl}h^{m}_{l}h_{ki} - \p^{kl}h_{kl}h^{m}_{i}) \nabla_m \p \\
+&\quad + c \left(\p\nabla_i\operatorname{tr}(\dot{\p}) + \p^{kl}g_{ki}\nabla_l \p\right),
 \end{split}
 \]
 where in the third equality, we used
@@ -410,37 +410,37 @@ The quantity $\beta$
 satisfies
 \[
 \begin{split}
-(\partial_{t} - \Box)\beta &= \left(\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}) \right)\beta \\
-&\quad + (\varphi - \varphi^{ij}h_{ij}) |\nabla\varphi|^{2} + 2\varphi^{ij}h^{k}_{i}\nabla_k \varphi \nabla_j \varphi \\
-&\quad + \varphi^{ij,kl} \a_{ij} \a_{kl} \\
-&\quad + 2b^{il}\varphi^{jk} (2\nabla^2_{ij}\varphi\varphi(h^2)_{kl} + \varphi(h^2)_{ij}\varphi(h^2)_{kl}) \\
+(\partial_{t} - \Box)\beta &= \left(\p^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}) \right)\beta \\
+&\quad + (\p - \p^{ij}h_{ij}) |\nabla\p|^{2} + 2\p^{ij}h^{k}_{i}\nabla_k \p \nabla_j \p \\
+&\quad + \p^{ij,kl} \a_{ij} \a_{kl} \\
+&\quad + 2b^{il}\p^{jk} (2\nabla^2_{ij}\p\p(h^2)_{kl} + \p(h^2)_{ij}\p(h^2)_{kl}) \\
 &\quad + cR_{\beta},
 \end{split}
 \]
 where
 $
-R_{\beta} = \varphi \Box \operatorname{tr}(\dot{\p}) + 2\varphi^{kl} \nabla_k \operatorname{tr}(\dot{\p}) \nabla_l \varphi + \varphi \varphi^{ij,kl}g_{kl} \a_{ij} + 2\varphi^{2}\varphi^{ij}h_{ij}.
+R_{\beta} = \p \Box \operatorname{tr}(\dot{\p}) + 2\p^{kl} \nabla_k \operatorname{tr}(\dot{\p}) \nabla_l \p + \p \p^{ij,kl}g_{kl} \a_{ij} + 2\p^{2}\p^{ij}h_{ij}.
 $
 \end{lemma}
 \begin{proof}
 Let us break up the calculation of
 \[
-(\partial_{t} - \Box)\beta =  \partial_{t}\Box\varphi + \partial_{t} (\varphi\varphi^{ij} (h^2)_{ij}) - \Box\Box\varphi - \Box(\varphi\varphi^{ij} (h^2)_{ij})
+(\partial_{t} - \Box)\beta =  \partial_{t}\Box\p + \partial_{t} (\p\p^{ij} (h^2)_{ij}) - \Box\Box\p - \Box(\p\p^{ij} (h^2)_{ij})
 \]
-into smaller pieces. First, we have lots of nice cancellation. Using the evolution of \(\varphi\) from \cref{lem:evolution}, \cref{eq:delt_speed} and the commutator relation from \cref{lem:deltBox} we have,
+into smaller pieces. First, we have lots of nice cancellation. Using the evolution of \(\p\) from \cref{lem:evolution}, \cref{eq:delt_speed} and the commutator relation from \cref{lem:deltBox} we have,
 \begin{equation}
 \label{eq:deltbeta1}
 \begin{split}
-&\partial_{t}\Box\varphi - \Box\Box\varphi - \Box(\varphi\varphi^{ij} (h^2)_{ij})\\ =\ &\Box\partial_t\varphi - \Box\Box\varphi - \Box(\varphi\varphi^{ij} (h^2)_{ij}) + [\partial_t, \Box] \varphi \\
-=\ &\Box(\Box \varphi + \varphi\varphi^{ij}(h^2)_{ij} + c \varphi\operatorname{tr}(\dot{\p})) - \Box\Box\varphi - \Box(\varphi\varphi^{ij} (h^2)_{ij})\\
-\quad &+ \varphi^{ij,kl} \nabla^2_{ij} \varphi (\a_{kl} + c \varphi g_{kl}) + 2\varphi^{ij}h^{k}_{i} (\varphi \nabla^2_{kj} \varphi + \nabla_k \varphi \nabla_j \varphi)\\ 
-\quad &+ (\varphi - \varphi^{ij}h_{ij})| \nabla\varphi|^{2} \\
-=\ &c (\operatorname{tr}(\dot{\p}) \Box \varphi + \varphi \Box \operatorname{tr}(\dot{\p}) + 2 \varphi^{kl} \nabla_k \operatorname{tr}(\dot{\p}) \nabla_l \varphi) \\
-\quad &+ \varphi^{ij,kl} \nabla^2_{ij} \varphi (\a_{kl} + c \varphi g_{kl}) + 2\varphi^{ij}b^{kl} \varphi (h^2)_{il} \nabla^2_{kj} \varphi\\
-\quad  &+ 2\varphi^{ij}h^{k}_{i} \nabla_k \varphi \nabla_j \varphi + (\varphi - \varphi^{ij}h_{ij})| \nabla\varphi|^{2} \\
-=\ &c \operatorname{tr}(\dot{\p}) \Box \varphi + (\varphi - \varphi^{ij}h_{ij})| \nabla\varphi|^{2}  + \varphi^{ij,kl} \nabla^2_{ij} \varphi \a_{kl} \\
-\quad &+ 2\varphi^{ij}b^{kl} \varphi (h^2)_{il} \nabla^2_{kj} \varphi + 2\varphi^{ij}h^{k}_{i} \nabla_k \varphi \nabla_j \varphi \\
-\quad &+ c(\varphi \Box \operatorname{tr}(\dot{\p}) + 2 \varphi^{kl} \nabla_k \operatorname{tr}(\dot{\p}) \nabla_l \varphi + \varphi \varphi^{ij,kl} g_{kl} \nabla^2_{ij} \varphi)
+&\partial_{t}\Box\p - \Box\Box\p - \Box(\p\p^{ij} (h^2)_{ij})\\ =\ &\Box\partial_t\p - \Box\Box\p - \Box(\p\p^{ij} (h^2)_{ij}) + [\partial_t, \Box] \p \\
+=\ &\Box(\Box \p + \p\p^{ij}(h^2)_{ij} + c \p\operatorname{tr}(\dot{\p})) - \Box\Box\p - \Box(\p\p^{ij} (h^2)_{ij})\\
+\quad &+ \p^{ij,kl} \nabla^2_{ij} \p (\a_{kl} + c \p g_{kl}) + 2\p^{ij}h^{k}_{i} (\p \nabla^2_{kj} \p + \nabla_k \p \nabla_j \p)\\ 
+\quad &+ (\p - \p^{ij}h_{ij})| \nabla\p|^{2} \\
+=\ &c (\operatorname{tr}(\dot{\p}) \Box \p + \p \Box \operatorname{tr}(\dot{\p}) + 2 \p^{kl} \nabla_k \operatorname{tr}(\dot{\p}) \nabla_l \p) \\
+\quad &+ \p^{ij,kl} \nabla^2_{ij} \p (\a_{kl} + c \p g_{kl}) + 2\p^{ij}b^{kl} \p (h^2)_{il} \nabla^2_{kj} \p\\
+\quad  &+ 2\p^{ij}h^{k}_{i} \nabla_k \p \nabla_j \p + (\p - \p^{ij}h_{ij})| \nabla\p|^{2} \\
+=\ &c \operatorname{tr}(\dot{\p}) \Box \p + (\p - \p^{ij}h_{ij})| \nabla\p|^{2}  + \p^{ij,kl} \nabla^2_{ij} \p \a_{kl} \\
+\quad &+ 2\p^{ij}b^{kl} \p (h^2)_{il} \nabla^2_{kj} \p + 2\p^{ij}h^{k}_{i} \nabla_k \p \nabla_j \p \\
+\quad &+ c(\p \Box \operatorname{tr}(\dot{\p}) + 2 \p^{kl} \nabla_k \operatorname{tr}(\dot{\p}) \nabla_l \p + \p \p^{ij,kl} g_{kl} \nabla^2_{ij} \p)
 \end{split}
 \end{equation}
 using, in the third equality, the product rule for \(\Box\) \cref{eq:productbox} and \(h^k_i = h^m_i b^{kl}h_{ml} = b^{kl} (h^2)_{il}\) since \(b\) is the inverse of \(A\).
@@ -448,12 +448,12 @@ using, in the third equality, the product rule for \(\Box\) \cref{eq:productbox}
 Next from \cref{eq:deltBox} and \cref{lem:evolution}, \cref{eq:delt_squaredsff} we obtain
 \[
 \begin{split}
-\partial_{t} (\varphi^{ij}(h^2)_{ij}) &= \partial_{t}(\varphi^{ij}) (h^2)_{ij} + \varphi^{ij} \partial_t (h^2)_{ij} \\
-&= \left(\varphi^{ij,kl} \left(\a_{kl} + c \varphi g_{kl}\right) + 2\varphi\varphi^{jk}h^{i}_{k}\right) (h^2)_{ij} \\
-&\quad + \varphi^{ij} \left(h^k_j \nabla^2_{i
-k} \varphi + h^k_i \nabla^2_{jk} \varphi + h^k_j \varphi(h^2)_{ik} - h^k_i \varphi(h^2)_{jk} + 2c\varphi h_{ij}\right) \\
-&= \varphi^{ij,kl} (h^2)_{ij} \left(\a_{kl} + c \varphi g_{kl}\right) + 2\varphi\varphi^{jk} b^{il} (h^2)_{lk} (h^2)_{ij} \\
-&\quad + 2 \varphi^{ij} b^{kl} (h^2)_{il} \nabla^2_{jk} \varphi  + 2c\varphi\varphi^{ij}h_{ij}
+\partial_{t} (\p^{ij}(h^2)_{ij}) &= \partial_{t}(\p^{ij}) (h^2)_{ij} + \p^{ij} \partial_t (h^2)_{ij} \\
+&= \left(\p^{ij,kl} \left(\a_{kl} + c \p g_{kl}\right) + 2\p\p^{jk}h^{i}_{k}\right) (h^2)_{ij} \\
+&\quad + \p^{ij} \left(h^k_j \nabla^2_{i
+k} \p + h^k_i \nabla^2_{jk} \p + h^k_j \p(h^2)_{ik} - h^k_i \p(h^2)_{jk} + 2c\p h_{ij}\right) \\
+&= \p^{ij,kl} (h^2)_{ij} \left(\a_{kl} + c \p g_{kl}\right) + 2\p\p^{jk} b^{il} (h^2)_{lk} (h^2)_{ij} \\
+&\quad + 2 \p^{ij} b^{kl} (h^2)_{il} \nabla^2_{jk} \p  + 2c\p\p^{ij}h_{ij}
 \end{split}
 \]
 again using \(h^k_i = b^{kl} (h^2)_{il}\) in the last equality.
@@ -462,13 +462,13 @@ The remaining term we need to compute is thus
 \begin{equation}
 \label{eq:deltbeta2}
 \begin{split}
-\partial_{t} (\varphi \varphi^{ij}(h^2)_{ij}) &= (\partial_{t} \varphi) \varphi^{ij}(h^2)_{ij} + \varphi \partial_t (\varphi^{ij} (h^2)^{ij}) \\
-&= (\beta + c \varphi\operatorname{tr}(\dot{\p})) \varphi^{ij}(h^2)_{ij} \\
-&\quad + \varphi \left[\varphi^{ij,kl} (h^2)_{ij} \left(\a_{kl} + c \varphi g_{kl}\right) + 2\varphi\varphi^{jk} b^{il} (h^2)_{lk} (h^2)_{ij} \right.\\
-&\quad \left. + 2 \varphi^{ij} b^{kl} (h^2)_{il} \nabla^2_{jk} \varphi  + 2c\varphi\varphi^{ij}h_{ij}\right]. \\
-&= (\beta + c \varphi\operatorname{tr}(\dot{\p})) \varphi^{ij}(h^2)_{ij} + \varphi^{ij,kl} \varphi (h^2)_{ij} \a_{kl}  \\
-&\quad + 2 \varphi\varphi^{ij} b^{kl} (h^2)_{il} \nabla^2_{jk} \varphi + 2\varphi^{jk} b^{il} \varphi (h^2)_{lk} \varphi (h^2)_{ij} \\
-&\quad + c \left[\varphi \varphi^{ij,kl} g_{kl} \varphi (h^2)_{ij} + 2c\varphi^2\varphi^{ij}h_{ij}\right].
+\partial_{t} (\p \p^{ij}(h^2)_{ij}) &= (\partial_{t} \p) \p^{ij}(h^2)_{ij} + \p \partial_t (\p^{ij} (h^2)^{ij}) \\
+&= (\beta + c \p\operatorname{tr}(\dot{\p})) \p^{ij}(h^2)_{ij} \\
+&\quad + \p \left[\p^{ij,kl} (h^2)_{ij} \left(\a_{kl} + c \p g_{kl}\right) + 2\p\p^{jk} b^{il} (h^2)_{lk} (h^2)_{ij} \right.\\
+&\quad \left. + 2 \p^{ij} b^{kl} (h^2)_{il} \nabla^2_{jk} \p  + 2c\p\p^{ij}h_{ij}\right]. \\
+&= (\beta + c \p\operatorname{tr}(\dot{\p})) \p^{ij}(h^2)_{ij} + \p^{ij,kl} \p (h^2)_{ij} \a_{kl}  \\
+&\quad + 2 \p\p^{ij} b^{kl} (h^2)_{il} \nabla^2_{jk} \p + 2\p^{jk} b^{il} \p (h^2)_{lk} \p (h^2)_{ij} \\
+&\quad + c \left[\p \p^{ij,kl} g_{kl} \p (h^2)_{ij} + 2c\p^2\p^{ij}h_{ij}\right].
 \end{split}
 \end{equation}
 
@@ -480,64 +480,64 @@ Now we add \cref{eq:deltbeta1} and \cref{eq:deltbeta2} together line by line to 
 The quantity $\theta$ evolves according to
 \[
 \begin{split}
-(\partial_{t} - \Box)\theta &= (\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}))\theta \\
-&\quad + (\varphi - \varphi^{ij}h_{ij})|\nabla\varphi|^{2} + 2\varphi^{ij}h^{k}_{i}\nabla_k\varphi\nabla_j\varphi \\
-&\quad - \varphi^{kl,ij} (\gamma_{ij}\gamma_{kl}  - 2\a_{ij} \gamma_{kl}) - 2b^{il} \varphi^{jk} \left(\gamma_{ij} \gamma_{kl} - 2\a_{ij} \gamma_{kl} + \nabla^2_{ij}\varphi\nabla^2_{kl}\varphi\right) \\
+(\partial_{t} - \Box)\theta &= (\p^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}))\theta \\
+&\quad + (\p - \p^{ij}h_{ij})|\nabla\p|^{2} + 2\p^{ij}h^{k}_{i}\nabla_k\p\nabla_j\p \\
+&\quad - \p^{kl,ij} (\gamma_{ij}\gamma_{kl}  - 2\a_{ij} \gamma_{kl}) - 2b^{il} \p^{jk} \left(\gamma_{ij} \gamma_{kl} - 2\a_{ij} \gamma_{kl} + \nabla^2_{ij}\p\nabla^2_{kl}\p\right) \\
 &\quad + cR_{\theta},
 \end{split}
 \]
 \end{lemma}
 where
 $
-R_{\theta} = -(\varphi^{kl}h_{kl} + \varphi)b^{ir}b^{j}_{r}\nabla_i \varphi\nabla_j\varphi + 2 b^{j}_{k}\varphi^{kl}\nabla_l\varphi\nabla_j\varphi + 2 \varphi\varphi^{ij,kl} g_{ij} \gamma_{kl}.
+R_{\theta} = -(\p^{kl}h_{kl} + \p)b^{ir}b^{j}_{r}\nabla_i \p\nabla_j\p + 2 b^{j}_{k}\p^{kl}\nabla_l\p\nabla_j\p + 2 \p\p^{ij,kl} g_{ij} \gamma_{kl}.
 $
 \begin{proof}
 Again using the product rule for \(\Box\), \cref{eq:productbox} and the symmetry \(b^{ij} = b^{ji}\), we have
 \begin{equation}
 \label{eq:delt_theta}
 \begin{split}
-(\partial_{t} - \Box)\theta &= (\partial_{t}b^{ij} - \Box b^{ij})\nabla_i \varphi\nabla_j\varphi + b^{ij} (\partial_{t} - \Box) (\nabla\varphi \otimes \nabla\varphi)_{ij} \\
-&\quad - 2 \varphi^{kl} \nabla_k b^{ij} \nabla_l (\nabla \varphi \otimes \nabla\varphi)_{ij} \\
-&= (\partial_{t}b^{ij} - \Box b^{ij})\nabla_i \varphi\nabla_j\varphi + 2 b^{ij} (\partial_{t} - \Box) (\nabla\varphi)_i \nabla_j\varphi\\ 
-&\quad - 2 b^{ij} \varphi^{kl} \nabla^2_{ik} \varphi \nabla^2_{lj} \varphi - 4 \varphi^{kl} \nabla_k b^{ij} \nabla^2_{il} \varphi \nabla_j\varphi \\
-&= (\partial_{t}b^{ij} - \Box b^{ij})\nabla_i \varphi\nabla_j\varphi + 2 b^{ij} (\partial_{t} - \Box) (\nabla\varphi)_i \nabla_j\varphi \\
-&\quad - 2 b^{ij} \varphi^{kl} \nabla^2_{ik} \varphi \nabla^2_{lj} \varphi + 4 \varphi^{kl} b^{ip}b^{jq} \nabla_k h_{pq} \nabla^2_{il} \varphi \nabla_j\varphi \\
-&= (\partial_{t}b^{ij} - \Box b^{ij})\nabla_i \varphi\nabla_j\varphi + 2 b^{ij} (\partial_{t} - \Box) (\nabla\varphi)_i \nabla_j\varphi \\
-&\quad - 2 b^{ij} \varphi^{kl} \nabla^2_{ik} \varphi \nabla^2_{lj} \varphi + 4 \varphi^{kl} b^{ip}\gamma_{pk} \nabla^2_{il} \varphi,
+(\partial_{t} - \Box)\theta &= (\partial_{t}b^{ij} - \Box b^{ij})\nabla_i \p\nabla_j\p + b^{ij} (\partial_{t} - \Box) (\nabla\p \otimes \nabla\p)_{ij} \\
+&\quad - 2 \p^{kl} \nabla_k b^{ij} \nabla_l (\nabla \p \otimes \nabla\p)_{ij} \\
+&= (\partial_{t}b^{ij} - \Box b^{ij})\nabla_i \p\nabla_j\p + 2 b^{ij} (\partial_{t} - \Box) (\nabla\p)_i \nabla_j\p\\ 
+&\quad - 2 b^{ij} \p^{kl} \nabla^2_{ik} \p \nabla^2_{lj} \p - 4 \p^{kl} \nabla_k b^{ij} \nabla^2_{il} \p \nabla_j\p \\
+&= (\partial_{t}b^{ij} - \Box b^{ij})\nabla_i \p\nabla_j\p + 2 b^{ij} (\partial_{t} - \Box) (\nabla\p)_i \nabla_j\p \\
+&\quad - 2 b^{ij} \p^{kl} \nabla^2_{ik} \p \nabla^2_{lj} \p + 4 \p^{kl} b^{ip}b^{jq} \nabla_k h_{pq} \nabla^2_{il} \p \nabla_j\p \\
+&= (\partial_{t}b^{ij} - \Box b^{ij})\nabla_i \p\nabla_j\p + 2 b^{ij} (\partial_{t} - \Box) (\nabla\p)_i \nabla_j\p \\
+&\quad - 2 b^{ij} \p^{kl} \nabla^2_{ik} \p \nabla^2_{lj} \p + 4 \p^{kl} b^{ip}\gamma_{pk} \nabla^2_{il} \p,
 \end{split}
 \end{equation}
-where in the second to last equality we used the formula for the derivative of the inverse \(b^{ij}\) of \(h_{ij}\) and the Codazzi equation in the last line, producing \(b^{jq} \nabla_k h_{pq} \nabla_j \varphi = b^{jq} \nabla_q h_{pk} \nabla_j \varphi = \gamma_{pk}\). The first term in final line appears on the second to last line of the statement of the lemma (with indices relabelled). The second term is part of \(4 b^{il}\varphi^{jk} \a_{ij} \gamma_{kl}\) in the second to last line. So we must deal with the first two terms and show they add to the remainder of the statement. For the first term, we use the evolution of \(b^{ij}\) from \cref{lem:evolution}, \cref{eq:delt_inversesff} to calculate
+where in the second to last equality we used the formula for the derivative of the inverse \(b^{ij}\) of \(h_{ij}\) and the Codazzi equation in the last line, producing \(b^{jq} \nabla_k h_{pq} \nabla_j \p = b^{jq} \nabla_q h_{pk} \nabla_j \p = \gamma_{pk}\). The first term in final line appears on the second to last line of the statement of the lemma (with indices relabelled). The second term is part of \(4 b^{il}\p^{jk} \a_{ij} \gamma_{kl}\) in the second to last line. So we must deal with the first two terms and show they add to the remainder of the statement. For the first term, we use the evolution of \(b^{ij}\) from \cref{lem:evolution}, \cref{eq:delt_inversesff} to calculate
 \begin{equation}
 \label{eq:delt_theta1}
 \begin{split}
-(\partial_{t}b^{ij} - \Box b^{ij})\nabla_i \varphi\nabla_j\varphi &= \nabla_i \varphi \nabla_j \varphi\left[-\varphi^{rs} (h^2)_{rs} b^{ij} + (\varphi^{kl}h_{kl} + \varphi) g^{ij} \right. \\
-& \quad - \left(2b^{lq}\varphi^{kp} + \varphi^{kl,pq}\right) b^{ir}b^{js} \nabla_r h_{kl} \nabla_s h_{pq} \\
-& \quad - \left. c \{(\varphi + \varphi^{kl}h_{kl}) b^{ir}b^{j}_{r} - \operatorname{tr}(\dot{\p}) b^{ij}\}\right] \\
-&= \left(c\operatorname{tr}(\dot{\p}) - \varphi^{rs}(h)^2_{rs}\right) \theta\\ & \quad - (2b^{lq}\varphi^{kp} + \varphi^{kl,pq}) b^{ir}b^{js}\nabla_i\varphi\nabla_j\varphi\nabla_rh_{kl}\nabla_s h_{pq} \\
-&\quad + (\varphi^{kl}h_{kl} + \varphi)|\nabla\varphi|^{2} - c(\varphi^{kl}h_{kl} + \varphi)b^{ir}b^{j}_{r}\nabla_i \varphi\nabla_j\varphi \\
-&= \left(c\operatorname{tr}(\dot{\p}) - \varphi^{rs}(h)^2_{rs}\right) \theta  + (\varphi^{kl}h_{kl} + \varphi)|\nabla\varphi|^{2} \\
-&\quad - \varphi^{kl,pq} \gamma_{kl} \gamma_{pq} - 2b^{lq}\varphi^{kp} \gamma_{kl} \gamma_{pq}  \\ 
-&\quad -c(\varphi^{kl}h_{kl} + \varphi)b^{ir}b^{j}_{r}\nabla_i \varphi\nabla_j\varphi.
+(\partial_{t}b^{ij} - \Box b^{ij})\nabla_i \p\nabla_j\p &= \nabla_i \p \nabla_j \p\left[-\p^{rs} (h^2)_{rs} b^{ij} + (\p^{kl}h_{kl} + \p) g^{ij} \right. \\
+& \quad - \left(2b^{lq}\p^{kp} + \p^{kl,pq}\right) b^{ir}b^{js} \nabla_r h_{kl} \nabla_s h_{pq} \\
+& \quad - \left. c \{(\p + \p^{kl}h_{kl}) b^{ir}b^{j}_{r} - \operatorname{tr}(\dot{\p}) b^{ij}\}\right] \\
+&= \left(c\operatorname{tr}(\dot{\p}) - \p^{rs}(h)^2_{rs}\right) \theta\\ & \quad - (2b^{lq}\p^{kp} + \p^{kl,pq}) b^{ir}b^{js}\nabla_i\p\nabla_j\p\nabla_rh_{kl}\nabla_s h_{pq} \\
+&\quad + (\p^{kl}h_{kl} + \p)|\nabla\p|^{2} - c(\p^{kl}h_{kl} + \p)b^{ir}b^{j}_{r}\nabla_i \p\nabla_j\p \\
+&= \left(c\operatorname{tr}(\dot{\p}) - \p^{rs}(h)^2_{rs}\right) \theta  + (\p^{kl}h_{kl} + \p)|\nabla\p|^{2} \\
+&\quad - \p^{kl,pq} \gamma_{kl} \gamma_{pq} - 2b^{lq}\p^{kp} \gamma_{kl} \gamma_{pq}  \\ 
+&\quad -c(\p^{kl}h_{kl} + \p)b^{ir}b^{j}_{r}\nabla_i \p\nabla_j\p.
 \end{split}
 \end{equation}
-For the second term, from the evolution of \(\nabla\varphi\) in \cref{lem:Evgradphi}, we have
+For the second term, from the evolution of \(\nabla\p\) in \cref{lem:Evgradphi}, we have
 \begin{equation}
 \label{eq:delt_theta2}
 \begin{split}
-&2 b^{ij} (\partial_{t} - \Box) (\nabla\varphi)_i \nabla_j\varphi\\  
-=\ &2 b^{ij} \nabla_j\varphi \big[\varphi^{kl,rs}\nabla_i h_{rs} \a_{kl}\varphi + 2 \varphi^{kl} b^{rs} \varphi(h^2)_{rl} \nabla_i h_{ks}  \\
-\quad &+ \varphi^{kl}(h^2)_{kl}\nabla_i \varphi + \left(\varphi^{kl}h^{m}_{l}h_{ki} - \varphi^{kl}h_{kl}h^{m}_{i}\right) \nabla_m \varphi\\
-\quad &+ c\left(\varphi^{kl}g_{ki} \nabla_l \varphi + \varphi \nabla_i \operatorname{tr}(\dot{\p})\right)\big] \\
-=\ &2 b^{ij} \nabla_j\varphi \varphi^{kl}(h^2)_{kl}\nabla_i \varphi \\
-\quad &- 2 b^{ij} \nabla_j\varphi \varphi^{kl}h_{kl}h^{m}_{i} \nabla_m \varphi + 2 b^{ij} \nabla_j\varphi \varphi^{kl}h^{m}_{l}h_{ki} \nabla_m \varphi \\
-\quad &+ 2 b^{ij} \nabla_j\varphi \varphi^{kl,rs}\nabla_i h_{rs} \a_{kl}  + 4 b^{ij} \nabla_j\varphi \varphi^{kl} b^{rs} \varphi(h^2)_{rl} \nabla_i h_{ks} \\
-\quad &+ c\left(2 b^{ij} \nabla_j\varphi \varphi^{kl}g_{ki} \nabla_l \varphi + 2 b^{ij} \nabla_j\varphi \varphi \nabla_i \operatorname{tr}(\dot{\p})\right) \\
-=\ &2 \varphi^{kl}(h^2)_{kl}\theta - 2 \varphi^{kl}h_{kl} |\nabla\varphi|^2 + 2 \varphi^{kl} h^{m}_{l} \nabla_k\varphi \nabla_m \varphi \\
-\quad &+ 2 \varphi^{kl,rs} \gamma_{rs} \a_{kl} + 4 b^{rs} \varphi^{kl} \gamma_{ks} \varphi(h^2)_{rl} \\
-\quad &+ c\left(2 \varphi^{kl} b^j_k \nabla_j\varphi \nabla_l \varphi + 2 \varphi b^{ij} \nabla_j\varphi \nabla_i \operatorname{tr}(\dot{\p})\right)
+&2 b^{ij} (\partial_{t} - \Box) (\nabla\p)_i \nabla_j\p\\  
+=\ &2 b^{ij} \nabla_j\p \big[\p^{kl,rs}\nabla_i h_{rs} \a_{kl}\p + 2 \p^{kl} b^{rs} \p(h^2)_{rl} \nabla_i h_{ks}  \\
+\quad &+ \p^{kl}(h^2)_{kl}\nabla_i \p + \left(\p^{kl}h^{m}_{l}h_{ki} - \p^{kl}h_{kl}h^{m}_{i}\right) \nabla_m \p\\
+\quad &+ c\left(\p^{kl}g_{ki} \nabla_l \p + \p \nabla_i \operatorname{tr}(\dot{\p})\right)\big] \\
+=\ &2 b^{ij} \nabla_j\p \p^{kl}(h^2)_{kl}\nabla_i \p \\
+\quad &- 2 b^{ij} \nabla_j\p \p^{kl}h_{kl}h^{m}_{i} \nabla_m \p + 2 b^{ij} \nabla_j\p \p^{kl}h^{m}_{l}h_{ki} \nabla_m \p \\
+\quad &+ 2 b^{ij} \nabla_j\p \p^{kl,rs}\nabla_i h_{rs} \a_{kl}  + 4 b^{ij} \nabla_j\p \p^{kl} b^{rs} \p(h^2)_{rl} \nabla_i h_{ks} \\
+\quad &+ c\left(2 b^{ij} \nabla_j\p \p^{kl}g_{ki} \nabla_l \p + 2 b^{ij} \nabla_j\p \p \nabla_i \operatorname{tr}(\dot{\p})\right) \\
+=\ &2 \p^{kl}(h^2)_{kl}\theta - 2 \p^{kl}h_{kl} |\nabla\p|^2 + 2 \p^{kl} h^{m}_{l} \nabla_k\p \nabla_m \p \\
+\quad &+ 2 \p^{kl,rs} \gamma_{rs} \a_{kl} + 4 b^{rs} \p^{kl} \gamma_{ks} \p(h^2)_{rl} \\
+\quad &+ c\left(2 \p^{kl} b^j_k \nabla_j\p \nabla_l \p + 2 \p b^{ij} \nabla_j\p \nabla_i \operatorname{tr}(\dot{\p})\right)
 \end{split}
 \end{equation}
-using the definitions of \(\theta, \a_{ij}\) and \(\gamma_{ij}\) as well as \(b^{ij}h_{ki} \nabla_j \varphi = \delta^j_k \nabla_j \varphi = \nabla_k \varphi\), and \(b^{ij} h^m_i = b^{ij} g^{mp}h_{pi} = \delta^j_p g^{mp} = g^{mj}\) in the last equality.
+using the definitions of \(\theta, \a_{ij}\) and \(\gamma_{ij}\) as well as \(b^{ij}h_{ki} \nabla_j \p = \delta^j_k \nabla_j \p = \nabla_k \p\), and \(b^{ij} h^m_i = b^{ij} g^{mp}h_{pi} = \delta^j_p g^{mp} = g^{mj}\) in the last equality.
 
 The proof is now completed by adding \cref{eq:delt_theta1} and \cref{eq:delt_theta2} line by line and adding also the final line from \cref{eq:delt_theta}.
 \end{proof}
@@ -550,79 +550,79 @@ We start this section by calculating the evolution equations of $\chi_2$ and its
 \label{thm:Evchi}
 Let $\delta \neq 0.$ The quantity
 $
-\chi_2 = t(\beta - \theta) + \delta\varphi
+\chi_2 = t(\beta - \theta) + \delta\p
 $
 satisfies
 \eq{\label{thm:Evchi1}
-\partial_t \chi_2 -\Box\chi_2 &= \left(\frac{\b-\t}{\delta\varphi} +\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p})\right)\chi_2 \\
-& \quad + t\left(\varphi^{ij,kl} + 2b^{il}\varphi^{jk} - \frac{\varphi^{ij}\varphi^{kl}}{\delta\varphi}\right)\eta_{ij}\eta_{kl} + tc R,
+\partial_t \chi_2 -\Box\chi_2 &= \left(\frac{\b-\t}{\delta\p} +\p^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p})\right)\chi_2 \\
+& \quad + t\left(\p^{ij,kl} + 2b^{il}\p^{jk} - \frac{\p^{ij}\p^{kl}}{\delta\p}\right)\eta_{ij}\eta_{kl} + tc R,
 }
 where
 \[
-\eta_{ij} = \a_{ij} - \gamma_{ij} = \nabla^2_{ij}\varphi + (h^2)_{ij}\varphi - b^{rs}\nabla_r h_{ij}\nabla_s \varphi
+\eta_{ij} = \a_{ij} - \gamma_{ij} = \nabla^2_{ij}\p + (h^2)_{ij}\p - b^{rs}\nabla_r h_{ij}\nabla_s \p
 \]
 and
 \[
 \begin{split}
 R &= R_{\beta} - R_{\theta} \\
-&= \varphi \Box \operatorname{tr}(\dot{\p}) + 2\varphi^{kl} \nabla_k \operatorname{tr}(\dot{\p}) \nabla_l \varphi + \varphi \varphi^{ij,kl}g_{kl} (\nabla^2_{ij} \varphi + \varphi(h^2)_{ij})\\ 
-&\quad- 2\varphi \varphi^{ij,kl}g_{kl} b^{rs}\nabla_r h_{ij}\nabla_s \varphi + 2\varphi^{2}\varphi^{ij}h_{ij}\\
-&\quad  +(\varphi^{kl}h_{kl} + \varphi)b^{ir}b^{j}_{r}\nabla_i \varphi\nabla_j\varphi - 2 b^{j}_{k}\varphi^{kl}\nabla_l\varphi\nabla_j\varphi.
+&= \p \Box \operatorname{tr}(\dot{\p}) + 2\p^{kl} \nabla_k \operatorname{tr}(\dot{\p}) \nabla_l \p + \p \p^{ij,kl}g_{kl} (\nabla^2_{ij} \p + \p(h^2)_{ij})\\ 
+&\quad- 2\p \p^{ij,kl}g_{kl} b^{rs}\nabla_r h_{ij}\nabla_s \p + 2\p^{2}\p^{ij}h_{ij}\\
+&\quad  +(\p^{kl}h_{kl} + \p)b^{ir}b^{j}_{r}\nabla_i \p\nabla_j\p - 2 b^{j}_{k}\p^{kl}\nabla_l\p\nabla_j\p.
 \end{split}
 \]
 \end{proposition}
 \begin{proof}
 We have
 $
-(\partial_t - \Box)\chi_2 = \beta - \theta + t(\partial_{t} - \Box)(\beta - \theta) + \delta(\partial_t \varphi - \Box\varphi).
+(\partial_t - \Box)\chi_2 = \beta - \theta + t(\partial_{t} - \Box)(\beta - \theta) + \delta(\partial_t \p - \Box\p).
 $
-First of all, the evolution equation for \(\varphi\), \cref{lem:evolution}, \cref{eq:delt_speed} gives us
+First of all, the evolution equation for \(\p\), \cref{lem:evolution}, \cref{eq:delt_speed} gives us
 \[
-\delta(\partial_t \varphi - \Box\varphi) = \left(\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p})\right)\delta\varphi.
+\delta(\partial_t \p - \Box\p) = \left(\p^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p})\right)\delta\p.
 \]
 Next, we note that
 $
-\varphi^{ij} \eta_{ij} = \beta - \theta
+\p^{ij} \eta_{ij} = \beta - \theta
 $
-since \(\nabla_r \varphi = \varphi^{ij} \nabla_r h_{ij}\). Putting the two equations above together gives
+since \(\nabla_r \p = \p^{ij} \nabla_r h_{ij}\). Putting the two equations above together gives
 \begin{equation}
 \label{eq:deltchi1}
 \begin{split}
-&\beta - \theta + \delta(\partial_t \varphi - \Box\varphi) \\
-=\ &\left(\frac{\beta-\theta}{\delta\varphi} + \varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p})\right)\delta\varphi + t \frac{(\beta - \theta)^2}{\delta\varphi} - t \frac{(\varphi^{ij}\eta_{ij})^2}{\delta\varphi} \\
-=\ &\frac{\beta-\theta}{\delta\varphi} \chi_2 + \left(\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p})\right)\delta\varphi  - t \frac{\varphi^{ij}\varphi^{kl}}{\delta\varphi} \eta_{ij}\eta_{kl}.
+&\beta - \theta + \delta(\partial_t \p - \Box\p) \\
+=\ &\left(\frac{\beta-\theta}{\delta\p} + \p^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p})\right)\delta\p + t \frac{(\beta - \theta)^2}{\delta\p} - t \frac{(\p^{ij}\eta_{ij})^2}{\delta\p} \\
+=\ &\frac{\beta-\theta}{\delta\p} \chi_2 + \left(\p^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p})\right)\delta\p  - t \frac{\p^{ij}\p^{kl}}{\delta\p} \eta_{ij}\eta_{kl}.
 \end{split}
 \end{equation}
 The remaining term \(t(\partial_{t} - \Box)(\beta - \theta)\) is now just bookkeeping. Recall, \cref{lem:evbeta} states that
 \begin{align*}
-(\partial_{t} - \Box)\beta &= \left(\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}) \right)\beta  & (A) \\
-&\quad + (\varphi - \varphi^{ij}h_{ij}) |\nabla\varphi|^{2} + 2\varphi^{ij}h^{k}_{i}\nabla_k \varphi \nabla_j \varphi  & (B) \\
-&\quad + \varphi^{ij,kl} \a_{ij} \a_{kl} & (C) \\
-&\quad + 2b^{il}\varphi^{jk} (2\nabla^2_{ij}\varphi\varphi(h^2)_{kl} + \varphi(h^2)_{ij}\varphi(h^2)_{kl}) & (D) \\
+(\partial_{t} - \Box)\beta &= \left(\p^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}) \right)\beta  & (A) \\
+&\quad + (\p - \p^{ij}h_{ij}) |\nabla\p|^{2} + 2\p^{ij}h^{k}_{i}\nabla_k \p \nabla_j \p  & (B) \\
+&\quad + \p^{ij,kl} \a_{ij} \a_{kl} & (C) \\
+&\quad + 2b^{il}\p^{jk} (2\nabla^2_{ij}\p\p(h^2)_{kl} + \p(h^2)_{ij}\p(h^2)_{kl}) & (D) \\
 &\quad + cR_{\beta}  & (E) \\
 \intertext{while \cref{lem:Evtheta} states that}
-(\partial_{t} - \Box)\theta &= (\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}))\theta & (A') \\
-&\quad + (\varphi - \varphi^{ij}h_{ij})|\nabla\varphi|^{2} + 2\varphi^{ij}h^{k}_{i}\nabla_k\varphi\nabla_j\varphi & (B') \\
-&\quad - \varphi^{kl,ij} (\gamma_{ij}\gamma_{kl}  - 2\a_{ij} \gamma_{kl}) & (C') \\
-&\quad - 2b^{il} \varphi^{jk} \left(\gamma_{ij} \gamma_{kl} - 2\a_{ij} \gamma_{kl} + \nabla^2_{ij}\varphi\nabla^2_{kl}\varphi\right) & (D') \\
+(\partial_{t} - \Box)\theta &= (\p^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}))\theta & (A') \\
+&\quad + (\p - \p^{ij}h_{ij})|\nabla\p|^{2} + 2\p^{ij}h^{k}_{i}\nabla_k\p\nabla_j\p & (B') \\
+&\quad - \p^{kl,ij} (\gamma_{ij}\gamma_{kl}  - 2\a_{ij} \gamma_{kl}) & (C') \\
+&\quad - 2b^{il} \p^{jk} \left(\gamma_{ij} \gamma_{kl} - 2\a_{ij} \gamma_{kl} + \nabla^2_{ij}\p\nabla^2_{kl}\p\right) & (D') \\
 &\quad + cR_{\theta}. & (E')
 \end{align*}
 Subtracting line by line, we have
 \begin{align*}
-(A) - (A') &= \left(\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}) \right)\beta - \left(\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}) \right)\theta \\
-        &= \left(\varphi^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}) \right)(\beta - \theta) \\
-(B) - (B') &= (\varphi - \varphi^{ij}h_{ij}) |\nabla\varphi|^{2} + 2\varphi^{ij}h^{k}_{i}\nabla_k \varphi \nabla_j \varphi \\ 
-    &\quad - (\varphi - \varphi^{ij}h_{ij})|\nabla\varphi|^{2} - 2\varphi^{ij}h^{k}_{i}\nabla_k\varphi\nabla_j\varphi \\    
+(A) - (A') &= \left(\p^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}) \right)\beta - \left(\p^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}) \right)\theta \\
+        &= \left(\p^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p}) \right)(\beta - \theta) \\
+(B) - (B') &= (\p - \p^{ij}h_{ij}) |\nabla\p|^{2} + 2\p^{ij}h^{k}_{i}\nabla_k \p \nabla_j \p \\ 
+    &\quad - (\p - \p^{ij}h_{ij})|\nabla\p|^{2} - 2\p^{ij}h^{k}_{i}\nabla_k\p\nabla_j\p \\    
         &= 0 \\
-(C) - (C') &= \varphi^{ij,kl} \a_{ij} \a_{kl} + \varphi^{kl,ij} (\gamma_{ij}\gamma_{kl}  - 2\a_{ij} \gamma_{kl})\\ 
-    &= \varphi^{ij,kl} (\a_{ij} - \gamma_{ij}) (\a_{kl} - \gamma_{kl}) \\
-&= \varphi^{ij,kl} \eta_{ij} \eta_{kl} \\
-(D) - (D') &= 2b^{il}\varphi^{jk} (2\nabla^2_{ij}\varphi\varphi(h^2)_{kl} + \varphi(h^2)_{ij}\varphi(h^2)_{kl}) \\
-&\quad + 2b^{il} \varphi^{jk} \left(\gamma_{ij} \gamma_{kl} - 2\a_{ij} \gamma_{kl} + \nabla^2_{ij}\varphi\nabla^2_{kl}\varphi\right) \\
-&= 2b^{il}\varphi^{jk} \big(\nabla^2_{ij}\varphi\nabla^2_{kl}\varphi +2\nabla^2_{ij}\varphi\varphi(h^2)_{kl} + \varphi(h^2)_{ij}\varphi(h^2)_{kl} \\
+(C) - (C') &= \p^{ij,kl} \a_{ij} \a_{kl} + \p^{kl,ij} (\gamma_{ij}\gamma_{kl}  - 2\a_{ij} \gamma_{kl})\\ 
+    &= \p^{ij,kl} (\a_{ij} - \gamma_{ij}) (\a_{kl} - \gamma_{kl}) \\
+&= \p^{ij,kl} \eta_{ij} \eta_{kl} \\
+(D) - (D') &= 2b^{il}\p^{jk} (2\nabla^2_{ij}\p\p(h^2)_{kl} + \p(h^2)_{ij}\p(h^2)_{kl}) \\
+&\quad + 2b^{il} \p^{jk} \left(\gamma_{ij} \gamma_{kl} - 2\a_{ij} \gamma_{kl} + \nabla^2_{ij}\p\nabla^2_{kl}\p\right) \\
+&= 2b^{il}\p^{jk} \big(\nabla^2_{ij}\p\nabla^2_{kl}\p +2\nabla^2_{ij}\p\p(h^2)_{kl} + \p(h^2)_{ij}\p(h^2)_{kl} \\
     &\qquad\qquad - 2 \a_{ij} \gamma_{kl} + \gamma_{ij} \gamma_{kl} \big) \\
-&= 2b^{il}\varphi^{jk} \left(\a_{ij}\a_{kl} - 2 \a_{ij} \gamma_{kl} + \gamma_{ij} \gamma_{kl} \right) \\ 
-    &= 2b^{il}\varphi^{jk} \eta_{ij} \eta_{kl} \\
+&= 2b^{il}\p^{jk} \left(\a_{ij}\a_{kl} - 2 \a_{ij} \gamma_{kl} + \gamma_{ij} \gamma_{kl} \right) \\ 
+    &= 2b^{il}\p^{jk} \eta_{ij} \eta_{kl} \\
 (E) - (E') &= c(R_{\beta} - R_{\theta}) \\ 
     &= cR.\\
 \end{align*}
@@ -660,7 +660,7 @@ Proposition \ref{thm:Evchi}, and Lemmas \ref{RSphere}, \ref{lemma : lem9}  enabl
 The quantity
 $\chi_1=t(\del_t\p-\t)+\d\p$
 satisfies the evolution equation
-\eq{\label{WeakHarnackEv12}\del_t\chi_1-\Box\chi_1 &= \br{\frac{\b-\t}{\delta\varphi} + \varphi^{ij}(h^2)_{ij} + c\frac{\d-1}{\d} \operatorname{tr}(\dot{\p})}\chi_1\\ 
+\eq{\label{WeakHarnackEv12}\del_t\chi_1-\Box\chi_1 &= \br{\frac{\b-\t}{\delta\p} + \p^{ij}(h^2)_{ij} + c\frac{\d-1}{\d} \operatorname{tr}(\dot{\p})}\chi_1\\ 
 &\quad +\fr{c\operatorname{tr}(\dot{\p})\p}{\d}(tc\operatorname{tr}(\dot{\p})+2\d) \\
 &\quad + t\p^{ij,kl}\br{\eta_{ij}+c\p g_{ij}}\br{\eta_{kl}+c\p g_{kl}}\\ &\quad +t\br{2b^{il}\p^{jk}-\fr{\p^{ij}\p^{kl}}{\d\p}}\eta_{ij}\eta_{kl} \\
 &\quad + tc\left\{2\p^2\p^{ij}h_{ij}+\left[\br{\p^{ij}h_{ij}+\p}b^{ir}-2\p^{ir}\right]b^{j}_{r}\nabla_{i}\p\nabla_{j}\p\right\}.
@@ -746,7 +746,7 @@ $$Hb^{ij}\geq g^{ij}$$
 in the sense of bilinear forms.
 
 To finish the proof, we need to show that the right-hand side is positive. If $\zeta=0$, this is straightforward:
-\[\varphi''<0,\quad n\br{2\fr{\p''}{\p'}-\fr{\p''^{2}\p}{\p'^{3}}+\fr{\p'''\p}{\p'^{2}}}+\fr{\p}{\p'H^2}-\fr{1}{H}\geq 0.\]
+\[\p''<0,\quad n\br{2\fr{\p''}{\p'}-\fr{\p''^{2}\p}{\p'^{3}}+\fr{\p'''\p}{\p'^{2}}}+\fr{\p}{\p'H^2}-\fr{1}{H}\geq 0.\]
 For the second case that $\zeta\neq 0$, note that
 $$2\zeta-2n\d\fr{\p''\p^2}{\p'}\geq 0\quad\mbox{for}\quad p\geq \frac{n+1}{2n},$$
 $$\br{\p^{ij,kl}+2b^{il}\p^{jk}-\fr{\p^{ij}\p^{kl}}{\d\p}}\eta_{ij}\eta_{kl}\geq0\quad\mbox{for}\quad\delta=\frac{p}{p+1},$$
