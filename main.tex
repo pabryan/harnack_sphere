@@ -66,11 +66,11 @@ If $0<{p}\leq \frac{1}{2} + \frac{1}{2n}$ or $p=1$, then
 \]
 \end{theorem}
 
-A number of authors have studied Harnack inequalities in Euclidean space. The genesis of such study is \cite{MR1316556} where Hamilton proves a Harnack inequality for the mean curvature flow of convex hypersurfaces. Harnack inequalities for other flows have been obtained in \cite{MR1100812, MR2813400, MR1480081}, including flows by the power of Gauss curvature and powers of inverse mean curvature. The most general results, subsuming many other results, were obtained in \cite{MR1296393} for so-called \(\alpha\)-convex and \(\alpha\)-concave speeds.
+A number of authors have studied Harnack inequalities in Euclidean space. The genesis of such study is \cite{MR1316556} where Hamilton proves a Harnack inequality for the mean curvature flow of convex hypersurfaces. Harnack inequalities for other flows have been obtained in \cite{MR1100812,ivaki2015centro,ivaki2015convex, MR2813400, MR1480081}, including flows by the power of Gauss curvature, centro-affine normal flow, and powers of inverse mean curvature. The most general results, subsuming many other results, were obtained in \cite{MR1296393} for so-called \(\alpha\)-convex and \(\alpha\)-concave speeds.
 
 In the sphere, we find it rather more difficult to obtain Harnack inequalities in such generality. For one thing, the Gauss-map parametrization used to great effect in \cite{MR1296393} is not available to us (at least in the same way). We get around this first difficulty by direct computation. The principle difficulty, however, arises from the background curvature introducing extra terms, involving up to third derivatives of the speed, and at this stage, we are only able to obtain the required positivity in the cases listed above. In the case of Euclidean space, our computations do recover many (but no new) Euclidean Harnack inequalities about which we make brief mention in \cref{sec:Harnack}.
 
-Let us now recall the general philosophy that ``equality should be attained on solitons'' in Harnack inequalities for curvature flows as espoused in \cite{MR1316556}, and see how this philosophy may be interpreted in the sphere. The original motivating idea was the seminal work of \cite{MR834612} where the differential Harnack inequality for the Schr\"odinger operator (and in particular for the heat equation) on a compact manifold with positive Ricci curvature was introduced. A sharp inequality was obtained, with equality attained precisely on the heat kernel, a self-similar solution of the heat equation. Motivated by the sharp inequality, Hamilton \cite{MR1316556} was lead to seek a sharp Harnack inequality with equality occurring precisely on solitons, the self-similar solutions of the Mean Curvature Flow. The result is the definition of the Harnack quadratic:
+Let us now recall the general philosophy that ``equality should be attained on solitons'' in Harnack inequalities for curvature flows as espoused in \cite{MR1316556}, and see how this philosophy may be interpreted in the sphere. The original motivating idea was the seminal work of \cite{MR834612} where the differential Harnack inequality for the Schr\"odinger operator (and in particular for the heat equation) on a compact manifold with positive Ricci curvature was introduced. A sharp inequality was obtained, with equality attained precisely on the heat kernel, a self-similar solution of the heat equation. Motivated by the sharp inequality, Hamilton \cite{MR1316556} was lead to seek a sharp Harnack inequality with equality occurring precisely on solitons, the self-similar solutions of the mean curvature flow. The result is the definition of the Harnack quadratic:
 \begin{equation}
 \label{eq:harnack_quadratic}
 Q = \partial_t \p - b^{ij} \nabla_i \p \nabla_j \p
@@ -95,7 +95,7 @@ For the second question, note that the Gauss map may be considered as a map \(M_
 
 The first question offers more possibilities. The usual symmetries considered in Euclidean space are isometries of the ambient space and space-time scalings. For the Harnack inequality, rotations are not so important, but translations and scalings are of utmost importance. On the sphere, if the initial area is smaller than the area of an equator, under suitable curvature assumptions, the hypersurface collapses to a point in finite time \cite[Theorem 0.1]{MR892052}, and thus cannot move by isometry. Otherwise, it converges smoothly to an equator and hence must have been an equator for all time (since it moves by isometries). Therefore, there are no closed, convex hypersurfaces of the sphere moving by isometry. This is the same in Euclidean space of course, and in that situation one may also consider translators. But these are non-compact hence do not exist in the sphere. 
 
-As to scalings, these also do not exist on the sphere, but the family of shrinking geodesic spheres is ``sufficiently self-similar'' to be of interest. Here we are only interested in attaining a qualitative understanding of the connection between solitons and Harnack inequalities, so let us consider the relatively simpler case of the Mean Curvature Flow. In this case, a family of shrinking geodesic spheres is given the graph \(\{\radialdistance = \radialdistance(t) = \arccos(e^{t})\}\) in geodesic polar coordinates around the equator (see e.g. \cite{Gerhardt:/2015} equations 6.5,6.11). The mean curvature of such a family is
+As to scalings, these also do not exist on the sphere, but the family of shrinking geodesic spheres is ``sufficiently self-similar'' to be of interest. Here we are only interested in attaining a qualitative understanding of the connection between solitons and Harnack inequalities, so let us consider the relatively simpler case of the mean curvature flow. In this case, a family of shrinking geodesic spheres is given the graph \(\{\radialdistance = \radialdistance(t) = \arccos(e^{t})\}\) in geodesic polar coordinates around the equator (see e.g., \cite{Gerhardt:/2015} equations 6.5, 6.11). The mean curvature of such a family is
 \[
 H(t) = n\cot(\radialdistance(t)) = n\frac{e^{t}}{\sqrt{1 - e^{2t}}}.
 \]
@@ -128,7 +128,7 @@ The authors would like to thank Knut Smoczyk and the Institut f\"{u}r Differenti
 \section{Preliminaries}
 \label{sec:prelim}
 
-Let $\overline{g}$ and $\overline{Rm}$ denote, respectively, the metric and the curvature tensor of $M_c$. Define \(M_t := x(M^n,t)\), and let \(g = x_t^{\ast} \overline{g}\) denote the induced metric on \(M\) with $\nabla$ the corresponding Levi-Civita connection. Write $\nu$ for the outer unit normal to $M_t$ and let \(\{\partial_i\}_{i=1}^n\) be a local coordinate frame on \(M\) which extends to a frame \(\{\partial_0 = \nu, (x_t)_{\ast} \partial_1, \cdots, (x_t)_{\ast} \partial_n\}\) on \(M_c\) in a neighbourhood of \(M_t\).
+Let $\overline{g}$ and $\overline{Rm}$ denote, respectively, the metric and the curvature tensor of $M_c$. Define \(M_t := x(M^n,t)\), and let \(g = x_t^{\ast} \overline{g}\) denote the induced metric on \(M\) with $\nabla$ the corresponding Levi-Civita connection. Write $\nu$ for the outer unit normal to $M_t$ and let \(\{\partial_i\}_{i=1}^n\) be a local coordinate frame on \(M\) which extends to a frame \(\{\partial_0 = \nu, (x_t)_{\ast} \partial_1, \cdots, (x_t)_{\ast} \partial_n\}\) on \(M_c\) in a neighborhood of \(M_t\).
 
 Let Greek indices range from \(0\) to \(n\) and Latin indices range from \(1\) to \(n\). The Riemann curvature tensor of \(M_c\) satisfies \(\bar{R}_{\a\beta\gamma\theta} = c(\bar{g}_{\a\gamma}\bar{g}_{\beta\delta} - \bar{g}_{\a\theta}\bar{g}_{\beta\gamma})\). We may write the metric $g = \{g_{ij}\}$, second fundamental form $A = \{h_{ij}\}$, the Weingarten map $\mathcal{W} = h^i_j = g^{mi} h_{jm}$ and the Riemann curvature tensor $Rm_{ijkl}$ with respect to the given frame.
 
@@ -299,12 +299,12 @@ Since $\partial_t \G^{k}_{ij}$ is a tensor, we may calculate using normal coordi
 \[
 \frac{1}{2} \partial_t g^{kl} (\partial_j g_{il} + \partial_i g_{jl} - \partial_l g_{ij}) = 2\varphi g^{kr} h_{rs} \G^s_{ij} = 0.
 \]
-from \cref{lem:evolution}, \cref{eq:delt_metric}. Now commuting derivatives \([\partial_t, \partial_i] = 0\), and using the Codazzi equations we obtain
+from \cref{lem:evolution}, \cref{eq:delt_inversemetric}. Now commuting derivatives \([\partial_t, \partial_i] = 0\), and using the Codazzi equations we obtain
 \[
 \begin{split}
 \partial_t {\G}^{k}_{ij} & = \frac{1}{2} g^{kl} \left(\partial_j \partial_t g_{il} + \partial_i \partial_t g_{jl} - \partial_l \partial_t g_{ij}\right) \\
 &= - g^{kl} \left(\partial_j (\varphi h_{il}) + \partial_i (\varphi h_{jl}) - \partial_l (\varphi h_{ij})\right) \\
-&= -\varphi g^{kl} \partial_l h_{ij} - g^{kl} h_{il} \partial_j \varphi  - g^{kl} h_{lj} \partial_i \varphi + g^{kl} h_{ij} \partial_i \varphi.
+&= -\varphi g^{kl} \partial_l h_{ij} - g^{kl} h_{il} \partial_j \varphi  - g^{kl} h_{lj} \partial_i \varphi + g^{kl} h_{ij} \partial_l \varphi.
 \end{split}
 \]
 The result follows since in normal coordinates, \(\nabla_i = \partial_i\) at our given point. 
