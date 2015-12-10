@@ -1,15 +1,15 @@
 %\documentclass[10 pt]{amsart}
-
-\usepackage[ocgcolorlinks,linktoc=all]{hyperref}
+%[ocgcolorlinks,linktoc=all]
+\usepackage[ocgcolorlinks,linktoc=all,linkcolor=blue]{hyperref}
 \hypersetup{citecolor=blue,linkcolor=red}
-%\usepackage[parfill]{parskip}
+%\usepackage{parskip}
 
 
 %\usepackage{amsthm}
 \usepackage{cleveref}
 \crefname{lemma}{Lemma}{Lemmata}
 \crefname{equation}{equation}{equations}
-
+ 
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}
@@ -135,7 +135,7 @@
 \newcommand{\hp}{\hphantom}
 
 
-\parindent 0 pt
+%\parindent 0 pt
 
 \protected\def\ignorethis#1\endignorethis{}
 \let\endignorethis\relax
