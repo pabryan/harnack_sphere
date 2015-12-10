@@ -66,12 +66,12 @@ If $0<{p}\leq \frac{1}{2} + \frac{1}{2n}$ or $p=1$, then
 \]
 \end{theorem}
 
-A number of authors have studied Harnack inequalities in Euclidean space. The genesis of such study is \cite{Hamilton:/1995} where Hamilton proves a Harnack inequality for the mean curvature flow of convex hypersurfaces. Harnack inequalities for other flows have been obtained in \cite{Chow:06/1991,Ivaki:11/2015,Ivaki:09/2015,Li:/2011,Schulze:/2005}, including flows by the power of Gauss curvature, centro-affine normal flows, and flows by the power of inverse mean curvature. The most general results, subsuming many other results, were obtained in \cite{Andrews:09/1994} for so-called \(\alpha\)-convex and \(\alpha\)-concave speeds. The philosophy as espoused in \cite{Hamilton:/1995} by Hamilton is that equality should be attained by self-similar solutions, a.k.a. solitons, as originally motivated by the fact that the equality case in the seminal work of Li-Yau \cite{LiYau:/1986} is attained on the heat kernel, a self-similar solution of the heat equation. Such self-similarity leads one to study the Harnack quadratic,
+A number of authors have studied Harnack inequalities in Euclidean space. The genesis of such study is \cite{Hamilton:/1995} where Hamilton proves a Harnack inequality for the mean curvature flow of convex hypersurfaces. Harnack inequalities for other flows have been obtained in \cite{Chow:06/1991,Ivaki:11/2015,Ivaki:09/2015,Li:/2011,Smoczyk:/1997}, including flows by the power of Gauss curvature, centro-affine normal flows, and flows by the power of inverse mean curvature. The most general results, subsuming many other results, were obtained in \cite{Andrews:09/1994} for so-called \(\alpha\)-convex and \(\alpha\)-concave speeds. The philosophy as espoused in \cite{Hamilton:/1995} by Hamilton is that equality should be attained by self-similar solutions, a.k.a. solitons, as originally motivated by the fact that the equality case in the seminal work of Li-Yau \cite{LiYau:/1986} is attained on the heat kernel, a self-similar solution of the heat equation. Such self-similarity leads one to study the Harnack quadratic,
 \begin{equation}
 \label{eq:harnack_quadratic}
 Q = \partial_t \p - b^{ij} \nabla_i \p \nabla_j \p,
 \end{equation}
-where \(b^{ij}\) is the inverse of the second fundamental form of a strictly convex hypersurface. This quadratic also arises, seemingly magically when changing parametrization from the ``Gauss map parametrization'' (where the calculations are almost trivial), to the ``Standard parametrization'' \cite{Andrews:09/1994}. Several authors, beginning with \cite{ChowChu:06/2001} have also investigated this quadratic, relating it to the second fundamental form of a degenerate metric on space-time \cite{HelmensdorferTopping:01/2013,Kotschwar:/2009}.
+where $\{b^{ij}\}$ is the inverse of the second fundamental form of a strictly convex hypersurface. This quadratic also arises, seemingly magically when changing parametrization from the ``Gauss map parametrization'' (where the calculations are almost trivial), to the ``Standard parametrization'' \cite{Andrews:09/1994}. Several authors, beginning with \cite{ChowChu:06/2001} have also investigated this quadratic, relating it to the second fundamental form of a degenerate metric on space-time \cite{HelmensdorferTopping:01/2013,Kotschwar:/2009}.
 
 In the sphere, we do not have quite the same notion of self-similarity and the Gauss map parametrization does not seem to have quite the same ``magical'' properties as in Euclidean space. Using the ``Euclidean'' Harnack quadratic \eqref{eq:harnack_quadratic} on the sphere, we immediately encounter new difficulties arising from the background curvature introducing the ``remainder term'' $R$ of Proposition \ref{thm:Evchi}. In addition to the positivity required for Euclidean Harnack inequalities, on the sphere we also require positivity of $R$; therefore, our Harnack inequalities apply to a restricted class of flows as compared with \cite{Andrews:09/1994}. In the particular case when the speed is a function of the mean curvature, \(H^p\), the computation becomes tractable (\Cref{RSphere}, \Cref{lemma : lem9}), and suitably modifying the Harnack quadratic, we can cancel some bad terms to obtain the second Harnack inequality in \Cref{thm:harnack}.
 
@@ -106,7 +106,7 @@ The authors would like to thank Knut Smoczyk and the Institut f\"{u}r Differenti
 
 Let $\overline{g}$ and $\overline{Rm}$ denote, respectively, the metric and the curvature tensor of $M_c$. Define \(M_t := x(M^n,t)\), and let \(g = x_t^{\ast} \overline{g}\) denote the induced metric on \(M\) with $\nabla$ the corresponding Levi-Civita connection. Write $\nu$ for the outer unit normal to $M_t$ and let \(\{\partial_i\}_{i=1}^n\) be a local coordinate frame on \(M\) which extends to a frame \(\{\partial_0 = \nu, (x_t)_{\ast} \partial_1, \cdots, (x_t)_{\ast} \partial_n\}\) on \(M_c\) in a neighborhood of \(M_t\).
 
-Let Greek indices range from \(0\) to \(n\) and Latin indices range from \(1\) to \(n\). The Riemann curvature tensor of \(M_c\) satisfies \(\bar{R}_{\a\beta\gamma\delta} = c(\bar{g}_{\a\gamma}\bar{g}_{\beta\delta} - \bar{g}_{\a\delta}\bar{g}_{\beta\gamma})\). We may write the metric $g = \{g_{ij}\}$, second fundamental form $A = \{h_{ij}\}$, the Weingarten map $\mathcal{W} = \{h^i_j\} = \{g^{mi} h_{jm}\}$ and the Riemann curvature tensor $Rm_{ijkl}$ with respect to the given frame.
+Let Greek indices range from \(0\) to \(n\) and Latin indices range from \(1\) to \(n\). The Riemann curvature tensor of \(M_c\) satisfies \(\bar{R}_{\a\beta\gamma\delta} = c(\bar{g}_{\a\gamma}\bar{g}_{\beta\delta} - \bar{g}_{\a\delta}\bar{g}_{\beta\gamma})\). We may write the metric $g = \{g_{ij}\}$, second fundamental form $A = \{h_{ij}\}$, the Weingarten map $\mathcal{W} = \{h^i_j\} = \{g^{mi} h_{jm}\}$ and the Riemann curvature tensor $\{Rm_{ijkl}\}$ with respect to the given frame.
 
 We shall write \(\nabla_i\) for covariant derivatives and also use the notation \(\nabla^i = g^{ik} \nabla_k\). Second covariant derivatives will be written \(\nabla^2_{ij} = \nabla_{\partial_i} \nabla_{\partial_j} - \nabla_{\nabla_{\partial_i}\partial_j}\) and \((\nabla^2)^i_j = g^{ik} \nabla^2_{kj}\).
 
@@ -127,7 +127,7 @@ b = \{b^{ij}\}.
 The relations between $A$, $Rm$, and $\overline{Rm}$ are given by the Gau{\ss} and Codazzi equations:
 \[
 \begin{split}
-Rm_{ijkl} &= \overline{Rm}_{ijkl} + h_{ik}h_{jl} - h_{il}h_{jk} \\
+Rm_{ijkl} &= \br{x^{*}\overline{Rm}}_{ijkl} + h_{ik}h_{jl} - h_{il}h_{jk} \\
 &= c({g}_{ik}{g}_{jl} - {g}_{il}{g}_{jk}) + h_{ik}h_{jl} - h_{il}h_{jk},
 \end{split}
 \]
@@ -211,7 +211,7 @@ and
 \[
 \chi_2 =t(\partial_t \p - b^{ij} \nabla_i \p \nabla_j \p - c \p \operatorname{tr}(\dot{\p})) +\delta\p,
 \]
-where \(\delta \ne 0\) is an arbitrary, non-zero constant. The evolution equation of $\chi_1$ will be used for obtaining Harnack estimates for convex 1-homogeneous curvature speeds $\p$ and the evolution equation of $\chi_2$ will be employed for obtaining stronger Harnack estimates for flow by powers of the mean curvature $\p(H)=H^{p}$ with $p\in(0,1].$ Note that in Euclidean space $\chi_1=\chi_2.$
+where \(\delta \ne 0\) is an arbitrary, non-zero constant. The evolution equation of $\chi_1$ will be used for obtaining Harnack estimates for convex 1-homogeneous curvature speeds $\p$ and the evolution equation of $\chi_2$ will be employed for obtaining stronger Harnack estimates for flows by powers of the mean curvature $\p(H)=H^{p}$ with $p\in(0,1].$ Note that in Euclidean space $\chi_1=\chi_2.$
 
 Let us make a few definitions to keep the calculations more manageable. Let
 \[
@@ -273,7 +273,7 @@ In local coordinates, we have
 \]
 Since $\partial_t \G^{k}_{ij}$ is a tensor, we may calculate using normal coordinates at any given point, at which \(\G^k_{ij} = 0\). Then we have
 \[
-\frac{1}{2} \partial_t g^{kl} (\partial_j g_{il} + \partial_i g_{jl} - \partial_l g_{ij}) = 2\p g^{kr} h_{rs} \G^s_{ij} = 0.
+\frac{1}{2} \partial_t g^{kl} (\partial_j g_{il} + \partial_i g_{jl} - \partial_l g_{ij}) = 2\p g^{kr} h_{rs} \G^s_{ij} = 0
 \]
 from \cref{lem:evolution}, \cref{eq:delt_inversemetric}. Now commuting derivatives \([\partial_t, \partial_i] = 0\), and using the Codazzi equations we obtain
 \[
@@ -294,8 +294,8 @@ For every smooth function $f$, the commutation relation
 \[
 \begin{split}
 ([\nabla, \Box]f)_i &= \nabla_i \Box f - (\Box \nabla f)_i\\
-                &= \p^{kl,rs} \nabla_i h_{rs} \nabla^2_{kl} f + \p^{kl}\left(h^{m}_{l}h_{ki} - h_{kl}h^{m}_{i}\right) \nabla_m f \\
-&\quad + c \p^{kl} g_{ki} \nabla_l f - c \operatorname{tr}(\dot{\p}) \nabla_i f
+                &= \p^{kl,rs} \nabla_i h_{rs} \nabla^2_{kl} f + \p^{kl}\left(h^{m}_{k}h_{li} - h_{kl}h^{m}_{i}\right) \nabla_m f \\
+&\quad + c \p^{kl} g_{li} \nabla_k f - c \operatorname{tr}(\dot{\p}) \nabla_i f
 \end{split}
 \]
 holds, where \(\nabla f = df\) is the covariant derivative of \(f\) and the subscript \(i\) refers to the \(i\)'th component of a one-form.
@@ -305,20 +305,20 @@ From the Ricci identities
 \[
 {Rm_{ijk}}^m  = \left(\nabla^2_{ij} \partial_k - \nabla^2_{ji} \partial_k\right)^m
 \]
-we obtain that the $3$-tensor $\nabla^3_{kli}f-\nabla^3_{kil}f$
+we obtain that the $3$-tensor $\nabla^3_{ikl}f-\nabla^3_{kli}f=\nabla_i\nabla_k\nabla_lf-\nabla_k\nabla_i\nabla_lf$
 is given by
 \[
-\nabla^3_{kli}f-\nabla^3_{kil}f={Rm^m}_{kli}\nabla_m f
+\nabla^3_{ikl}f-\nabla^3_{kli}f={{Rm}_{ikl}}^m\nabla_m f
 \]
 and thus we obtain
 \[
-\nabla_i (\p^{kl} \nabla^2_{kl} f) - (\p^{kl}(\nabla^2_{kl} \nabla f))_i = \p^{kl,rs} \nabla_i h_{rs} \nabla^2_{kl}f + \p^{kl}{Rm^{m}}_{kli} \nabla_m f.
+\nabla_i (\p^{kl} \nabla^2_{kl} f) - (\p^{kl}(\nabla^2_{kl} \nabla f))_i = \p^{kl,rs} \nabla_i h_{rs} \nabla^2_{kl}f+ \p^{kl}{{Rm}_{ikl}}^{m} \nabla_m f.
 \]
 From the Gauss equation we obtain
 \[
 \begin{split}
-{Rm^{m}}_{kli} \nabla_m f &= \left(c\left(g^{pm}g_{ki}g_{pl}  - g^{pm}g_{pi}g_{kl}\right) + g^{pm} h_{pl}h_{ki} - g^{pm}h_{kl}h_{pi}\right) \nabla_m f \\
-&= c\left(g_{ki} \nabla_l f - g_{kl} \nabla_i f\right) + \left(h^{m}_{l}h_{ki} - h_{kl}h^{m}_{i}\right) \nabla_m f.
+{{Rm}_{ikl}}^{m} \nabla_m f &= \left(c\left(g^{pm}g_{il}g_{kp}  - g^{pm}g_{pi}g_{kl}\right) + g^{pm} h_{il}h_{kp} - g^{pm}h_{kl}h_{pi}\right) \nabla_m f \\
+&= c\left(g_{li} \nabla_k f - g_{kl} \nabla_i f\right) + \left(h^{m}_{k}h_{li} - h_{kl}h^{m}_{i}\right) \nabla_m f.
 \end{split}
 \]
 \end{proof}
@@ -513,8 +513,8 @@ where in the second to last equality we used the formula for the derivative of t
 (\partial_{t}b^{ij} - \Box b^{ij})\nabla_i \p\nabla_j\p &= \nabla_i \p \nabla_j \p\left(-\p^{rs} (h^2)_{rs} b^{ij} + (\p^{kl}h_{kl} + \p) g^{ij} \right. \\
 & \quad - \left(2b^{lq}\p^{kp} + \p^{kl,pq}\right) b^{ir}b^{js} \nabla_r h_{kl} \nabla_s h_{pq} \\
 & \quad - \left. c \{(\p + \p^{kl}h_{kl}) b^{ir}b^{j}_{r} - \operatorname{tr}(\dot{\p}) b^{ij}\}\right) \\
-&= \left(c\operatorname{tr}(\dot{\p}) - \p^{rs}(h)^2_{rs}\right) \theta\\ & \quad - (2b^{lq}\p^{kp} + \p^{kl,pq}) b^{ir}b^{js}\nabla_i\p\nabla_j\p\nabla_rh_{kl}\nabla_s h_{pq} \\
-&\quad + (\p^{kl}h_{kl} + \p)|\nabla\p|^{2} - c(\p^{kl}h_{kl} + \p)b^{ir}b^{j}_{r}\nabla_i \p\nabla_j\p \\
+&= \left(c\operatorname{tr}(\dot{\p}) - \p^{rs}(h)^2_{rs}\right) \theta+ (\p^{kl}h_{kl} + \p)|\nabla\p|^{2}\\ & \quad - (2b^{lq}\p^{kp} + \p^{kl,pq}) b^{ir}b^{js}\nabla_i\p\nabla_j\p\nabla_rh_{kl}\nabla_s h_{pq} \\
+&\quad  - c(\p^{kl}h_{kl} + \p)b^{ir}b^{j}_{r}\nabla_i \p\nabla_j\p \\
 &= \left(c\operatorname{tr}(\dot{\p}) - \p^{rs}(h)^2_{rs}\right) \theta  + (\p^{kl}h_{kl} + \p)|\nabla\p|^{2} \\
 &\quad - \p^{kl,pq} \gamma_{kl} \gamma_{pq} - 2b^{lq}\p^{kp} \gamma_{kl} \gamma_{pq}  \\
 &\quad -c(\p^{kl}h_{kl} + \p)b^{ir}b^{j}_{r}\nabla_i \p\nabla_j\p.
@@ -633,24 +633,24 @@ We need two more lemmas to obtain a Harnack inequality for $H^{p}$-flow with $0<
 \begin{lemma}\label{RSphere}
 Suppose that $\p=\p(H).$ Then the term $R$ in the evolution equation of $\chi_2$ takes the form
 \eq{\label{RSphere1}
-R&=2n\fr{\p''\p}{\p'}\br{\Box\p + \p\p^{ij}(h^2)_{ij} - b^{ij}\nabla_i \p \nabla_j \p}-n\fr{\p''\p^2}{\p'}\p^{ij}(h^2)_{ij}+2\p^2\p'H\\
-    &\hp{=}+n\br{2\fr{\p''}{\p'}-\fr{\p''^{2}\p}{\p'^{3}}+\fr{\p'''\p}{\p'^{2}}}\p^{ij}\nabla_{i}\p\nabla_j\p\\
+R&=2n\fr{\p''\p}{\p'}\br{\Box\p + \p\p^{ij}(h^2)_{ij} - b^{ij}\nabla_i \p \nabla_j \p}-n\fr{\p''\p^2}{\p'}\p^{ij}(h^2)_{ij}\\
+		&\hp{=}+2\p^2\p'H+n\br{2\fr{\p''}{\p'}-\fr{\p''^{2}\p}{\p'^{3}}+\fr{\p'''\p}{\p'^{2}}}\p^{ij}\nabla_{i}\p\nabla_j\p\\
  &\hp{=}+\br{\p'H+\p}b^{ir}b^{j}_{r}\nabla_i\p\nabla_j\p-2\p'b^{ij}\nabla_i\p\nabla_j\p.
 }
 \end{lemma}
 \pf{
 This computation is tedious but straightforward. The key point is to replace the terms containing second covariant derivatives of $\p,$ namely $\Box\operatorname{tr}(\dot{\p})$ and $\a_{ij},$ by a term involving $\Box\p,$ which can then be replaced by $\b-\t$ and some curvature terms.
 }
-To obtain a Harnack estimate for $H^{p}$-flow, we will have to handle the middle term in \eqref{RSphere1}; this term does not always have the favorable positive sign. To this aim, it is useful to add an auxiliary function of the speed. Using Proposition \ref{thm:Evchi} and \cref{RSphere}, it is straightforward to obtain the following evolution equation for $\chi_3=\chi_2+t\zeta$, where $\zeta=\zeta(\p)$ is a function of $\p.$
+To obtain a Harnack estimate for $H^{p}$-flow, we will have to handle the middle term in \eqref{RSphere1}; this term does not always have the favorable positive sign. To this aim, it is useful to add an auxiliary function of the speed. Using Proposition \ref{thm:Evchi} and \cref{RSphere} it is straightforward to obtain the following evolution equation for $\chi_3=\chi_2+ct\zeta$, where $\zeta=\zeta(\p)$ is a function of $\p.$
 \begin{lemma}\label{lemma : lem9}
 The quantity
-$\chi_3=\chi_2+t\zeta$
+$\chi_3=\chi_2+ct\zeta$
 evolves according to
 \eq{\label{Evchibar1}
-\del_t \chi_3 -\Box\chi_3 &= \left(\fr{\b-\t}{\d\p} + \p^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p})\right)\chi_2+\zeta \\
+\del_t \chi_3 -\Box\chi_3 &= \left(\fr{\b-\t}{\d\p} + \p^{ij}(h^2)_{ij} + c\operatorname{tr}(\dot{\p})\right)\chi_2+c\zeta \\
 &\hp{=} + t\left(\p^{ij,kl} + 2b^{il}\p^{jk} - \fr{\p^{ij}\p^{kl}}{\d\p}\right)\eta_{ij}\eta_{kl} \\
 &\hp{=} + ct\Big\{2n\fr{\p''\p}{\p'}\br{\Box\p + \p\p^{ij}(h^2)_{ij} - b^{ij}\nabla_i \p \nabla_j \p}\\
-&\hp{=+t}+\br{\zeta'-n\fr{\p''\p}{\p'}}\p^{ij}(h^2)_{ij}\p+ \zeta'\operatorname{tr}(\dot{\p})\p+ 2\p^2\p'H\\
+&\hp{=+t}+\br{\zeta'-n\fr{\p''\p}{\p'}}\p^{ij}(h^2)_{ij}\p+ c\zeta'\operatorname{tr}(\dot{\p})\p+ 2\p^2\p'H\\
 &\hp{=+t}+\br{n\br{2\fr{\p''}{\p'}-\fr{\p''^{2}\p}{\p'^{3}}+\fr{\p'''\p}{\p'^{2}}}-\zeta''}\p^{ij}\nabla_{i}\p\nabla_j\p \\
 &\hp{=+t} + \br{\p'H+\p}b^{ir}b^{j}_{r}\nabla_i\p\nabla_j\p-2\p'b^{ij}\nabla_i\p\nabla_j\p\Big\}.
 }
@@ -727,15 +727,16 @@ At time $t=0,$ $\chi_3$ is positive.
 %%%%%%%%%%%% We need to impose strict mean convexity in the main theorem here!!!!!!! %%%%%%
 Thus suppose there exists a first time $t_0$ and a point $x_0$ in $M_{t_0},$ such that $\chi_3(t_0,x_0)=0.$
 Then we also obtain
-$$\chi_2=-t\zeta\Rightarrow \b-\t=-\fr{\d\p}{t}-\zeta.$$
+$$\chi_2=-ct\zeta\Rightarrow \b-\t=-\fr{\d\p}{t}-c\zeta.$$
 Thus, using \eqref{Evchibar1}, we obtain at $(t_0,x_0)\colon$
 \eq{0&\geq \del_t\chi_3-\Box\chi_3\\
-        &=2\zeta-2n\d\fr{\p''\p^2}{\p'}+t\br{\p^{ij,kl}+2b^{il}\p^{jk}-\fr{\p^{ij}\p^{kl}}{\d\p}}\eta_{ij}\eta_{kl}\\
-        &\hp{=}+t\Big\{\fr{\zeta^2}{\d\p}-2n\fr{\p''\p}{\p'}\zeta+2\p^2\p'H+\br{\zeta'\p-\zeta}\p^{ij}g_{ij}    \\
+        &=2c\zeta-2cn\d\fr{\p''\p^2}{\p'}+t\br{\p^{ij,kl}+2b^{il}\p^{jk}-\fr{\p^{ij}\p^{kl}}{\d\p}}\eta_{ij}\eta_{kl}\\
+        &\hp{=}+ct\Big\{\fr{c\zeta^2}{\d\p}-2cn\fr{\p''\p}{\p'}\zeta+2\p^2\p'H+c\br{\zeta'\p-\zeta}\p^{ij}g_{ij}    \\
         &\hp{=+t} +\br{\zeta'\p-n\fr{\p''\p^2}{\p'}-\zeta}\p^{ij}(h^2)_{ij}+\br{\p'H+\p}b^{ir}b^j_r\nabla_i\p\nabla_j\p\\
-        &\hp{=+t}-2\p'b^{ij}\nabla_i\p\nabla_j\p+\br{n\br{2\fr{\p''}{\p'}-\fr{\p''^{2}\p}{\p'^{3}}+\fr{\p'''\p}{\p'^{2}}}-\zeta''}\p^{ij}\nabla_{i}\p\nabla_j\p\Big\}\\
-        &\geq2\zeta-2n\d\fr{\p''\p^2}{\p'}+t\br{\p^{ij,kl}+2b^{il}\p^{jk}-\fr{\p^{ij}\p^{kl}}{\d\p}}\eta_{ij}\eta_{kl}\\
-        &\hp{=}+t\Big\{\fr{\zeta^2}{\d\p}+2\p^2\p'H-2n\fr{\p''\p}{\p'}\zeta+n\br{\zeta'\p-\zeta}\p'    \\
+        &\hp{=+t}+\br{n\br{2\fr{\p''}{\p'}-\fr{\p''^{2}\p}{\p'^{3}}+\fr{\p'''\p}{\p'^{2}}}-\zeta''}\p^{ij}\nabla_{i}\p\nabla_j\p\\
+        &\hp{=+t}-2\p'b^{ij}\nabla_i\p\nabla_j\p\Big\}\\
+        &\geq2c\zeta-2cn\d\fr{\p''\p^2}{\p'}+t\br{\p^{ij,kl}+2b^{il}\p^{jk}-\fr{\p^{ij}\p^{kl}}{\d\p}}\eta_{ij}\eta_{kl}\\
+        &\hp{=}+ct\Big\{\fr{c\zeta^2}{\d\p}+2\p^2\p'H-2cn\fr{\p''\p}{\p'}\zeta+cn\br{\zeta'\p-\zeta}\p'    \\
         &\hp{=+t} +\br{\zeta'\p-n\fr{\p''\p^2}{\p'}-\zeta}\p^{ij}(h^2)_{ij}\\
         &\hp{=+t}+\br{n\br{2\fr{\p''}{\p'}-\fr{\p''^{2}\p}{\p'^{3}}+\fr{\p'''\p}{\p'^{2}}}-\zeta''+\fr{\p}{\p'H^2}-\fr{1}{H}}\p^{ij}\nabla_{i}\p\nabla_j\p\Big\},}
 
@@ -748,9 +749,9 @@ in the sense of bilinear forms.
 To finish the proof, we need to show that the right-hand side is positive. If $\zeta=0$, this is straightforward:
 \[\p''<0,\quad n\br{2\fr{\p''}{\p'}-\fr{\p''^{2}\p}{\p'^{3}}+\fr{\p'''\p}{\p'^{2}}}+\fr{\p}{\p'H^2}-\fr{1}{H}\geq 0.\]
 For the second case that $\zeta\neq 0$, note that
-$$2\zeta-2n\d\fr{\p''\p^2}{\p'}\geq 0\quad\mbox{for}\quad p\geq \frac{n+1}{2n},$$
+$$2c\zeta-2cn\d\fr{\p''\p^2}{\p'}\geq 0\quad\mbox{for}\quad p\geq \frac{n+1}{2n},$$
 $$\br{\p^{ij,kl}+2b^{il}\p^{jk}-\fr{\p^{ij}\p^{kl}}{\d\p}}\eta_{ij}\eta_{kl}\geq0\quad\mbox{for}\quad\delta=\frac{p}{p+1},$$
-$$\fr{\zeta^2}{\d\p}-2n\fr{\p''\p}{\p'}\zeta+n\br{\zeta'\p-\zeta}\p'\geq 0\quad\mbox{for}\quad p\geq\frac{n+1}{2n},~\delta=\frac{p}{p+1},$$
+$$\fr{c\zeta^2}{\d\p}-2cn\fr{\p''\p}{\p'}\zeta+cn\br{\zeta'\p-\zeta}\p'\geq 0\quad\mbox{for}\quad p\geq\frac{n+1}{2n},~\delta=\frac{p}{p+1},$$
 $$\zeta'\p-n\fr{\p''\p^2}{\p'}-\zeta\geq 0\quad\mbox{for}\quad\frac{n+1}{2n}\leq p\leq 1,$$
 $$n\br{2\fr{\p''}{\p'}-\fr{\p''^{2}\p}{\p'^{3}}+\fr{\p'''\p}{\p'^{2}}}-\zeta''+\fr{\p}{\p'H^2}-\fr{1}{H}=0.$$
 \end{proof}
